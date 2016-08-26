@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 08/05/2016 13:25:46
+-- /___/   /\     Timestamp : 08/26/2016 16:38:15
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -sympath D:/cbradford/SignalProcessing/ipcore_dir -sympath D:/cbradford/SignalProcessing/GEL_CAPTAN/ipcore_dir -intstyle ise -family virtex4 -flat -suppress -vhdl D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.vhf -w D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.sch
+--Command: sch2hdl -sympath D:/cbradford/NewADCFirmware/ipcore_dir -sympath D:/cbradford/NewADCFirmware/GEL_CAPTAN/ipcore_dir -intstyle ise -family virtex4 -flat -suppress -vhdl D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf -w D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.sch
 --Design Name: TOP_LEVEL
 --Device: virtex4
 --Purpose:
@@ -529,39 +529,7 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity TOP_LEVEL is
-   port ( BUSA_00DN_01S     : in    std_logic; 
-          BUSA_00DP_00S     : in    std_logic; 
-          BUSA_01DN_03S     : in    std_logic; 
-          BUSA_01DP_02S     : in    std_logic; 
-          BUSA_02DN_05S     : in    std_logic; 
-          BUSA_02DP_04S     : in    std_logic; 
-          BUSA_03DN_07S     : in    std_logic; 
-          BUSA_03DP_06S     : in    std_logic; 
-          BUSA_04DN_09S     : in    std_logic; 
-          BUSA_04DP_08S     : in    std_logic; 
-          BUSA_05DN_11S     : in    std_logic; 
-          BUSA_05DP_10S     : in    std_logic; 
-          BUSA_06DN_13S     : in    std_logic; 
-          BUSA_06DP_12S     : in    std_logic; 
-          BUSA_07DN_15S     : in    std_logic; 
-          BUSA_07DP_14S     : in    std_logic; 
-          BUSA_08DN_17S     : in    std_logic; 
-          BUSA_08DP_16S     : in    std_logic; 
-          BUSA_09DN_19S     : in    std_logic; 
-          BUSA_09DP_18S     : in    std_logic; 
-          BUSA_10DN_21S     : in    std_logic; 
-          BUSA_10DP_20S     : in    std_logic; 
-          BUSA_11DN_23S     : in    std_logic; 
-          BUSA_11DP_22S     : in    std_logic; 
-          BUSA_12DN_25S     : in    std_logic; 
-          BUSA_12DP_24S     : in    std_logic; 
-          BUSA_13DN_27S     : in    std_logic; 
-          BUSA_13DP_26S     : in    std_logic; 
-          BUSA_14DN_29S     : in    std_logic; 
-          BUSA_14DP_28S     : in    std_logic; 
-          BUSA_15DN_31S     : in    std_logic; 
-          BUSA_15DP_30S     : in    std_logic; 
-          BUSA_26DN_53S     : in    std_logic; 
+   port ( BUSA_26DN_53S     : in    std_logic; 
           BUSA_26DP_52S     : in    std_logic; 
           BUSA_28DN_57S     : in    std_logic; 
           BUSA_28DP_56S     : in    std_logic; 
@@ -671,8 +639,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute DRIVE                 : string ;
    attribute DIFF_TERM             : string ;
    signal adc_data_in               : std_logic_vector (63 downto 0);
-   signal adc_fifo_f_empty          : std_logic;
-   signal adc_fifo_r_empty          : std_logic;
    signal b_data                    : std_logic_vector (63 downto 0);
    signal b_data_we                 : std_logic;
    signal b_enable                  : std_logic;
@@ -688,7 +654,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal dcm_reset_1               : std_logic;
    signal dcm_reset_2               : std_logic;
    signal ethernet_data_out         : std_logic_vector (63 downto 0);
-   signal ethernet_fifo_din         : std_logic_vector (255 downto 0);
+   signal ethernet_fifo_din         : std_logic_vector (15 downto 0);
    signal ethernet_fifo_empty       : std_logic;
    signal ethernet_fifo_in_en       : std_logic;
    signal ethernet_overflow         : std_logic;
@@ -720,7 +686,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal GMII_RX_ER_0_sig          : std_logic;
    signal GTX_CLK_0_sig             : std_logic;
    signal MASTER_CLK                : std_logic;
-   signal peak_finder_din           : std_logic_vector (255 downto 0);
    signal PHY_TXD_sig               : std_logic_vector (7 downto 0);
    signal PHY_TXEN_sig              : std_logic;
    signal PHY_TXER_sig              : std_logic;
@@ -733,7 +698,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal psudo_data_select_map     : std_logic;
    signal psudo_delay               : std_logic_vector (7 downto 0);
    signal pulse                     : std_logic;
-   signal pulse_finder_in_en        : std_logic;
    signal pusdo_data_select         : std_logic_vector (2 downto 0);
    signal read_size                 : std_logic_vector (15 downto 0);
    signal reset                     : std_logic;
@@ -776,13 +740,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal XLXN_15130                : std_logic;
    signal XLXN_15140                : std_logic;
    signal XLXN_15150                : std_logic;
-   signal XLXN_15351                : std_logic;
-   signal XLXN_15352                : std_logic;
    signal XLXN_15364                : std_logic;
-   signal XLXN_15378                : std_logic;
-   signal XLXN_15385                : std_logic;
-   signal XLXN_15389                : std_logic;
-   signal XLXN_15390                : std_logic;
    signal XLXN_15479                : std_logic_vector (63 downto 0);
    signal XLXN_15480                : std_logic_vector (63 downto 0);
    signal XLXN_15481                : std_logic_vector (63 downto 0);
@@ -793,19 +751,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal XLXI_5338_in5_openSignal  : std_logic_vector (63 downto 0);
    signal XLXI_5338_in6_openSignal  : std_logic_vector (63 downto 0);
    signal XLXI_5338_in7_openSignal  : std_logic_vector (63 downto 0);
-   component ADC_FIFO
-      port ( wr_clk   : in    std_logic; 
-             din      : in    std_logic_vector (31 downto 0); 
-             wr_en    : in    std_logic; 
-             full     : out   std_logic; 
-             overflow : out   std_logic; 
-             rd_clk   : in    std_logic; 
-             dout     : out   std_logic_vector (127 downto 0); 
-             rd_en    : in    std_logic; 
-             empty    : out   std_logic; 
-             valid    : out   std_logic);
-   end component;
-   
    component IDELAY
       -- synopsys translate_off
       generic( IOBDELAY_VALUE : integer :=  0;
@@ -1097,7 +1042,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    component ethernet_FIFO
       port ( rst      : in    std_logic; 
              wr_clk   : in    std_logic; 
-             din      : in    std_logic_vector (255 downto 0); 
+             din      : in    std_logic_vector (15 downto 0); 
              wr_en    : in    std_logic; 
              full     : out   std_logic; 
              overflow : out   std_logic; 
@@ -1111,14 +1056,11 @@ architecture BEHAVIORAL of TOP_LEVEL is
    component PeakFinder
       port ( clk                     : in    std_logic; 
              reset                   : in    std_logic; 
-             empty                   : in    std_logic; 
-             data_valid              : in    std_logic; 
-             data_in                 : in    std_logic_vector (255 downto 0); 
+             data_in                 : in    std_logic_vector (15 downto 0); 
              signal_threshold        : in    std_logic_vector (7 downto 0); 
              user_samples_after_trig : in    std_logic_vector (15 downto 0); 
              out_enable              : out   std_logic; 
-             data_out                : out   std_logic_vector (255 downto 0); 
-             in_enable               : out   std_logic);
+             data_out                : out   std_logic_vector (15 downto 0));
    end component;
    
    component data_send
@@ -1132,24 +1074,11 @@ architecture BEHAVIORAL of TOP_LEVEL is
              delay_time : in    std_logic_vector (7 downto 0));
    end component;
    
-   component VCC
-      port ( P : out   std_logic);
-   end component;
-   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
-   
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
    component psudoData
-      port ( clk          : in    std_logic; 
-             reset        : in    std_logic; 
-             delay        : in    std_logic_vector (7 downto 0); 
-             rising_data  : out   std_logic_vector (31 downto 0); 
-             falling_data : out   std_logic_vector (31 downto 0));
+      port ( clk      : in    std_logic; 
+             reset    : in    std_logic; 
+             delay    : in    std_logic_vector (7 downto 0); 
+             data_out : out   std_logic_vector (15 downto 0));
    end component;
    
    component psudo_data_allOne
@@ -1194,14 +1123,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute DIFF_TERM of XLXI_6154 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6155 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6156 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6157 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6158 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6159 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6160 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6161 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6162 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6163 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6164 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6165 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6166 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6167 : label is "TRUE";
@@ -1210,14 +1131,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute DIFF_TERM of XLXI_6170 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6171 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6172 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6173 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6174 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6175 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6176 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6177 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6178 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6179 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6180 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6181 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6182 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6183 : label is "TRUE";
@@ -1232,30 +1145,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute HU_SET of XLXI_6299 : label is "XLXI_6299_10";
    attribute HU_SET of XLXI_6329 : label is "XLXI_6329_11";
 begin
-   ADC_FIFO_F : ADC_FIFO
-      port map (din(31 downto 0)=>adc_data_in(63 downto 32),
-                rd_clk=>MASTER_CLK,
-                rd_en=>pulse_finder_in_en,
-                wr_clk=>clock_5mhz,
-                wr_en=>XLXN_15352,
-                dout(127 downto 0)=>peak_finder_din(255 downto 128),
-                empty=>adc_fifo_f_empty,
-                full=>open,
-                overflow=>open,
-                valid=>XLXN_15389);
-   
-   ADC_FIFO_R : ADC_FIFO
-      port map (din(31 downto 0)=>adc_data_in(31 downto 0),
-                rd_clk=>MASTER_CLK,
-                rd_en=>pulse_finder_in_en,
-                wr_clk=>clock_5mhz,
-                wr_en=>XLXN_15351,
-                dout(127 downto 0)=>peak_finder_din(127 downto 0),
-                empty=>adc_fifo_r_empty,
-                full=>open,
-                overflow=>open,
-                valid=>XLXN_15385);
-   
    XLXI_3405 : IDELAY
    -- synopsys translate_off
    generic map( IOBDELAY_TYPE => "VARIABLE")
@@ -1762,77 +1651,13 @@ begin
                 IB=>BUSB_07DN_15S,
                 O=>fadc_data_in(0));
    
-   XLXI_6157 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_15DP_30S,
-                IB=>BUSA_15DN_31S,
-                O=>fadc_data_in(15));
-   
-   XLXI_6158 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_14DP_28S,
-                IB=>BUSA_14DN_29S,
-                O=>fadc_data_in(14));
-   
-   XLXI_6159 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_13DP_26S,
-                IB=>BUSA_13DN_27S,
-                O=>fadc_data_in(13));
-   
-   XLXI_6160 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_12DP_24S,
-                IB=>BUSA_12DN_25S,
-                O=>fadc_data_in(12));
-   
-   XLXI_6161 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_11DP_22S,
-                IB=>BUSA_11DN_23S,
-                O=>fadc_data_in(11));
-   
-   XLXI_6162 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_10DP_20S,
-                IB=>BUSA_10DN_21S,
-                O=>fadc_data_in(10));
-   
-   XLXI_6163 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_09DP_18S,
-                IB=>BUSA_09DN_19S,
-                O=>fadc_data_in(9));
-   
-   XLXI_6164 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_08DP_16S,
-                IB=>BUSA_08DN_17S,
-                O=>fadc_data_in(8));
-   
    XLXI_6165 : IBUFDS
    -- synopsys translate_off
    generic map( DIFF_TERM => TRUE)
    -- synopsys translate_on
       port map (I=>BUSB_08DP_16S,
                 IB=>BUSB_08DN_17S,
-                O=>fadc_data_in(23));
+                O=>fadc_data_in(15));
    
    XLXI_6166 : IBUFDS
    -- synopsys translate_off
@@ -1840,7 +1665,7 @@ begin
    -- synopsys translate_on
       port map (I=>BUSB_09DP_18S,
                 IB=>BUSB_09DN_19S,
-                O=>fadc_data_in(22));
+                O=>fadc_data_in(14));
    
    XLXI_6167 : IBUFDS
    -- synopsys translate_off
@@ -1848,7 +1673,7 @@ begin
    -- synopsys translate_on
       port map (I=>BUSB_10DP_20S,
                 IB=>BUSB_10DN_21S,
-                O=>fadc_data_in(21));
+                O=>fadc_data_in(13));
    
    XLXI_6168 : IBUFDS
    -- synopsys translate_off
@@ -1856,7 +1681,7 @@ begin
    -- synopsys translate_on
       port map (I=>BUSB_11DP_22S,
                 IB=>BUSB_11DN_23S,
-                O=>fadc_data_in(20));
+                O=>fadc_data_in(12));
    
    XLXI_6169 : IBUFDS
    -- synopsys translate_off
@@ -1864,7 +1689,7 @@ begin
    -- synopsys translate_on
       port map (I=>BUSB_12DP_24S,
                 IB=>BUSB_12DN_25S,
-                O=>fadc_data_in(19));
+                O=>fadc_data_in(11));
    
    XLXI_6170 : IBUFDS
    -- synopsys translate_off
@@ -1872,7 +1697,7 @@ begin
    -- synopsys translate_on
       port map (I=>BUSB_13DP_26S,
                 IB=>BUSB_13DN_27S,
-                O=>fadc_data_in(18));
+                O=>fadc_data_in(10));
    
    XLXI_6171 : IBUFDS
    -- synopsys translate_off
@@ -1880,7 +1705,7 @@ begin
    -- synopsys translate_on
       port map (I=>BUSB_14DP_28S,
                 IB=>BUSB_14DN_29S,
-                O=>fadc_data_in(17));
+                O=>fadc_data_in(9));
    
    XLXI_6172 : IBUFDS
    -- synopsys translate_off
@@ -1888,71 +1713,7 @@ begin
    -- synopsys translate_on
       port map (I=>BUSB_15DP_30S,
                 IB=>BUSB_15DN_31S,
-                O=>fadc_data_in(16));
-   
-   XLXI_6173 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_07DP_14S,
-                IB=>BUSA_07DN_15S,
-                O=>fadc_data_in(31));
-   
-   XLXI_6174 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_06DP_12S,
-                IB=>BUSA_06DN_13S,
-                O=>fadc_data_in(30));
-   
-   XLXI_6175 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_05DP_10S,
-                IB=>BUSA_05DN_11S,
-                O=>fadc_data_in(29));
-   
-   XLXI_6176 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_04DP_08S,
-                IB=>BUSA_04DN_09S,
-                O=>fadc_data_in(28));
-   
-   XLXI_6177 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_03DP_06S,
-                IB=>BUSA_03DN_07S,
-                O=>fadc_data_in(27));
-   
-   XLXI_6178 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_02DP_04S,
-                IB=>BUSA_02DN_05S,
-                O=>fadc_data_in(26));
-   
-   XLXI_6179 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_01DP_02S,
-                IB=>BUSA_01DN_03S,
-                O=>fadc_data_in(25));
-   
-   XLXI_6180 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_00DP_00S,
-                IB=>BUSA_00DN_01S,
-                O=>fadc_data_in(24));
+                O=>fadc_data_in(8));
    
    XLXI_6181 : IBUFDS
    -- synopsys translate_off
@@ -2097,11 +1858,11 @@ begin
                 Q(7 downto 0)=>threshold(7 downto 0));
    
    XLXI_6248 : ethernet_FIFO
-      port map (din(255 downto 0)=>ethernet_fifo_din(255 downto 0),
+      port map (din(15 downto 0)=>ethernet_fifo_din(15 downto 0),
                 rd_clk=>MASTER_CLK,
                 rd_en=>b_data_we,
                 rst=>reset,
-                wr_clk=>MASTER_CLK,
+                wr_clk=>clock_5mhz,
                 wr_en=>ethernet_fifo_in_en,
                 dout(63 downto 0)=>ethernet_data_out(63 downto 0),
                 empty=>ethernet_fifo_empty,
@@ -2110,15 +1871,12 @@ begin
                 valid=>open);
    
    XLXI_6249 : PeakFinder
-      port map (clk=>MASTER_CLK,
-                data_in(255 downto 0)=>peak_finder_din(255 downto 0),
-                data_valid=>XLXN_15378,
-                empty=>XLXN_15390,
+      port map (clk=>clock_5mhz,
+                data_in(15 downto 0)=>psudo_data_sawtooth(15 downto 0),
                 reset=>reset,
                 signal_threshold(7 downto 0)=>threshold(7 downto 0),
                 user_samples_after_trig(15 downto 0)=>read_size(15 downto 0),
-                data_out(255 downto 0)=>ethernet_fifo_din(255 downto 0),
-                in_enable=>pulse_finder_in_en,
+                data_out(15 downto 0)=>ethernet_fifo_din(15 downto 0),
                 out_enable=>ethernet_fifo_in_en);
    
    XLXI_6251 : FD16RE_MXILINX_TOP_LEVEL
@@ -2138,17 +1896,6 @@ begin
                 b_data(63 downto 0)=>b_data(63 downto 0),
                 b_data_we=>b_data_we);
    
-   XLXI_6285 : VCC
-      port map (P=>XLXN_15351);
-   
-   XLXI_6286 : VCC
-      port map (P=>XLXN_15352);
-   
-   XLXI_6289 : OR2
-      port map (I0=>adc_fifo_f_empty,
-                I1=>adc_fifo_r_empty,
-                O=>XLXN_15390);
-   
    XLXI_6291 : OBUF
       port map (I=>ethernet_overflow,
                 O=>open);
@@ -2157,8 +1904,7 @@ begin
       port map (clk=>clock_5mhz,
                 delay(7 downto 0)=>psudo_delay(7 downto 0),
                 reset=>reset,
-                falling_data(31 downto 0)=>psudo_data_sawtooth(63 downto 32),
-                rising_data(31 downto 0)=>psudo_data_sawtooth(31 downto 0));
+                data_out(15 downto 0)=>psudo_data_sawtooth(15 downto 0));
    
    XLXI_6294 : psudo_data_allOne
       port map (value_in(7 downto 0)=>psudo_data_all_one_val_in(7 downto 0),

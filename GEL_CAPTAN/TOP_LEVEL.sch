@@ -147,21 +147,6 @@
         <signal name="BUSB_07DN_15S" />
         <signal name="fadc_data_in(0)" />
         <signal name="BUSB_04DN_09S" />
-        <signal name="BUSA_15DP_30S" />
-        <signal name="BUSA_15DN_31S" />
-        <signal name="BUSA_14DP_28S" />
-        <signal name="BUSA_14DN_29S" />
-        <signal name="BUSA_13DP_26S" />
-        <signal name="BUSA_13DN_27S" />
-        <signal name="BUSA_11DP_22S" />
-        <signal name="BUSA_12DN_25S" />
-        <signal name="BUSA_10DN_21S" />
-        <signal name="BUSA_10DP_20S" />
-        <signal name="BUSA_09DP_18S" />
-        <signal name="BUSA_09DN_19S" />
-        <signal name="BUSA_08DP_16S" />
-        <signal name="BUSA_08DN_17S" />
-        <signal name="not_connected(0)" />
         <signal name="BUSB_08DP_16S" />
         <signal name="BUSB_08DN_17S" />
         <signal name="fadc_data_in(14)" />
@@ -183,24 +168,6 @@
         <signal name="BUSB_15DP_30S" />
         <signal name="BUSB_15DN_31S" />
         <signal name="fadc_data_in(8)" />
-        <signal name="BUSA_07DP_14S" />
-        <signal name="BUSA_07DN_15S" />
-        <signal name="BUSA_06DP_12S" />
-        <signal name="BUSA_06DN_13S" />
-        <signal name="BUSA_05DP_10S" />
-        <signal name="BUSA_05DN_11S" />
-        <signal name="BUSA_04DP_08S" />
-        <signal name="BUSA_04DN_09S" />
-        <signal name="BUSA_03DP_06S" />
-        <signal name="BUSA_03DN_07S" />
-        <signal name="BUSA_02DP_04S" />
-        <signal name="BUSA_02DN_05S" />
-        <signal name="BUSA_01DP_02S" />
-        <signal name="BUSA_01DN_03S" />
-        <signal name="BUSA_00DP_00S" />
-        <signal name="BUSA_00DN_01S" />
-        <signal name="BUSA_11DN_23S" />
-        <signal name="BUSA_12DP_24S" />
         <signal name="INTERNAL_08DP_16S" />
         <signal name="fadc_debug(63:0)" />
         <signal name="XLXN_12220" />
@@ -303,20 +270,6 @@
         <signal name="data_send_delay_time(7:0)" />
         <signal name="fadc_data_in(9)" />
         <signal name="fadc_data_in(10)" />
-        <signal name="not_connected(1)" />
-        <signal name="not_connected(2)" />
-        <signal name="not_connected(3)" />
-        <signal name="not_connected(4)" />
-        <signal name="not_connected(5)" />
-        <signal name="not_connected(6)" />
-        <signal name="not_connected(7)" />
-        <signal name="not_connected(8)" />
-        <signal name="not_connected(9)" />
-        <signal name="not_connected(10)" />
-        <signal name="not_connected(11)" />
-        <signal name="not_connected(12)" />
-        <signal name="not_connected(13)" />
-        <signal name="not_connected(14)" />
         <signal name="fadc_data_in(15)" />
         <signal name="ethernet_fifo_din(15:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
@@ -364,20 +317,6 @@
         <port polarity="Input" name="BUSB_07DP_14S" />
         <port polarity="Input" name="BUSB_07DN_15S" />
         <port polarity="Input" name="BUSB_04DN_09S" />
-        <port polarity="Input" name="BUSA_15DP_30S" />
-        <port polarity="Input" name="BUSA_15DN_31S" />
-        <port polarity="Input" name="BUSA_14DP_28S" />
-        <port polarity="Input" name="BUSA_14DN_29S" />
-        <port polarity="Input" name="BUSA_13DP_26S" />
-        <port polarity="Input" name="BUSA_13DN_27S" />
-        <port polarity="Input" name="BUSA_11DP_22S" />
-        <port polarity="Input" name="BUSA_12DN_25S" />
-        <port polarity="Input" name="BUSA_10DN_21S" />
-        <port polarity="Input" name="BUSA_10DP_20S" />
-        <port polarity="Input" name="BUSA_09DP_18S" />
-        <port polarity="Input" name="BUSA_09DN_19S" />
-        <port polarity="Input" name="BUSA_08DP_16S" />
-        <port polarity="Input" name="BUSA_08DN_17S" />
         <port polarity="Input" name="BUSB_08DP_16S" />
         <port polarity="Input" name="BUSB_08DN_17S" />
         <port polarity="Input" name="BUSB_09DP_18S" />
@@ -394,24 +333,6 @@
         <port polarity="Input" name="BUSB_14DN_29S" />
         <port polarity="Input" name="BUSB_15DP_30S" />
         <port polarity="Input" name="BUSB_15DN_31S" />
-        <port polarity="Input" name="BUSA_07DP_14S" />
-        <port polarity="Input" name="BUSA_07DN_15S" />
-        <port polarity="Input" name="BUSA_06DP_12S" />
-        <port polarity="Input" name="BUSA_06DN_13S" />
-        <port polarity="Input" name="BUSA_05DP_10S" />
-        <port polarity="Input" name="BUSA_05DN_11S" />
-        <port polarity="Input" name="BUSA_04DP_08S" />
-        <port polarity="Input" name="BUSA_04DN_09S" />
-        <port polarity="Input" name="BUSA_03DP_06S" />
-        <port polarity="Input" name="BUSA_03DN_07S" />
-        <port polarity="Input" name="BUSA_02DP_04S" />
-        <port polarity="Input" name="BUSA_02DN_05S" />
-        <port polarity="Input" name="BUSA_01DP_02S" />
-        <port polarity="Input" name="BUSA_01DN_03S" />
-        <port polarity="Input" name="BUSA_00DP_00S" />
-        <port polarity="Input" name="BUSA_00DN_01S" />
-        <port polarity="Input" name="BUSA_11DN_23S" />
-        <port polarity="Input" name="BUSA_12DP_24S" />
         <port polarity="Output" name="INTERNAL_08DP_16S" />
         <port polarity="Input" name="BUSA_30DP_60S" />
         <port polarity="Input" name="BUSA_30DN_61S" />
@@ -1385,118 +1306,6 @@
             <blockpin signalname="BUSB_07DN_15S" name="IB" />
             <blockpin signalname="fadc_data_in(0)" name="O" />
         </block>
-        <block symbolname="ibufds" name="XLXI_6157">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_15DP_30S" name="I" />
-            <blockpin signalname="BUSA_15DN_31S" name="IB" />
-            <blockpin signalname="not_connected(7)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6158">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_14DP_28S" name="I" />
-            <blockpin signalname="BUSA_14DN_29S" name="IB" />
-            <blockpin signalname="not_connected(6)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6159">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_13DP_26S" name="I" />
-            <blockpin signalname="BUSA_13DN_27S" name="IB" />
-            <blockpin signalname="not_connected(5)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6160">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_12DP_24S" name="I" />
-            <blockpin signalname="BUSA_12DN_25S" name="IB" />
-            <blockpin signalname="not_connected(4)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6161">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_11DP_22S" name="I" />
-            <blockpin signalname="BUSA_11DN_23S" name="IB" />
-            <blockpin signalname="not_connected(3)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6162">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_10DP_20S" name="I" />
-            <blockpin signalname="BUSA_10DN_21S" name="IB" />
-            <blockpin signalname="not_connected(2)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6163">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_09DP_18S" name="I" />
-            <blockpin signalname="BUSA_09DN_19S" name="IB" />
-            <blockpin signalname="not_connected(1)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6164">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_08DP_16S" name="I" />
-            <blockpin signalname="BUSA_08DN_17S" name="IB" />
-            <blockpin signalname="not_connected(0)" name="O" />
-        </block>
         <block symbolname="ibufds" name="XLXI_6165">
             <attr value="TRUE" name="DIFF_TERM">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
@@ -1608,118 +1417,6 @@
             <blockpin signalname="BUSB_15DP_30S" name="I" />
             <blockpin signalname="BUSB_15DN_31S" name="IB" />
             <blockpin signalname="fadc_data_in(8)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6173">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_07DP_14S" name="I" />
-            <blockpin signalname="BUSA_07DN_15S" name="IB" />
-            <blockpin signalname="not_connected(0)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6174">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_06DP_12S" name="I" />
-            <blockpin signalname="BUSA_06DN_13S" name="IB" />
-            <blockpin signalname="not_connected(14)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6175">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_05DP_10S" name="I" />
-            <blockpin signalname="BUSA_05DN_11S" name="IB" />
-            <blockpin signalname="not_connected(13)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6176">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_04DP_08S" name="I" />
-            <blockpin signalname="BUSA_04DN_09S" name="IB" />
-            <blockpin signalname="not_connected(12)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6177">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_03DP_06S" name="I" />
-            <blockpin signalname="BUSA_03DN_07S" name="IB" />
-            <blockpin signalname="not_connected(11)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6178">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_02DP_04S" name="I" />
-            <blockpin signalname="BUSA_02DN_05S" name="IB" />
-            <blockpin signalname="not_connected(10)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6179">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_01DP_02S" name="I" />
-            <blockpin signalname="BUSA_01DN_03S" name="IB" />
-            <blockpin signalname="not_connected(9)" name="O" />
-        </block>
-        <block symbolname="ibufds" name="XLXI_6180">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_00DP_00S" name="I" />
-            <blockpin signalname="BUSA_00DN_01S" name="IB" />
-            <blockpin signalname="not_connected(8)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6181">
             <attr value="TRUE" name="DIFF_TERM">
@@ -3657,103 +3354,6 @@
         <iomarker fontsize="28" x="3168" y="3216" name="BUSB_07DP_14S" orien="R180" />
         <iomarker fontsize="28" x="3168" y="3248" name="BUSB_07DN_15S" orien="R180" />
         <text style="alignment:RIGHT;fontsize:44;fontname:Arial;textcolor:rgb(0,128,0)" x="2840" y="2756">DI bus</text>
-        <branch name="BUSA_15DP_30S">
-            <wire x2="3392" y1="3488" y2="3488" x1="3168" />
-        </branch>
-        <branch name="BUSA_15DN_31S">
-            <wire x2="3392" y1="3520" y2="3520" x1="3168" />
-        </branch>
-        <branch name="not_connected(7)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="3504" type="branch" />
-            <wire x2="3696" y1="3504" y2="3504" x1="3616" />
-        </branch>
-        <branch name="BUSA_14DP_28S">
-            <wire x2="3392" y1="3616" y2="3616" x1="3168" />
-        </branch>
-        <branch name="BUSA_14DN_29S">
-            <wire x2="3392" y1="3648" y2="3648" x1="3168" />
-        </branch>
-        <branch name="not_connected(6)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="3632" type="branch" />
-            <wire x2="3696" y1="3632" y2="3632" x1="3616" />
-        </branch>
-        <branch name="BUSA_13DP_26S">
-            <wire x2="3392" y1="3744" y2="3744" x1="3168" />
-        </branch>
-        <branch name="BUSA_13DN_27S">
-            <wire x2="3392" y1="3776" y2="3776" x1="3168" />
-        </branch>
-        <branch name="not_connected(5)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="3760" type="branch" />
-            <wire x2="3696" y1="3760" y2="3760" x1="3616" />
-        </branch>
-        <branch name="BUSA_12DP_24S">
-            <wire x2="3392" y1="3872" y2="3872" x1="3168" />
-        </branch>
-        <branch name="BUSA_12DN_25S">
-            <wire x2="3392" y1="3904" y2="3904" x1="3168" />
-        </branch>
-        <branch name="not_connected(4)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="3888" type="branch" />
-            <wire x2="3696" y1="3888" y2="3888" x1="3616" />
-        </branch>
-        <branch name="BUSA_11DP_22S">
-            <wire x2="3392" y1="4000" y2="4000" x1="3168" />
-        </branch>
-        <branch name="BUSA_11DN_23S">
-            <wire x2="3392" y1="4032" y2="4032" x1="3168" />
-        </branch>
-        <branch name="not_connected(3)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="4016" type="branch" />
-            <wire x2="3696" y1="4016" y2="4016" x1="3616" />
-        </branch>
-        <branch name="BUSA_10DP_20S">
-            <wire x2="3392" y1="4128" y2="4128" x1="3168" />
-        </branch>
-        <branch name="BUSA_10DN_21S">
-            <wire x2="3392" y1="4160" y2="4160" x1="3168" />
-        </branch>
-        <branch name="not_connected(2)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="4144" type="branch" />
-            <wire x2="3696" y1="4144" y2="4144" x1="3616" />
-        </branch>
-        <branch name="BUSA_09DP_18S">
-            <wire x2="3392" y1="4256" y2="4256" x1="3168" />
-        </branch>
-        <branch name="BUSA_09DN_19S">
-            <wire x2="3392" y1="4288" y2="4288" x1="3168" />
-        </branch>
-        <branch name="not_connected(1)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="4272" type="branch" />
-            <wire x2="3696" y1="4272" y2="4272" x1="3616" />
-        </branch>
-        <branch name="BUSA_08DP_16S">
-            <wire x2="3392" y1="4384" y2="4384" x1="3168" />
-        </branch>
-        <branch name="BUSA_08DN_17S">
-            <wire x2="3392" y1="4416" y2="4416" x1="3168" />
-        </branch>
-        <branch name="not_connected(0)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="4400" type="branch" />
-            <wire x2="3696" y1="4400" y2="4400" x1="3616" />
-        </branch>
-        <text style="alignment:RIGHT;fontsize:44;fontname:Arial;textcolor:rgb(0,128,0)" x="2840" y="3924">DQ bus</text>
-        <iomarker fontsize="28" x="3168" y="3488" name="BUSA_15DP_30S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="3520" name="BUSA_15DN_31S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="3616" name="BUSA_14DP_28S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="3648" name="BUSA_14DN_29S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="3744" name="BUSA_13DP_26S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="3776" name="BUSA_13DN_27S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="3872" name="BUSA_12DP_24S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="3904" name="BUSA_12DN_25S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="4000" name="BUSA_11DP_22S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="4032" name="BUSA_11DN_23S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="4128" name="BUSA_10DP_20S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="4160" name="BUSA_10DN_21S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="4256" name="BUSA_09DP_18S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="4288" name="BUSA_09DN_19S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="4384" name="BUSA_08DP_16S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="4416" name="BUSA_08DN_17S" orien="R180" />
         <branch name="BUSB_08DP_16S">
             <wire x2="4736" y1="2320" y2="2320" x1="4512" />
         </branch>
@@ -3835,87 +3435,6 @@
             <wire x2="5040" y1="3232" y2="3232" x1="4960" />
         </branch>
         <text style="alignment:RIGHT;fontsize:44;fontname:Arial;textcolor:rgb(0,128,0)" x="4184" y="2756">DId bus</text>
-        <branch name="BUSA_07DP_14S">
-            <wire x2="4736" y1="3488" y2="3488" x1="4512" />
-        </branch>
-        <branch name="BUSA_07DN_15S">
-            <wire x2="4736" y1="3520" y2="3520" x1="4512" />
-        </branch>
-        <branch name="not_connected(0)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="3504" type="branch" />
-            <wire x2="5040" y1="3504" y2="3504" x1="4960" />
-        </branch>
-        <branch name="BUSA_06DP_12S">
-            <wire x2="4736" y1="3616" y2="3616" x1="4512" />
-        </branch>
-        <branch name="BUSA_06DN_13S">
-            <wire x2="4736" y1="3648" y2="3648" x1="4512" />
-        </branch>
-        <branch name="not_connected(14)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="3632" type="branch" />
-            <wire x2="5040" y1="3632" y2="3632" x1="4960" />
-        </branch>
-        <branch name="BUSA_05DP_10S">
-            <wire x2="4736" y1="3744" y2="3744" x1="4512" />
-        </branch>
-        <branch name="BUSA_05DN_11S">
-            <wire x2="4736" y1="3776" y2="3776" x1="4512" />
-        </branch>
-        <branch name="not_connected(13)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="3760" type="branch" />
-            <wire x2="5040" y1="3760" y2="3760" x1="4960" />
-        </branch>
-        <branch name="BUSA_04DP_08S">
-            <wire x2="4736" y1="3872" y2="3872" x1="4512" />
-        </branch>
-        <branch name="BUSA_04DN_09S">
-            <wire x2="4736" y1="3904" y2="3904" x1="4512" />
-        </branch>
-        <branch name="not_connected(12)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="3888" type="branch" />
-            <wire x2="5040" y1="3888" y2="3888" x1="4960" />
-        </branch>
-        <branch name="BUSA_03DP_06S">
-            <wire x2="4736" y1="4000" y2="4000" x1="4512" />
-        </branch>
-        <branch name="BUSA_03DN_07S">
-            <wire x2="4736" y1="4032" y2="4032" x1="4512" />
-        </branch>
-        <branch name="not_connected(11)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="4016" type="branch" />
-            <wire x2="5040" y1="4016" y2="4016" x1="4960" />
-        </branch>
-        <branch name="BUSA_02DP_04S">
-            <wire x2="4736" y1="4128" y2="4128" x1="4512" />
-        </branch>
-        <branch name="BUSA_02DN_05S">
-            <wire x2="4736" y1="4160" y2="4160" x1="4512" />
-        </branch>
-        <branch name="not_connected(10)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="4144" type="branch" />
-            <wire x2="5040" y1="4144" y2="4144" x1="4960" />
-        </branch>
-        <branch name="BUSA_01DP_02S">
-            <wire x2="4736" y1="4256" y2="4256" x1="4512" />
-        </branch>
-        <branch name="BUSA_01DN_03S">
-            <wire x2="4736" y1="4288" y2="4288" x1="4512" />
-        </branch>
-        <branch name="not_connected(9)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="4272" type="branch" />
-            <wire x2="5040" y1="4272" y2="4272" x1="4960" />
-        </branch>
-        <branch name="BUSA_00DP_00S">
-            <wire x2="4736" y1="4384" y2="4384" x1="4512" />
-        </branch>
-        <branch name="BUSA_00DN_01S">
-            <wire x2="4736" y1="4416" y2="4416" x1="4512" />
-        </branch>
-        <branch name="not_connected(8)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="4400" type="branch" />
-            <wire x2="5040" y1="4400" y2="4400" x1="4960" />
-        </branch>
-        <text style="alignment:RIGHT;fontsize:44;fontname:Arial;textcolor:rgb(0,128,0)" x="4184" y="3924">DQd bus</text>
         <iomarker fontsize="28" x="4512" y="2320" name="BUSB_08DP_16S" orien="R180" />
         <iomarker fontsize="28" x="4512" y="2352" name="BUSB_08DN_17S" orien="R180" />
         <iomarker fontsize="28" x="4512" y="2448" name="BUSB_09DP_18S" orien="R180" />
@@ -3932,22 +3451,6 @@
         <iomarker fontsize="28" x="4512" y="3120" name="BUSB_14DN_29S" orien="R180" />
         <iomarker fontsize="28" x="4512" y="3216" name="BUSB_15DP_30S" orien="R180" />
         <iomarker fontsize="28" x="4512" y="3248" name="BUSB_15DN_31S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="3488" name="BUSA_07DP_14S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="3520" name="BUSA_07DN_15S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="3616" name="BUSA_06DP_12S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="3648" name="BUSA_06DN_13S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="3744" name="BUSA_05DP_10S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="3776" name="BUSA_05DN_11S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="3872" name="BUSA_04DP_08S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="3904" name="BUSA_04DN_09S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="4000" name="BUSA_03DP_06S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="4032" name="BUSA_03DN_07S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="4128" name="BUSA_02DP_04S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="4160" name="BUSA_02DN_05S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="4256" name="BUSA_01DP_02S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="4288" name="BUSA_01DN_03S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="4384" name="BUSA_00DP_00S" orien="R180" />
-        <iomarker fontsize="28" x="4512" y="4416" name="BUSA_00DN_01S" orien="R180" />
         <branch name="BUSA_30DP_60S">
             <wire x2="592" y1="3312" y2="3312" x1="576" />
             <wire x2="800" y1="3312" y2="3312" x1="592" />
@@ -4036,30 +3539,6 @@
         <instance x="3392" y="3264" name="XLXI_6156" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
         </instance>
-        <instance x="3392" y="3536" name="XLXI_6157" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="3392" y="3664" name="XLXI_6158" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="3392" y="3792" name="XLXI_6159" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="3392" y="3920" name="XLXI_6160" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="3392" y="4048" name="XLXI_6161" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="3392" y="4176" name="XLXI_6162" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="3392" y="4304" name="XLXI_6163" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="3392" y="4432" name="XLXI_6164" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
         <instance x="4736" y="2368" name="XLXI_6165" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
         </instance>
@@ -4082,30 +3561,6 @@
             <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
         </instance>
         <instance x="4736" y="3264" name="XLXI_6172" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="4736" y="3536" name="XLXI_6173" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="4736" y="3664" name="XLXI_6174" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="4736" y="3792" name="XLXI_6175" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="4736" y="3920" name="XLXI_6176" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="4736" y="4048" name="XLXI_6177" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="4736" y="4176" name="XLXI_6178" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="4736" y="4304" name="XLXI_6179" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="4736" y="4432" name="XLXI_6180" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
         </instance>
         <branch name="trigger">
