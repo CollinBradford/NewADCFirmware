@@ -164,7 +164,10 @@
 </msg>
 
 <msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/NewADCFirmware/GEL_CAPTAN/psudoData.vhd</arg>&quot; line <arg fmt="%d" index="2">40</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;counter&gt;, &lt;reset&gt;</arg>
+<arg fmt="%s" index="3">&lt;counter&gt;, &lt;counter_two&gt;, &lt;reset&gt;</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">delayCounter</arg>&gt; in unit &lt;<arg fmt="%s" index="2">psudoData</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
 <msg type="warning" file="Xst" num="3052" delta="new" >You have requested that asynchronous control signals of sequential elements be treated as if they were synchronous. Please review the details of this switch in chapter Design Constraints of the XST User Guide. This feature allows you to better explore the possibilities offered by the Xilinx solution without having to rewrite the descriptions of sequential elements. However, be well aware that the synthesis result, while providing you with a good way to assess final device usage and design performance, is not functionally equivalent to your HDL description. As a result, you will not be able to validate your design by comparison of pre-synthesis and post-synthesis simulation results. Please also note that in general we strongly recommend synchronous flip-flop initialization.
@@ -179,7 +182,10 @@
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">b_enable</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">counter_two</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">delay</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">delayCounter</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -1211,6 +1217,15 @@ It will be removed from the design.
 </msg>
 
 <msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">TX_CTRL_MAC_FIFO</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1_1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ram_addr_sig_10_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RAM_COMM_DEC</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ram_addr_sig_9_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RAM_COMM_DEC</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ram_addr_sig_8_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RAM_COMM_DEC</arg>&gt;.
 </msg>
 
 </messages>

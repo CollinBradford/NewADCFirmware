@@ -36,14 +36,14 @@ signal delayCounter : unsigned(7 downto 0);
 signal unsDelay : unsigned(7 downto 0);
 
 begin
-	unsDelay <= unsigned(delay);
+	unsDelay <= (others => '0');
 	process(clk) begin
 		data_out(7 downto 0) <= std_logic_vector(counter);
-		data_out(15 downto 8) <= std_logic_vector(counter);
+		data_out(15 downto 8) <= std_logic_vector(counter_two);
 		
 		if(reset = '0') then
 			if(rising_edge(clk)) then
-				if(delayCounter = unsDelay) then
+				if(delayCounter >= unsDelay) then
 					counter <= counter + 2;
 					delayCounter <= (others => '0');
 				else

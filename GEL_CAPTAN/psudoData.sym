@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="psudoData">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2016-8-26T21:23:29</timestamp>
+    <timestamp>2016-8-26T22:6:55</timestamp>
     <pin polarity="Input" x="0" y="-160" name="clk" />
     <pin polarity="Input" x="0" y="-32" name="reset" />
     <pin polarity="Input" x="384" y="-160" name="delay(7:0)" />
