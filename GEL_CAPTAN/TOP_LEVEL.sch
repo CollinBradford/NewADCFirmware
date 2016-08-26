@@ -293,8 +293,7 @@
         <signal name="psudo_data_select_map" />
         <signal name="psudo_data_all_one_val_in(7:0)" />
         <signal name="psudo_delay(7:0)" />
-        <signal name="psudo_data_sawtooth(31:0)" />
-        <signal name="psudo_data_sawtooth(63:32)" />
+        <signal name="psudo_data_sawtooth(15:0)" />
         <signal name="rx_data(2)" />
         <signal name="pusdo_data_select(2)" />
         <signal name="rx_data(1)" />
@@ -319,7 +318,6 @@
         <signal name="not_connected(13)" />
         <signal name="not_connected(14)" />
         <signal name="fadc_data_in(15)" />
-        <signal name="peak_finder_din(15:0)" />
         <signal name="ethernet_fifo_din(15:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
@@ -795,16 +793,14 @@
             <rect width="256" x="64" y="-384" height="448" />
         </blockdef>
         <blockdef name="psudoData">
-            <timestamp>2016-7-20T21:29:6</timestamp>
-            <rect width="256" x="64" y="-192" height="192" />
+            <timestamp>2016-8-26T21:23:29</timestamp>
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="64" x="320" y="-172" height="24" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
-            <rect width="64" x="320" y="-108" height="24" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <rect width="64" x="320" y="-44" height="24" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="256" x="64" y="-192" height="192" />
         </blockdef>
         <blockdef name="psudo_data_allOne">
             <timestamp>2016-7-25T20:3:3</timestamp>
@@ -2033,7 +2029,7 @@
         </block>
         <block symbolname="ethernet_FIFO" name="XLXI_6248">
             <blockpin signalname="reset" name="rst" />
-            <blockpin signalname="FADC_DCLK" name="wr_clk" />
+            <blockpin signalname="clock_5mhz" name="wr_clk" />
             <blockpin signalname="ethernet_fifo_din(15:0)" name="din(15:0)" />
             <blockpin signalname="ethernet_fifo_in_en" name="wr_en" />
             <blockpin signalname="XLXN_15364" name="full" />
@@ -2085,8 +2081,7 @@
             <blockpin signalname="clock_5mhz" name="clk" />
             <blockpin signalname="reset" name="reset" />
             <blockpin signalname="psudo_delay(7:0)" name="delay(7:0)" />
-            <blockpin signalname="psudo_data_sawtooth(31:0)" name="rising_data(31:0)" />
-            <blockpin signalname="psudo_data_sawtooth(63:32)" name="falling_data(31:0)" />
+            <blockpin signalname="psudo_data_sawtooth(15:0)" name="data_out(15:0)" />
         </block>
         <block symbolname="fdre" name="XLXI_6324">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -2110,9 +2105,9 @@
             <blockpin signalname="data_send_delay_time(7:0)" name="Q(7:0)" />
         </block>
         <block symbolname="PeakFinder" name="XLXI_6249">
-            <blockpin signalname="FADC_DCLK" name="clk" />
+            <blockpin signalname="clock_5mhz" name="clk" />
             <blockpin signalname="reset" name="reset" />
-            <blockpin signalname="peak_finder_din(15:0)" name="data_in(15:0)" />
+            <blockpin signalname="psudo_data_sawtooth(15:0)" name="data_in(15:0)" />
             <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
             <blockpin signalname="read_size(15:0)" name="user_samples_after_trig(15:0)" />
             <blockpin signalname="ethernet_fifo_in_en" name="out_enable" />
@@ -2535,7 +2530,7 @@
             <wire x2="6368" y1="496" y2="496" x1="6352" />
             <wire x2="6400" y1="496" y2="496" x1="6368" />
         </branch>
-        <branch name="FADC_DCLK">
+        <branch name="clock_5mhz">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4944" y="480" type="branch" />
             <wire x2="4992" y1="480" y2="480" x1="4944" />
         </branch>
@@ -2704,11 +2699,7 @@
             <wire x2="1088" y1="2336" y2="2336" x1="1072" />
             <wire x2="1104" y1="2336" y2="2336" x1="1088" />
         </branch>
-        <branch name="psudo_data_sawtooth(31:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1088" y="2400" type="branch" />
-            <wire x2="1088" y1="2400" y2="2400" x1="1072" />
-        </branch>
-        <branch name="psudo_data_sawtooth(63:32)">
+        <branch name="psudo_data_sawtooth(15:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1088" y="2464" type="branch" />
             <wire x2="1088" y1="2464" y2="2464" x1="1072" />
         </branch>
@@ -2842,7 +2833,7 @@
             <wire x2="3568" y1="1152" y2="1152" x1="3552" />
             <wire x2="3600" y1="1152" y2="1152" x1="3568" />
         </branch>
-        <branch name="FADC_DCLK">
+        <branch name="clock_5mhz">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3552" y="768" type="branch" />
             <wire x2="3568" y1="768" y2="768" x1="3552" />
             <wire x2="3600" y1="768" y2="768" x1="3568" />
@@ -2857,7 +2848,7 @@
             <wire x2="4176" y1="1024" y2="1024" x1="4128" />
             <wire x2="4192" y1="1024" y2="1024" x1="4176" />
         </branch>
-        <branch name="peak_finder_din(15:0)">
+        <branch name="psudo_data_sawtooth(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3552" y="960" type="branch" />
             <wire x2="3568" y1="960" y2="960" x1="3552" />
             <wire x2="3600" y1="960" y2="960" x1="3568" />

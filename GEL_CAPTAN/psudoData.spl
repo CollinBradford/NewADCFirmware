@@ -1,0 +1,7 @@
+[Inputs]
+clk
+reset
+=delay[7:0]=
+[Outputs]
+=data_out[15:0]=
+[BiDir]
