@@ -149,74 +149,56 @@
         <signal name="BUSB_04DN_09S" />
         <signal name="BUSA_15DP_30S" />
         <signal name="BUSA_15DN_31S" />
-        <signal name="fadc_data_in(15)" />
         <signal name="BUSA_14DP_28S" />
         <signal name="BUSA_14DN_29S" />
-        <signal name="fadc_data_in(14)" />
         <signal name="BUSA_13DP_26S" />
         <signal name="BUSA_13DN_27S" />
-        <signal name="fadc_data_in(13)" />
         <signal name="BUSA_11DP_22S" />
         <signal name="BUSA_12DN_25S" />
-        <signal name="fadc_data_in(12)" />
         <signal name="BUSA_10DN_21S" />
-        <signal name="fadc_data_in(11)" />
         <signal name="BUSA_10DP_20S" />
-        <signal name="fadc_data_in(10)" />
         <signal name="BUSA_09DP_18S" />
         <signal name="BUSA_09DN_19S" />
-        <signal name="fadc_data_in(9)" />
         <signal name="BUSA_08DP_16S" />
         <signal name="BUSA_08DN_17S" />
-        <signal name="fadc_data_in(8)" />
+        <signal name="not_connected(0)" />
         <signal name="BUSB_08DP_16S" />
         <signal name="BUSB_08DN_17S" />
-        <signal name="fadc_data_in(23)" />
+        <signal name="fadc_data_in(14)" />
         <signal name="BUSB_09DP_18S" />
         <signal name="BUSB_09DN_19S" />
-        <signal name="fadc_data_in(22)" />
+        <signal name="fadc_data_in(13)" />
         <signal name="BUSB_10DP_20S" />
         <signal name="BUSB_10DN_21S" />
-        <signal name="fadc_data_in(21)" />
+        <signal name="fadc_data_in(12)" />
         <signal name="BUSB_11DP_22S" />
         <signal name="BUSB_11DN_23S" />
-        <signal name="fadc_data_in(20)" />
+        <signal name="fadc_data_in(11)" />
         <signal name="BUSB_12DP_24S" />
         <signal name="BUSB_12DN_25S" />
-        <signal name="fadc_data_in(19)" />
         <signal name="BUSB_13DP_26S" />
         <signal name="BUSB_13DN_27S" />
-        <signal name="fadc_data_in(18)" />
         <signal name="BUSB_14DP_28S" />
         <signal name="BUSB_14DN_29S" />
-        <signal name="fadc_data_in(17)" />
         <signal name="BUSB_15DP_30S" />
         <signal name="BUSB_15DN_31S" />
-        <signal name="fadc_data_in(16)" />
+        <signal name="fadc_data_in(8)" />
         <signal name="BUSA_07DP_14S" />
         <signal name="BUSA_07DN_15S" />
-        <signal name="fadc_data_in(31)" />
         <signal name="BUSA_06DP_12S" />
         <signal name="BUSA_06DN_13S" />
-        <signal name="fadc_data_in(30)" />
         <signal name="BUSA_05DP_10S" />
         <signal name="BUSA_05DN_11S" />
-        <signal name="fadc_data_in(29)" />
         <signal name="BUSA_04DP_08S" />
         <signal name="BUSA_04DN_09S" />
-        <signal name="fadc_data_in(28)" />
         <signal name="BUSA_03DP_06S" />
         <signal name="BUSA_03DN_07S" />
-        <signal name="fadc_data_in(27)" />
         <signal name="BUSA_02DP_04S" />
         <signal name="BUSA_02DN_05S" />
-        <signal name="fadc_data_in(26)" />
         <signal name="BUSA_01DP_02S" />
         <signal name="BUSA_01DN_03S" />
-        <signal name="fadc_data_in(25)" />
         <signal name="BUSA_00DP_00S" />
         <signal name="BUSA_00DN_01S" />
-        <signal name="fadc_data_in(24)" />
         <signal name="BUSA_11DN_23S" />
         <signal name="BUSA_12DP_24S" />
         <signal name="INTERNAL_08DP_16S" />
@@ -283,24 +265,11 @@
         <signal name="rx_data(23:8)" />
         <signal name="rx_data(7:0)" />
         <signal name="ethernet_fifo_in_en" />
-        <signal name="pulse_finder_in_en" />
-        <signal name="adc_fifo_r_empty" />
-        <signal name="adc_fifo_f_empty" />
-        <signal name="ethernet_fifo_din(255:0)" />
         <signal name="psudo_data_attr_map" />
         <signal name="ethernet_data_out(63:0)" />
         <signal name="XLXN_15364" />
         <signal name="ethernet_overflow" />
         <signal name="ethernet_fifo_empty" />
-        <signal name="XLXN_15378" />
-        <signal name="peak_finder_din(255:0)" />
-        <signal name="XLXN_15390" />
-        <signal name="XLXN_15352" />
-        <signal name="peak_finder_din(255:128)" />
-        <signal name="XLXN_15389" />
-        <signal name="XLXN_15351" />
-        <signal name="peak_finder_din(127:0)" />
-        <signal name="XLXN_15385" />
         <signal name="U10_1" />
         <signal name="U10_2" />
         <signal name="U10_3" />
@@ -314,8 +283,6 @@
         <signal name="XLXN_15483(63:0)" />
         <signal name="XLXN_15484(63:0)" />
         <signal name="pusdo_data_select(2:0)" />
-        <signal name="adc_data_in(31:0)" />
-        <signal name="adc_data_in(63:32)" />
         <signal name="psudo_data_attr(15:0)" />
         <signal name="rx_data(31:16)" />
         <signal name="psudo_data_attr(31:16)" />
@@ -335,6 +302,26 @@
         <signal name="pusdo_data_select(0)" />
         <signal name="rx_data(31:24)" />
         <signal name="data_send_delay_time(7:0)" />
+        <signal name="fadc_data_in(9)" />
+        <signal name="fadc_data_in(10)" />
+        <signal name="not_connected(1)" />
+        <signal name="not_connected(2)" />
+        <signal name="not_connected(3)" />
+        <signal name="not_connected(4)" />
+        <signal name="not_connected(5)" />
+        <signal name="not_connected(6)" />
+        <signal name="not_connected(7)" />
+        <signal name="not_connected(8)" />
+        <signal name="not_connected(9)" />
+        <signal name="not_connected(10)" />
+        <signal name="not_connected(11)" />
+        <signal name="not_connected(12)" />
+        <signal name="not_connected(13)" />
+        <signal name="not_connected(14)" />
+        <signal name="fadc_data_in(15)" />
+        <signal name="peak_finder_din(15:0)" />
+        <signal name="XLXN_15494" />
+        <signal name="ethernet_fifo_din(15:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -748,20 +735,6 @@
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
         </blockdef>
-        <blockdef name="ADC_FIFO">
-            <timestamp>2016-7-14T16:10:3</timestamp>
-            <rect width="768" x="32" y="32" height="4032" />
-            <line x2="32" y1="208" y2="208" x1="0" />
-            <line x2="32" y1="240" y2="240" style="linewidth:W" x1="0" />
-            <line x2="32" y1="272" y2="272" x1="0" />
-            <line x2="32" y1="464" y2="464" x1="0" />
-            <line x2="32" y1="592" y2="592" x1="0" />
-            <line x2="800" y1="240" y2="240" x1="832" />
-            <line x2="800" y1="272" y2="272" style="linewidth:W" x1="832" />
-            <line x2="800" y1="304" y2="304" x1="832" />
-            <line x2="800" y1="496" y2="496" x1="832" />
-            <line x2="800" y1="592" y2="592" x1="832" />
-        </blockdef>
         <blockdef name="fd8re">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-128" y2="-128" x1="0" />
@@ -793,14 +766,11 @@
             <line x2="800" y1="592" y2="592" x1="832" />
         </blockdef>
         <blockdef name="PeakFinder">
-            <timestamp>2016-7-29T19:34:3</timestamp>
-            <line x2="528" y1="160" y2="160" x1="464" />
+            <timestamp>2016-8-26T20:37:20</timestamp>
             <rect width="64" x="0" y="84" height="24" />
             <line x2="0" y1="96" y2="96" x1="64" />
-            <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-288" y2="-288" x1="64" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
             <rect width="64" x="0" y="-108" height="24" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <rect width="64" x="0" y="-44" height="24" />
@@ -824,23 +794,6 @@
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
             <rect width="256" x="64" y="-384" height="448" />
-        </blockdef>
-        <blockdef name="vcc">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-32" y2="-64" x1="64" />
-            <line x2="64" y1="0" y2="-32" x1="64" />
-            <line x2="32" y1="-64" y2="-64" x1="96" />
-        </blockdef>
-        <blockdef name="or2">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-64" y2="-64" x1="0" />
-            <line x2="64" y1="-128" y2="-128" x1="0" />
-            <line x2="192" y1="-96" y2="-96" x1="256" />
-            <arc ex="192" ey="-96" sx="112" sy="-48" r="88" cx="116" cy="-136" />
-            <arc ex="48" ey="-144" sx="48" sy="-48" r="56" cx="16" cy="-96" />
-            <line x2="48" y1="-144" y2="-144" x1="112" />
-            <arc ex="112" ey="-144" sx="192" sy="-96" r="88" cx="116" cy="-56" />
-            <line x2="48" y1="-48" y2="-48" x1="112" />
         </blockdef>
         <blockdef name="psudoData">
             <timestamp>2016-7-20T21:29:6</timestamp>
@@ -1449,7 +1402,7 @@
             </attr>
             <blockpin signalname="BUSA_15DP_30S" name="I" />
             <blockpin signalname="BUSA_15DN_31S" name="IB" />
-            <blockpin signalname="fadc_data_in(15)" name="O" />
+            <blockpin signalname="not_connected(7)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6158">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1463,7 +1416,7 @@
             </attr>
             <blockpin signalname="BUSA_14DP_28S" name="I" />
             <blockpin signalname="BUSA_14DN_29S" name="IB" />
-            <blockpin signalname="fadc_data_in(14)" name="O" />
+            <blockpin signalname="not_connected(6)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6159">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1477,7 +1430,7 @@
             </attr>
             <blockpin signalname="BUSA_13DP_26S" name="I" />
             <blockpin signalname="BUSA_13DN_27S" name="IB" />
-            <blockpin signalname="fadc_data_in(13)" name="O" />
+            <blockpin signalname="not_connected(5)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6160">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1491,7 +1444,7 @@
             </attr>
             <blockpin signalname="BUSA_12DP_24S" name="I" />
             <blockpin signalname="BUSA_12DN_25S" name="IB" />
-            <blockpin signalname="fadc_data_in(12)" name="O" />
+            <blockpin signalname="not_connected(4)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6161">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1505,7 +1458,7 @@
             </attr>
             <blockpin signalname="BUSA_11DP_22S" name="I" />
             <blockpin signalname="BUSA_11DN_23S" name="IB" />
-            <blockpin signalname="fadc_data_in(11)" name="O" />
+            <blockpin signalname="not_connected(3)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6162">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1519,7 +1472,7 @@
             </attr>
             <blockpin signalname="BUSA_10DP_20S" name="I" />
             <blockpin signalname="BUSA_10DN_21S" name="IB" />
-            <blockpin signalname="fadc_data_in(10)" name="O" />
+            <blockpin signalname="not_connected(2)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6163">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1533,7 +1486,7 @@
             </attr>
             <blockpin signalname="BUSA_09DP_18S" name="I" />
             <blockpin signalname="BUSA_09DN_19S" name="IB" />
-            <blockpin signalname="fadc_data_in(9)" name="O" />
+            <blockpin signalname="not_connected(1)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6164">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1547,7 +1500,7 @@
             </attr>
             <blockpin signalname="BUSA_08DP_16S" name="I" />
             <blockpin signalname="BUSA_08DN_17S" name="IB" />
-            <blockpin signalname="fadc_data_in(8)" name="O" />
+            <blockpin signalname="not_connected(0)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6165">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1561,7 +1514,7 @@
             </attr>
             <blockpin signalname="BUSB_08DP_16S" name="I" />
             <blockpin signalname="BUSB_08DN_17S" name="IB" />
-            <blockpin signalname="fadc_data_in(23)" name="O" />
+            <blockpin signalname="fadc_data_in(15)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6166">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1575,7 +1528,7 @@
             </attr>
             <blockpin signalname="BUSB_09DP_18S" name="I" />
             <blockpin signalname="BUSB_09DN_19S" name="IB" />
-            <blockpin signalname="fadc_data_in(22)" name="O" />
+            <blockpin signalname="fadc_data_in(14)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6167">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1589,7 +1542,7 @@
             </attr>
             <blockpin signalname="BUSB_10DP_20S" name="I" />
             <blockpin signalname="BUSB_10DN_21S" name="IB" />
-            <blockpin signalname="fadc_data_in(21)" name="O" />
+            <blockpin signalname="fadc_data_in(13)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6168">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1603,7 +1556,7 @@
             </attr>
             <blockpin signalname="BUSB_11DP_22S" name="I" />
             <blockpin signalname="BUSB_11DN_23S" name="IB" />
-            <blockpin signalname="fadc_data_in(20)" name="O" />
+            <blockpin signalname="fadc_data_in(12)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6169">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1617,7 +1570,7 @@
             </attr>
             <blockpin signalname="BUSB_12DP_24S" name="I" />
             <blockpin signalname="BUSB_12DN_25S" name="IB" />
-            <blockpin signalname="fadc_data_in(19)" name="O" />
+            <blockpin signalname="fadc_data_in(11)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6170">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1631,7 +1584,7 @@
             </attr>
             <blockpin signalname="BUSB_13DP_26S" name="I" />
             <blockpin signalname="BUSB_13DN_27S" name="IB" />
-            <blockpin signalname="fadc_data_in(18)" name="O" />
+            <blockpin signalname="fadc_data_in(10)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6171">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1645,7 +1598,7 @@
             </attr>
             <blockpin signalname="BUSB_14DP_28S" name="I" />
             <blockpin signalname="BUSB_14DN_29S" name="IB" />
-            <blockpin signalname="fadc_data_in(17)" name="O" />
+            <blockpin signalname="fadc_data_in(9)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6172">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1659,7 +1612,7 @@
             </attr>
             <blockpin signalname="BUSB_15DP_30S" name="I" />
             <blockpin signalname="BUSB_15DN_31S" name="IB" />
-            <blockpin signalname="fadc_data_in(16)" name="O" />
+            <blockpin signalname="fadc_data_in(8)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6173">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1673,7 +1626,7 @@
             </attr>
             <blockpin signalname="BUSA_07DP_14S" name="I" />
             <blockpin signalname="BUSA_07DN_15S" name="IB" />
-            <blockpin signalname="fadc_data_in(31)" name="O" />
+            <blockpin signalname="not_connected(0)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6174">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1687,7 +1640,7 @@
             </attr>
             <blockpin signalname="BUSA_06DP_12S" name="I" />
             <blockpin signalname="BUSA_06DN_13S" name="IB" />
-            <blockpin signalname="fadc_data_in(30)" name="O" />
+            <blockpin signalname="not_connected(14)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6175">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1701,7 +1654,7 @@
             </attr>
             <blockpin signalname="BUSA_05DP_10S" name="I" />
             <blockpin signalname="BUSA_05DN_11S" name="IB" />
-            <blockpin signalname="fadc_data_in(29)" name="O" />
+            <blockpin signalname="not_connected(13)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6176">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1715,7 +1668,7 @@
             </attr>
             <blockpin signalname="BUSA_04DP_08S" name="I" />
             <blockpin signalname="BUSA_04DN_09S" name="IB" />
-            <blockpin signalname="fadc_data_in(28)" name="O" />
+            <blockpin signalname="not_connected(12)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6177">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1729,7 +1682,7 @@
             </attr>
             <blockpin signalname="BUSA_03DP_06S" name="I" />
             <blockpin signalname="BUSA_03DN_07S" name="IB" />
-            <blockpin signalname="fadc_data_in(27)" name="O" />
+            <blockpin signalname="not_connected(11)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6178">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1743,7 +1696,7 @@
             </attr>
             <blockpin signalname="BUSA_02DP_04S" name="I" />
             <blockpin signalname="BUSA_02DN_05S" name="IB" />
-            <blockpin signalname="fadc_data_in(26)" name="O" />
+            <blockpin signalname="not_connected(10)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6179">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1757,7 +1710,7 @@
             </attr>
             <blockpin signalname="BUSA_01DP_02S" name="I" />
             <blockpin signalname="BUSA_01DN_03S" name="IB" />
-            <blockpin signalname="fadc_data_in(25)" name="O" />
+            <blockpin signalname="not_connected(9)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6180">
             <attr value="TRUE" name="DIFF_TERM">
@@ -1771,7 +1724,7 @@
             </attr>
             <blockpin signalname="BUSA_00DP_00S" name="I" />
             <blockpin signalname="BUSA_00DN_01S" name="IB" />
-            <blockpin signalname="fadc_data_in(24)" name="O" />
+            <blockpin signalname="not_connected(8)" name="O" />
         </block>
         <block symbolname="ibufds" name="XLXI_6181">
             <attr value="TRUE" name="DIFF_TERM">
@@ -2082,7 +2035,7 @@
         <block symbolname="ethernet_FIFO" name="XLXI_6248">
             <blockpin signalname="reset" name="rst" />
             <blockpin signalname="MASTER_CLK" name="wr_clk" />
-            <blockpin signalname="ethernet_fifo_din(255:0)" name="din(255:0)" />
+            <blockpin signalname="ethernet_fifo_din(15:0)" name="din(255:0)" />
             <blockpin signalname="ethernet_fifo_in_en" name="wr_en" />
             <blockpin signalname="XLXN_15364" name="full" />
             <blockpin signalname="ethernet_overflow" name="overflow" />
@@ -2106,53 +2059,6 @@
             <blockpin signalname="ethernet_overflow" name="I" />
             <blockpin name="O" />
         </block>
-        <block symbolname="PeakFinder" name="XLXI_6249">
-            <blockpin signalname="MASTER_CLK" name="clk" />
-            <blockpin signalname="reset" name="reset" />
-            <blockpin signalname="XLXN_15390" name="empty" />
-            <blockpin signalname="XLXN_15378" name="data_valid" />
-            <blockpin signalname="peak_finder_din(255:0)" name="data_in(255:0)" />
-            <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
-            <blockpin signalname="read_size(15:0)" name="user_samples_after_trig(15:0)" />
-            <blockpin signalname="ethernet_fifo_in_en" name="out_enable" />
-            <blockpin signalname="ethernet_fifo_din(255:0)" name="data_out(255:0)" />
-            <blockpin signalname="pulse_finder_in_en" name="in_enable" />
-        </block>
-        <block symbolname="or2" name="XLXI_6289">
-            <blockpin signalname="adc_fifo_f_empty" name="I0" />
-            <blockpin signalname="adc_fifo_r_empty" name="I1" />
-            <blockpin signalname="XLXN_15390" name="O" />
-        </block>
-        <block symbolname="vcc" name="XLXI_6286">
-            <blockpin signalname="XLXN_15352" name="P" />
-        </block>
-        <block symbolname="ADC_FIFO" name="ADC_FIFO_F">
-            <blockpin signalname="clock_5mhz" name="wr_clk" />
-            <blockpin signalname="adc_data_in(63:32)" name="din(31:0)" />
-            <blockpin signalname="XLXN_15352" name="wr_en" />
-            <blockpin name="full" />
-            <blockpin name="overflow" />
-            <blockpin signalname="MASTER_CLK" name="rd_clk" />
-            <blockpin signalname="peak_finder_din(255:128)" name="dout(127:0)" />
-            <blockpin signalname="pulse_finder_in_en" name="rd_en" />
-            <blockpin signalname="adc_fifo_f_empty" name="empty" />
-            <blockpin signalname="XLXN_15389" name="valid" />
-        </block>
-        <block symbolname="ADC_FIFO" name="ADC_FIFO_R">
-            <blockpin signalname="clock_5mhz" name="wr_clk" />
-            <blockpin signalname="adc_data_in(31:0)" name="din(31:0)" />
-            <blockpin signalname="XLXN_15351" name="wr_en" />
-            <blockpin name="full" />
-            <blockpin name="overflow" />
-            <blockpin signalname="MASTER_CLK" name="rd_clk" />
-            <blockpin signalname="peak_finder_din(127:0)" name="dout(127:0)" />
-            <blockpin signalname="pulse_finder_in_en" name="rd_en" />
-            <blockpin signalname="adc_fifo_r_empty" name="empty" />
-            <blockpin signalname="XLXN_15385" name="valid" />
-        </block>
-        <block symbolname="vcc" name="XLXI_6285">
-            <blockpin signalname="XLXN_15351" name="P" />
-        </block>
         <block symbolname="obuf" name="XLXI_6232">
             <blockpin signalname="CLK_187_5" name="I" />
             <blockpin signalname="U10_1" name="O" />
@@ -2164,18 +2070,6 @@
         <block symbolname="obuf" name="XLXI_6236">
             <blockpin signalname="FADC_DCLK" name="I" />
             <blockpin signalname="U10_3" name="O" />
-        </block>
-        <block symbolname="MUX64_8" name="XLXI_6321">
-            <blockpin signalname="psudo_data_attr(63:0)" name="in0(63:0)" />
-            <blockpin signalname="psudo_data_aio(63:0)" name="in1(63:0)" />
-            <blockpin signalname="psudo_data_sawtooth(63:0)" name="in2(63:0)" />
-            <blockpin signalname="XLXN_15479(63:0)" name="in3(63:0)" />
-            <blockpin signalname="XLXN_15480(63:0)" name="in4(63:0)" />
-            <blockpin signalname="XLXN_15481(63:0)" name="in5(63:0)" />
-            <blockpin signalname="XLXN_15483(63:0)" name="in6(63:0)" />
-            <blockpin signalname="XLXN_15484(63:0)" name="in7(63:0)" />
-            <blockpin signalname="pusdo_data_select(2:0)" name="sel(2:0)" />
-            <blockpin signalname="adc_data_in(63:0)" name="muxout(63:0)" />
         </block>
         <block symbolname="fdre" name="XLXI_6323">
             <blockpin signalname="MASTER_CLK" name="C" />
@@ -2215,6 +2109,27 @@
             <blockpin signalname="rx_data(31:24)" name="D(7:0)" />
             <blockpin signalname="reset" name="R" />
             <blockpin signalname="data_send_delay_time(7:0)" name="Q(7:0)" />
+        </block>
+        <block symbolname="PeakFinder" name="XLXI_6249">
+            <blockpin signalname="MASTER_CLK" name="clk" />
+            <blockpin signalname="reset" name="reset" />
+            <blockpin signalname="peak_finder_din(15:0)" name="data_in(15:0)" />
+            <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
+            <blockpin signalname="read_size(15:0)" name="user_samples_after_trig(15:0)" />
+            <blockpin signalname="ethernet_fifo_in_en" name="out_enable" />
+            <blockpin signalname="ethernet_fifo_din(15:0)" name="data_out(15:0)" />
+        </block>
+        <block symbolname="MUX64_8" name="XLXI_6321">
+            <blockpin signalname="psudo_data_attr(63:0)" name="in0(63:0)" />
+            <blockpin signalname="psudo_data_aio(63:0)" name="in1(63:0)" />
+            <blockpin signalname="psudo_data_sawtooth(63:0)" name="in2(63:0)" />
+            <blockpin signalname="XLXN_15479(63:0)" name="in3(63:0)" />
+            <blockpin signalname="XLXN_15480(63:0)" name="in4(63:0)" />
+            <blockpin signalname="XLXN_15481(63:0)" name="in5(63:0)" />
+            <blockpin signalname="XLXN_15483(63:0)" name="in6(63:0)" />
+            <blockpin signalname="XLXN_15484(63:0)" name="in7(63:0)" />
+            <blockpin signalname="pusdo_data_select(2:0)" name="sel(2:0)" />
+            <blockpin signalname="adc_data_in(63:0)" name="muxout(63:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -2625,7 +2540,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4944" y="480" type="branch" />
             <wire x2="4992" y1="480" y2="480" x1="4944" />
         </branch>
-        <branch name="ethernet_fifo_din(255:0)">
+        <branch name="ethernet_fifo_din(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4944" y="512" type="branch" />
             <wire x2="4992" y1="512" y2="512" x1="4944" />
         </branch>
@@ -2650,119 +2565,6 @@
         <branch name="ethernet_fifo_empty">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="6384" y="560" type="branch" />
             <wire x2="6400" y1="560" y2="560" x1="6384" />
-        </branch>
-        <branch name="threshold(7:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3904" y="4624" type="branch" />
-            <wire x2="3920" y1="4624" y2="4624" x1="3904" />
-            <wire x2="3952" y1="4624" y2="4624" x1="3920" />
-        </branch>
-        <branch name="read_size(15:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3904" y="4752" type="branch" />
-            <wire x2="3920" y1="4752" y2="4752" x1="3904" />
-            <wire x2="3952" y1="4752" y2="4752" x1="3920" />
-        </branch>
-        <branch name="MASTER_CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3904" y="4368" type="branch" />
-            <wire x2="3920" y1="4368" y2="4368" x1="3904" />
-            <wire x2="3952" y1="4368" y2="4368" x1="3920" />
-        </branch>
-        <branch name="ethernet_fifo_in_en">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4544" y="4368" type="branch" />
-            <wire x2="4528" y1="4368" y2="4368" x1="4480" />
-            <wire x2="4544" y1="4368" y2="4368" x1="4528" />
-        </branch>
-        <branch name="ethernet_fifo_din(255:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4544" y="4624" type="branch" />
-            <wire x2="4528" y1="4624" y2="4624" x1="4480" />
-            <wire x2="4544" y1="4624" y2="4624" x1="4528" />
-        </branch>
-        <branch name="peak_finder_din(255:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3904" y="4560" type="branch" />
-            <wire x2="3920" y1="4560" y2="4560" x1="3904" />
-            <wire x2="3952" y1="4560" y2="4560" x1="3920" />
-        </branch>
-        <branch name="reset">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3904" y="4432" type="branch" />
-            <wire x2="3920" y1="4432" y2="4432" x1="3904" />
-            <wire x2="3952" y1="4432" y2="4432" x1="3920" />
-        </branch>
-        <instance x="3808" y="5200" name="XLXI_6289" orien="R0" />
-        <branch name="adc_fifo_f_empty">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3760" y="5136" type="branch" />
-            <wire x2="3808" y1="5136" y2="5136" x1="3760" />
-        </branch>
-        <branch name="adc_fifo_r_empty">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3760" y="5072" type="branch" />
-            <wire x2="3808" y1="5072" y2="5072" x1="3760" />
-        </branch>
-        <branch name="XLXN_15390">
-            <wire x2="3936" y1="4496" y2="4944" x1="3936" />
-            <wire x2="4496" y1="4944" y2="4944" x1="3936" />
-            <wire x2="4496" y1="4944" y2="5104" x1="4496" />
-            <wire x2="3952" y1="4496" y2="4496" x1="3936" />
-            <wire x2="4096" y1="5104" y2="5104" x1="4064" />
-            <wire x2="4320" y1="5104" y2="5104" x1="4096" />
-            <wire x2="4336" y1="5104" y2="5104" x1="4320" />
-            <wire x2="4496" y1="5104" y2="5104" x1="4336" />
-        </branch>
-        <branch name="clock_5mhz">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3200" y="384" type="branch" />
-            <wire x2="3216" y1="384" y2="384" x1="3200" />
-            <wire x2="3264" y1="384" y2="384" x1="3216" />
-        </branch>
-        <instance x="3072" y="416" name="XLXI_6286" orien="M90" />
-        <branch name="XLXN_15352">
-            <wire x2="3088" y1="480" y2="480" x1="3072" />
-            <wire x2="3168" y1="480" y2="480" x1="3088" />
-            <wire x2="3168" y1="448" y2="480" x1="3168" />
-            <wire x2="3264" y1="448" y2="448" x1="3168" />
-        </branch>
-        <branch name="pulse_finder_in_en">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4144" y="480" type="branch" />
-            <wire x2="4128" y1="480" y2="480" x1="4096" />
-            <wire x2="4144" y1="480" y2="480" x1="4128" />
-        </branch>
-        <branch name="adc_fifo_f_empty">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4144" y="672" type="branch" />
-            <wire x2="4128" y1="672" y2="672" x1="4096" />
-            <wire x2="4144" y1="672" y2="672" x1="4128" />
-        </branch>
-        <branch name="peak_finder_din(255:128)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4144" y="448" type="branch" />
-            <wire x2="4128" y1="448" y2="448" x1="4096" />
-            <wire x2="4144" y1="448" y2="448" x1="4128" />
-        </branch>
-        <branch name="MASTER_CLK">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4144" y="416" type="branch" />
-            <wire x2="4128" y1="416" y2="416" x1="4096" />
-            <wire x2="4144" y1="416" y2="416" x1="4128" />
-        </branch>
-        <branch name="adc_data_in(63:32)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3200" y="416" type="branch" />
-            <wire x2="3216" y1="416" y2="416" x1="3200" />
-            <wire x2="3264" y1="416" y2="416" x1="3216" />
-        </branch>
-        <instance x="3264" y="176" name="ADC_FIFO_F" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="320" y="0" type="instance" />
-        </instance>
-        <branch name="XLXN_15389">
-            <wire x2="4144" y1="768" y2="768" x1="4096" />
-        </branch>
-        <branch name="clock_5mhz">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1824" y="528" type="branch" />
-            <wire x2="1840" y1="528" y2="528" x1="1824" />
-            <wire x2="1872" y1="528" y2="528" x1="1840" />
-        </branch>
-        <instance x="1696" y="560" name="XLXI_6285" orien="M90" />
-        <branch name="pulse_finder_in_en">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2768" y="624" type="branch" />
-            <wire x2="2752" y1="624" y2="624" x1="2704" />
-            <wire x2="2768" y1="624" y2="624" x1="2752" />
-        </branch>
-        <branch name="adc_fifo_r_empty">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2768" y="816" type="branch" />
-            <wire x2="2752" y1="816" y2="816" x1="2704" />
-            <wire x2="2768" y1="816" y2="816" x1="2752" />
         </branch>
         <instance x="976" y="112" name="XLXI_6232" orien="R0" />
         <branch name="U10_1">
@@ -2974,33 +2776,6 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="752" y="1408" type="branch" />
             <wire x2="752" y1="1408" y2="1408" x1="736" />
         </branch>
-        <branch name="peak_finder_din(127:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2768" y="592" type="branch" />
-            <wire x2="2752" y1="592" y2="592" x1="2704" />
-            <wire x2="2768" y1="592" y2="592" x1="2752" />
-        </branch>
-        <branch name="MASTER_CLK">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2768" y="560" type="branch" />
-            <wire x2="2752" y1="560" y2="560" x1="2704" />
-            <wire x2="2768" y1="560" y2="560" x1="2752" />
-        </branch>
-        <branch name="XLXN_15351">
-            <wire x2="1712" y1="624" y2="624" x1="1696" />
-            <wire x2="1776" y1="624" y2="624" x1="1712" />
-            <wire x2="1776" y1="592" y2="624" x1="1776" />
-            <wire x2="1872" y1="592" y2="592" x1="1776" />
-        </branch>
-        <branch name="adc_data_in(31:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1824" y="560" type="branch" />
-            <wire x2="1840" y1="560" y2="560" x1="1824" />
-            <wire x2="1872" y1="560" y2="560" x1="1840" />
-        </branch>
-        <instance x="1872" y="320" name="ADC_FIFO_R" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="304" y="0" type="instance" />
-        </instance>
-        <branch name="XLXN_15385">
-            <wire x2="2768" y1="912" y2="912" x1="2704" />
-        </branch>
         <branch name="pusdo_data_select(2:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="1152" type="branch" />
             <wire x2="752" y1="1152" y2="1152" x1="736" />
@@ -3017,8 +2792,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="736" y="640" type="branch" />
             <wire x2="752" y1="640" y2="640" x1="736" />
         </branch>
-        <instance x="752" y="1184" name="XLXI_6321" orien="R0">
-        </instance>
         <branch name="XLXN_15479(63:0)">
             <wire x2="752" y1="832" y2="832" x1="736" />
         </branch>
@@ -3033,15 +2806,6 @@
         </branch>
         <branch name="XLXN_15484(63:0)">
             <wire x2="752" y1="1088" y2="1088" x1="736" />
-        </branch>
-        <instance x="3952" y="4656" name="XLXI_6249" orien="R0">
-        </instance>
-        <branch name="XLXN_15378">
-            <wire x2="3952" y1="4688" y2="4688" x1="3904" />
-        </branch>
-        <branch name="pulse_finder_in_en">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4544" y="4816" type="branch" />
-            <wire x2="4544" y1="4816" y2="4816" x1="4480" />
         </branch>
         <instance x="1536" y="5024" name="XLXI_6329" orien="R0" />
         <branch name="rx_data(31:24)">
@@ -3069,6 +2833,45 @@
             <wire x2="6368" y1="816" y2="816" x1="6320" />
             <wire x2="6400" y1="816" y2="816" x1="6368" />
         </branch>
+        <branch name="threshold(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3552" y="1024" type="branch" />
+            <wire x2="3568" y1="1024" y2="1024" x1="3552" />
+            <wire x2="3600" y1="1024" y2="1024" x1="3568" />
+        </branch>
+        <branch name="read_size(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3552" y="1152" type="branch" />
+            <wire x2="3568" y1="1152" y2="1152" x1="3552" />
+            <wire x2="3600" y1="1152" y2="1152" x1="3568" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3552" y="768" type="branch" />
+            <wire x2="3568" y1="768" y2="768" x1="3552" />
+            <wire x2="3600" y1="768" y2="768" x1="3568" />
+        </branch>
+        <branch name="ethernet_fifo_in_en">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4192" y="768" type="branch" />
+            <wire x2="4176" y1="768" y2="768" x1="4128" />
+            <wire x2="4192" y1="768" y2="768" x1="4176" />
+        </branch>
+        <branch name="ethernet_fifo_din(15:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4192" y="1024" type="branch" />
+            <wire x2="4176" y1="1024" y2="1024" x1="4128" />
+            <wire x2="4192" y1="1024" y2="1024" x1="4176" />
+        </branch>
+        <branch name="peak_finder_din(15:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3552" y="960" type="branch" />
+            <wire x2="3568" y1="960" y2="960" x1="3552" />
+            <wire x2="3600" y1="960" y2="960" x1="3568" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3552" y="832" type="branch" />
+            <wire x2="3568" y1="832" y2="832" x1="3552" />
+            <wire x2="3600" y1="832" y2="832" x1="3568" />
+        </branch>
+        <instance x="3600" y="1056" name="XLXI_6249" orien="R0">
+        </instance>
+        <instance x="752" y="1184" name="XLXI_6321" orien="R0">
+        </instance>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
         <instance x="1328" y="704" name="XLXI_5951" orien="R0" />
@@ -3870,7 +3673,7 @@
         <branch name="BUSA_15DN_31S">
             <wire x2="3392" y1="3520" y2="3520" x1="3168" />
         </branch>
-        <branch name="fadc_data_in(15)">
+        <branch name="not_connected(7)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="3504" type="branch" />
             <wire x2="3696" y1="3504" y2="3504" x1="3616" />
         </branch>
@@ -3880,7 +3683,7 @@
         <branch name="BUSA_14DN_29S">
             <wire x2="3392" y1="3648" y2="3648" x1="3168" />
         </branch>
-        <branch name="fadc_data_in(14)">
+        <branch name="not_connected(6)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="3632" type="branch" />
             <wire x2="3696" y1="3632" y2="3632" x1="3616" />
         </branch>
@@ -3890,7 +3693,7 @@
         <branch name="BUSA_13DN_27S">
             <wire x2="3392" y1="3776" y2="3776" x1="3168" />
         </branch>
-        <branch name="fadc_data_in(13)">
+        <branch name="not_connected(5)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="3760" type="branch" />
             <wire x2="3696" y1="3760" y2="3760" x1="3616" />
         </branch>
@@ -3900,7 +3703,7 @@
         <branch name="BUSA_12DN_25S">
             <wire x2="3392" y1="3904" y2="3904" x1="3168" />
         </branch>
-        <branch name="fadc_data_in(12)">
+        <branch name="not_connected(4)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="3888" type="branch" />
             <wire x2="3696" y1="3888" y2="3888" x1="3616" />
         </branch>
@@ -3910,7 +3713,7 @@
         <branch name="BUSA_11DN_23S">
             <wire x2="3392" y1="4032" y2="4032" x1="3168" />
         </branch>
-        <branch name="fadc_data_in(11)">
+        <branch name="not_connected(3)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="4016" type="branch" />
             <wire x2="3696" y1="4016" y2="4016" x1="3616" />
         </branch>
@@ -3920,7 +3723,7 @@
         <branch name="BUSA_10DN_21S">
             <wire x2="3392" y1="4160" y2="4160" x1="3168" />
         </branch>
-        <branch name="fadc_data_in(10)">
+        <branch name="not_connected(2)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="4144" type="branch" />
             <wire x2="3696" y1="4144" y2="4144" x1="3616" />
         </branch>
@@ -3930,7 +3733,7 @@
         <branch name="BUSA_09DN_19S">
             <wire x2="3392" y1="4288" y2="4288" x1="3168" />
         </branch>
-        <branch name="fadc_data_in(9)">
+        <branch name="not_connected(1)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="4272" type="branch" />
             <wire x2="3696" y1="4272" y2="4272" x1="3616" />
         </branch>
@@ -3940,7 +3743,7 @@
         <branch name="BUSA_08DN_17S">
             <wire x2="3392" y1="4416" y2="4416" x1="3168" />
         </branch>
-        <branch name="fadc_data_in(8)">
+        <branch name="not_connected(0)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="4400" type="branch" />
             <wire x2="3696" y1="4400" y2="4400" x1="3616" />
         </branch>
@@ -3967,7 +3770,7 @@
         <branch name="BUSB_08DN_17S">
             <wire x2="4736" y1="2352" y2="2352" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(23)">
+        <branch name="fadc_data_in(15)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="2336" type="branch" />
             <wire x2="5040" y1="2336" y2="2336" x1="4960" />
         </branch>
@@ -3977,7 +3780,7 @@
         <branch name="BUSB_09DN_19S">
             <wire x2="4736" y1="2480" y2="2480" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(22)">
+        <branch name="fadc_data_in(14)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="2464" type="branch" />
             <wire x2="5040" y1="2464" y2="2464" x1="4960" />
         </branch>
@@ -3987,7 +3790,7 @@
         <branch name="BUSB_10DN_21S">
             <wire x2="4736" y1="2608" y2="2608" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(21)">
+        <branch name="fadc_data_in(13)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="2592" type="branch" />
             <wire x2="5040" y1="2592" y2="2592" x1="4960" />
         </branch>
@@ -3997,7 +3800,7 @@
         <branch name="BUSB_11DN_23S">
             <wire x2="4736" y1="2736" y2="2736" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(20)">
+        <branch name="fadc_data_in(12)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="2720" type="branch" />
             <wire x2="5040" y1="2720" y2="2720" x1="4960" />
         </branch>
@@ -4007,7 +3810,7 @@
         <branch name="BUSB_12DN_25S">
             <wire x2="4736" y1="2864" y2="2864" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(19)">
+        <branch name="fadc_data_in(11)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="2848" type="branch" />
             <wire x2="5040" y1="2848" y2="2848" x1="4960" />
         </branch>
@@ -4017,7 +3820,7 @@
         <branch name="BUSB_13DN_27S">
             <wire x2="4736" y1="2992" y2="2992" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(18)">
+        <branch name="fadc_data_in(10)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="2976" type="branch" />
             <wire x2="5040" y1="2976" y2="2976" x1="4960" />
         </branch>
@@ -4027,7 +3830,7 @@
         <branch name="BUSB_14DN_29S">
             <wire x2="4736" y1="3120" y2="3120" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(17)">
+        <branch name="fadc_data_in(9)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="3104" type="branch" />
             <wire x2="5040" y1="3104" y2="3104" x1="4960" />
         </branch>
@@ -4037,7 +3840,7 @@
         <branch name="BUSB_15DN_31S">
             <wire x2="4736" y1="3248" y2="3248" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(16)">
+        <branch name="fadc_data_in(8)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="3232" type="branch" />
             <wire x2="5040" y1="3232" y2="3232" x1="4960" />
         </branch>
@@ -4048,7 +3851,7 @@
         <branch name="BUSA_07DN_15S">
             <wire x2="4736" y1="3520" y2="3520" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(31)">
+        <branch name="not_connected(0)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="3504" type="branch" />
             <wire x2="5040" y1="3504" y2="3504" x1="4960" />
         </branch>
@@ -4058,7 +3861,7 @@
         <branch name="BUSA_06DN_13S">
             <wire x2="4736" y1="3648" y2="3648" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(30)">
+        <branch name="not_connected(14)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="3632" type="branch" />
             <wire x2="5040" y1="3632" y2="3632" x1="4960" />
         </branch>
@@ -4068,7 +3871,7 @@
         <branch name="BUSA_05DN_11S">
             <wire x2="4736" y1="3776" y2="3776" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(29)">
+        <branch name="not_connected(13)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="3760" type="branch" />
             <wire x2="5040" y1="3760" y2="3760" x1="4960" />
         </branch>
@@ -4078,7 +3881,7 @@
         <branch name="BUSA_04DN_09S">
             <wire x2="4736" y1="3904" y2="3904" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(28)">
+        <branch name="not_connected(12)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="3888" type="branch" />
             <wire x2="5040" y1="3888" y2="3888" x1="4960" />
         </branch>
@@ -4088,7 +3891,7 @@
         <branch name="BUSA_03DN_07S">
             <wire x2="4736" y1="4032" y2="4032" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(27)">
+        <branch name="not_connected(11)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="4016" type="branch" />
             <wire x2="5040" y1="4016" y2="4016" x1="4960" />
         </branch>
@@ -4098,7 +3901,7 @@
         <branch name="BUSA_02DN_05S">
             <wire x2="4736" y1="4160" y2="4160" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(26)">
+        <branch name="not_connected(10)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="4144" type="branch" />
             <wire x2="5040" y1="4144" y2="4144" x1="4960" />
         </branch>
@@ -4108,7 +3911,7 @@
         <branch name="BUSA_01DN_03S">
             <wire x2="4736" y1="4288" y2="4288" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(25)">
+        <branch name="not_connected(9)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="4272" type="branch" />
             <wire x2="5040" y1="4272" y2="4272" x1="4960" />
         </branch>
@@ -4118,7 +3921,7 @@
         <branch name="BUSA_00DN_01S">
             <wire x2="4736" y1="4416" y2="4416" x1="4512" />
         </branch>
-        <branch name="fadc_data_in(24)">
+        <branch name="not_connected(8)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="4400" type="branch" />
             <wire x2="5040" y1="4400" y2="4400" x1="4960" />
         </branch>
