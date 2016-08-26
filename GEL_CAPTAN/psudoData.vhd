@@ -26,44 +26,34 @@ entity psudoData is
     Port ( clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
            delay : in  STD_LOGIC_VECTOR (7 downto 0);
-           rising_data : out  STD_LOGIC_VECTOR (31 downto 0);
-           falling_data : out  STD_LOGIC_VECTOR (31 downto 0));
+           data_out : out  STD_LOGIC_VECTOR (15 downto 0));
 end psudoData;
 
 architecture Behavioral of psudoData is
 signal counter : unsigned(7 downto 0);
-signal counter_f : unsigned(7 downto 0);
+signal counter_two : unsigned(7 downto 0);
 signal delayCounter : unsigned(7 downto 0);
 signal unsDelay : unsigned(7 downto 0);
 
 begin
 	unsDelay <= unsigned(delay);
 	process(clk) begin
-		rising_data(7 downto 0) <= std_logic_vector(counter);
-		rising_data(15 downto 8) <= std_logic_vector(counter);
-		rising_data(23 downto 16) <= std_logic_vector(counter);
-		rising_data(31 downto 24) <= std_logic_vector(counter);
-		
-		falling_data(7 downto 0) <= std_logic_vector(counter_f);
-		falling_data(15 downto 8) <= std_logic_vector(counter_f);
-		falling_data(23 downto 16) <= std_logic_vector(counter_f);
-		falling_data(31 downto 24) <= std_logic_vector(counter_f);
+		data_out(7 downto 0) <= std_logic_vector(counter);
+		data_out(15 downto 8) <= std_logic_vector(counter);
 		
 		if(reset = '0') then
 			if(rising_edge(clk)) then
 				if(delayCounter = unsDelay) then
-					counter <= counter + 1;
+					counter <= counter + 2;
 					delayCounter <= (others => '0');
 				else
 					delayCounter <= delayCounter + 1;
 				end if;
 			end if;
-			if(falling_edge(clk)) then
-				counter_f <= counter;
-			end if;
+			counter_two <= counter + 1;
 		else
 			counter <= (others => '0');
-			counter_f <= (others => '0');
+			counter_two <= (others => '0');
 		end if;
 	end process;
 	
