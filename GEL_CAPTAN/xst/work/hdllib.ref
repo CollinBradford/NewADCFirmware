@@ -1,5 +1,5 @@
 AR trigger_recv_blk behavioral D:/cbradford/SignalProcessing/GEL_CAPTAN/trigger_recv_blk.vhd sub00/vhpl63 1470421615
-AR peakfinder behavioral D:/cbradford/SignalProcessing/GEL_CAPTAN/PeakFinder.vhd sub00/vhpl71 1470421623
+AR peakfinder behavioral D:/cbradford/NewADCFirmware/GEL_CAPTAN/PeakFinder.vhd sub00/vhpl71 1472245718
 EN address_container NULL D:/cbradford/SignalProcessing/oei/address_container.vhd sub00/vhpl02 1470421554
 AR m2_1_mxilinx_top_level behavioral D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl83 1470421635
 EN ethernet_controller NULL D:/cbradford/SignalProcessing/oei/ethernet_controller.vhd sub00/vhpl40 1470421592
@@ -11,8 +11,8 @@ AR addr_fifo addr_fifo_a D:/cbradford/SignalProcessing/ipcore_dir/ADDR_FIFO.vhd 
 EN reset_mgr NULL D:/cbradford/SignalProcessing/oei/reset_mgr.vhd sub00/vhpl52 1470421604
 AR ram_comm_dec arch D:/cbradford/SignalProcessing/oei/ram_comm_dec.vhd sub00/vhpl37 1470421589
 EN ip_checksum_calc NULL D:/cbradford/SignalProcessing/oei/ip_checksum_calc.vhd sub00/vhpl08 1470421560
-EN fd8re_mxilinx_top_level NULL D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl78 1470421630
 EN data_manager NULL D:/cbradford/SignalProcessing/oei/data_manager.vhd sub00/vhpl48 1470421600
+EN fd8re_mxilinx_top_level NULL D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl78 1470421630
 EN burst_controller_sm NULL D:/cbradford/SignalProcessing/oei/burst_controller_sm.vhd sub00/vhpl32 1470421584
 AR buffer_10bit behavioral D:/cbradford/SignalProcessing/GEL_CAPTAN/buffer_10bit.vhd sub00/vhpl61 1470421613
 EN dataout_mux NULL D:/cbradford/SignalProcessing/oei/dataout_mux.vhd sub00/vhpl12 1470421564
@@ -21,9 +21,9 @@ AR version_blk behavioral D:/cbradford/SignalProcessing/GEL_CAPTAN/VERSION_BLK.v
 EN data_fifo_0 NULL D:/cbradford/SignalProcessing/ipcore_dir/DATA_FIFO_0.vhd sub00/vhpl26 1470421578
 AR udp_data_splicer udp_data_splicer_arch D:/cbradford/SignalProcessing/oei/udp_data_splicer.vhd sub00/vhpl23 1470421575
 AR address_container arch D:/cbradford/SignalProcessing/oei/address_container.vhd sub00/vhpl03 1470421555
-AR top_level behavioral D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl87 1470421639
-AR mux64_8 behavioral D:/cbradford/SignalProcessing/GEL_CAPTAN/MUX64_8.vhd sub00/vhpl59 1470421611
 EN or33 NULL D:/cbradford/SignalProcessing/oei/or33.vhd sub00/vhpl06 1470421558
+AR mux64_8 behavioral D:/cbradford/SignalProcessing/GEL_CAPTAN/MUX64_8.vhd sub00/vhpl59 1470421611
+AR top_level behavioral D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl87 1470421639
 EN d4_16e_mxilinx_top_level NULL D:/cbradford/SignalProcessing/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl84 1470421636
 EN adc_fifo NULL D:/cbradford/SignalProcessing/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd sub00/vhpl54 1470421606
 AR tx_seq_ctl arch D:/cbradford/SignalProcessing/oei/tx_seq_ctl.vhd sub00/vhpl39 1470421591
@@ -33,8 +33,8 @@ AR fd16re_mxilinx_top_level behavioral D:/cbradford/SignalProcessing/GEL_CAPTAN/
 AR decipherer decipherer_arch D:/cbradford/SignalProcessing/oei/decipherer.vhd sub00/vhpl15 1470421567
 EN ram_comm_dec NULL D:/cbradford/SignalProcessing/oei/ram_comm_dec.vhd sub00/vhpl36 1470421588
 EN tx_seq_ctl NULL D:/cbradford/SignalProcessing/oei/tx_seq_ctl.vhd sub00/vhpl38 1470421590
-AR adc_fifo adc_fifo_a D:/cbradford/SignalProcessing/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd sub00/vhpl55 1470421607
 AR ethernet_controller_wrapper arch D:/cbradford/SignalProcessing/oei/ethernet_controller_wrapper.vhd sub00/vhpl47 1470421599
+AR adc_fifo adc_fifo_a D:/cbradford/SignalProcessing/GEL_CAPTAN/ipcore_dir/ADC_FIFO.vhd sub00/vhpl55 1470421607
 EN rx_ctl NULL D:/cbradford/SignalProcessing/oei/rx_ctl.vhd sub00/vhpl34 1470421586
 AR filter_data_out filter_data_out_arch D:/cbradford/SignalProcessing/oei/filter_data_out.vhd sub00/vhpl17 1470421569
 AR psudodata behavioral D:/cbradford/SignalProcessing/GEL_CAPTAN/psudoData.vhd sub00/vhpl75 1470421627
@@ -46,7 +46,7 @@ AR psudo_data_allone behavioral D:/cbradford/SignalProcessing/GEL_CAPTAN/psudo_d
 EN version_blk NULL D:/cbradford/SignalProcessing/GEL_CAPTAN/VERSION_BLK.vhd sub00/vhpl56 1470421608
 AR data_send behavioral D:/cbradford/SignalProcessing/GEL_CAPTAN/data_send.vhd sub00/vhpl73 1470421625
 AR rx_ctl arch D:/cbradford/SignalProcessing/oei/rx_ctl.vhd sub00/vhpl35 1470421587
-EN peakfinder NULL D:/cbradford/SignalProcessing/GEL_CAPTAN/PeakFinder.vhd sub00/vhpl70 1470421622
+EN peakfinder NULL D:/cbradford/NewADCFirmware/GEL_CAPTAN/PeakFinder.vhd sub00/vhpl70 1472245717
 AR data_fifo_0 data_fifo_0_a D:/cbradford/SignalProcessing/ipcore_dir/DATA_FIFO_0.vhd sub00/vhpl27 1470421579
 AR ip_checksum_calc arch D:/cbradford/SignalProcessing/oei/ip_checksum_calc.vhd sub00/vhpl09 1470421561
 EN create_packet NULL D:/cbradford/SignalProcessing/oei/create_packet.vhd sub00/vhpl10 1470421562

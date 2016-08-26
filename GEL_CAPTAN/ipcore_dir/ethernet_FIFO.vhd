@@ -45,7 +45,7 @@ ENTITY ethernet_FIFO IS
     rst : IN STD_LOGIC;
     wr_clk : IN STD_LOGIC;
     rd_clk : IN STD_LOGIC;
-    din : IN STD_LOGIC_VECTOR(255 DOWNTO 0);
+    din : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     wr_en : IN STD_LOGIC;
     rd_en : IN STD_LOGIC;
     dout : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
@@ -63,7 +63,7 @@ COMPONENT wrapped_ethernet_FIFO
     rst : IN STD_LOGIC;
     wr_clk : IN STD_LOGIC;
     rd_clk : IN STD_LOGIC;
-    din : IN STD_LOGIC_VECTOR(255 DOWNTO 0);
+    din : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     wr_en : IN STD_LOGIC;
     rd_en : IN STD_LOGIC;
     dout : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
@@ -104,7 +104,7 @@ END COMPONENT;
       c_count_type => 0,
       c_data_count_width => 11,
       c_default_value => "BlankString",
-      c_din_width => 256,
+      c_din_width => 16,
       c_din_width_axis => 1,
       c_din_width_rach => 32,
       c_din_width_rdch => 64,
@@ -217,10 +217,10 @@ END COMPONENT;
       c_prog_full_type_wdch => 0,
       c_prog_full_type_wrch => 0,
       c_rach_type => 0,
-      c_rd_data_count_width => 13,
-      c_rd_depth => 8192,
+      c_rd_data_count_width => 9,
+      c_rd_depth => 512,
       c_rd_freq => 1,
-      c_rd_pntr_width => 13,
+      c_rd_pntr_width => 9,
       c_rdch_type => 0,
       c_reg_slice_mode_axis => 0,
       c_reg_slice_mode_rach => 0,

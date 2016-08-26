@@ -1,0 +1,5 @@
+set -tmpdir "D:/cbradford/NewADCFirmware/GEL_CAPTAN/xst/projnav.tmp"
+set -xsthdpdir "D:/cbradford/NewADCFirmware/GEL_CAPTAN/xst"
+elaborate
+-ifn PeakFinder.prj
+-ifmt mixed

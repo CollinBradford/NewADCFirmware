@@ -320,7 +320,6 @@
         <signal name="not_connected(14)" />
         <signal name="fadc_data_in(15)" />
         <signal name="peak_finder_din(15:0)" />
-        <signal name="XLXN_15494" />
         <signal name="ethernet_fifo_din(15:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
@@ -751,7 +750,7 @@
             <rect width="256" x="64" y="-320" height="256" />
         </blockdef>
         <blockdef name="ethernet_FIFO">
-            <timestamp>2016-7-21T14:44:13</timestamp>
+            <timestamp>2016-8-26T20:58:21</timestamp>
             <rect width="768" x="32" y="32" height="4032" />
             <line x2="32" y1="112" y2="112" x1="0" />
             <line x2="32" y1="208" y2="208" x1="0" />
@@ -2035,7 +2034,7 @@
         <block symbolname="ethernet_FIFO" name="XLXI_6248">
             <blockpin signalname="reset" name="rst" />
             <blockpin signalname="MASTER_CLK" name="wr_clk" />
-            <blockpin signalname="ethernet_fifo_din(15:0)" name="din(255:0)" />
+            <blockpin signalname="ethernet_fifo_din(15:0)" name="din(15:0)" />
             <blockpin signalname="ethernet_fifo_in_en" name="wr_en" />
             <blockpin signalname="XLXN_15364" name="full" />
             <blockpin signalname="ethernet_overflow" name="overflow" />
