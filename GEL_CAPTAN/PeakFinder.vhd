@@ -69,10 +69,6 @@ begin
 						samplesSinceTrig <= (others => '0');
 						triggered <= '0';
 					end if;
-					
-					if(triggered = '1') then
-						out_en_sig <= '1';
-					end if;
 				end if;
 				
 				if(out_en_sig = '1')then --We took another sample.  Increase the sample count
