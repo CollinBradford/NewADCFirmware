@@ -8,7 +8,7 @@
 -- \   \   \/     Version    : 14.7
 --  \   \         Application: Xilinx CORE Generator
 --  /   /         Filename   : ila_pro_0.vho
--- /___/   /\     Timestamp  : Fri Sep 09 11:07:30 Central Daylight Time 2016
+-- /___/   /\     Timestamp  : Fri Sep 09 11:23:20 Central Daylight Time 2016
 -- \   \  /  \
 --  \___\/\___\
 --
@@ -22,7 +22,7 @@ component ila_pro_0
   PORT (
     CONTROL : INOUT STD_LOGIC_VECTOR(35 DOWNTO 0);
     CLK : IN STD_LOGIC;
-    TRIG0 : IN STD_LOGIC_VECTOR(141 DOWNTO 0));
+    TRIG0 : IN STD_LOGIC_VECTOR(140 DOWNTO 0));
 
 end component;
 
