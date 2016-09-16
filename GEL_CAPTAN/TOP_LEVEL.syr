@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -891,12 +891,12 @@ Synthesizing Unit <PeakFinder>.
     Related source file is "D:/cbradford/NewADCFirmware/GEL_CAPTAN/PeakFinder.vhd".
     Register <triggered> equivalent to <out_en_sig> has been removed
     Found 1-bit register for signal <out_en_sig>.
-    Found 16-bit comparator greatequal for signal <out_en_sig$cmp_ge0000> created at line 71.
     Found 8-bit comparator greater for signal <out_en_sig$cmp_gt0000> created at line 66.
     Found 8-bit comparator greater for signal <out_en_sig$cmp_gt0001> created at line 66.
+    Found 16-bit comparator greater for signal <out_en_sig$cmp_gt0002> created at line 71.
     Found 16-bit register for signal <samplesSinceTrig>.
     Found 16-bit adder for signal <samplesSinceTrig$addsub0000> created at line 81.
-    Found 16-bit comparator less for signal <samplesSinceTrig$cmp_lt0000> created at line 71.
+    Found 16-bit comparator lessequal for signal <samplesSinceTrig$cmp_le0000> created at line 71.
     Summary:
 	inferred  17 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
@@ -1751,9 +1751,9 @@ Macro Statistics
 # Comparators                                          : 26
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
- 16-bit comparator greatequal                          : 1
- 16-bit comparator less                                : 2
- 16-bit comparator lessequal                           : 2
+ 16-bit comparator greater                             : 1
+ 16-bit comparator less                                : 1
+ 16-bit comparator lessequal                           : 3
  17-bit comparator greater                             : 1
  32-bit comparator equal                               : 1
  34-bit comparator greatequal                          : 1
@@ -2185,9 +2185,9 @@ Macro Statistics
 # Comparators                                          : 26
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
- 16-bit comparator greatequal                          : 1
- 16-bit comparator less                                : 2
- 16-bit comparator lessequal                           : 2
+ 16-bit comparator greater                             : 1
+ 16-bit comparator less                                : 1
+ 16-bit comparator lessequal                           : 3
  17-bit comparator greater                             : 1
  32-bit comparator equal                               : 1
  34-bit comparator greatequal                          : 1
@@ -2765,7 +2765,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 3.840ns (frequency: 260.444MHz)
-  Total number of paths / destination ports: 75 / 29
+  Total number of paths / destination ports: 91 / 29
 -------------------------------------------------------------------------
 Offset:              3.840ns (Levels of Logic = 11)
   Source:            XLXI_6247/I_Q0 (FF)
@@ -2859,7 +2859,7 @@ Delay:               7.053ns (Levels of Logic = 11)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
   Clock period: 5.564ns (frequency: 179.712MHz)
-  Total number of paths / destination ports: 1278 / 265
+  Total number of paths / destination ports: 1262 / 265
 -------------------------------------------------------------------------
 Delay:               5.564ns (Levels of Logic = 14)
   Source:            XLXI_6227/reset_mgr/reset (FF)
@@ -2989,11 +2989,11 @@ Delay:               5.299ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 63.00 secs
-Total CPU time to Xst completion: 63.38 secs
+Total CPU time to Xst completion: 63.80 secs
  
 --> 
 
-Total memory usage is 661704 kilobytes
+Total memory usage is 662024 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  274 (   0 filtered)

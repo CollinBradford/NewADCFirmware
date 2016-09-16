@@ -68,7 +68,7 @@ begin
 						triggered <= '1';
 					end if;
 				else
-					if(triggered = '1' and samplesSinceTrig >= userSamplesSinceTrig)then--Our sample count matches the user request.  Turn off.  
+					if(triggered = '1' and samplesSinceTrig > userSamplesSinceTrig)then--Our sample count matches the user request.  Turn off.  
 						out_en_sig <= '0';
 						samplesSinceTrig <= (others => '0');
 						triggered <= '0';
