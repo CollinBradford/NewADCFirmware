@@ -72,11 +72,14 @@ begin
 						out_en_sig <= '0';
 						samplesSinceTrig <= (others => '0');
 						triggered <= '0';
+					else--I added this code because for some reason everything was turning off every other clock.  
+						triggered <= '1';
+						out_en_sig <= '1';
 					end if;
-				end if;
-				
-				if(out_en_sig = '1')then --We took another sample.  Increase the sample count
-					samplesSinceTrig <= samplesSinceTrig + 1;
+					
+					if(out_en_sig = '1')then --We took another sample.  Increase the sample count
+						samplesSinceTrig <= samplesSinceTrig + 1;
+					end if;
 				end if;
 			end if;
 		else--reset is high

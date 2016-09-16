@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -891,15 +891,16 @@ Synthesizing Unit <PeakFinder>.
     Related source file is "D:/cbradford/NewADCFirmware/GEL_CAPTAN/PeakFinder.vhd".
     Register <triggered> equivalent to <out_en_sig> has been removed
     Found 1-bit register for signal <out_en_sig>.
-    Found 8-bit comparator lessequal for signal <out_en_sig$cmp_le0000> created at line 66.
-    Found 8-bit comparator lessequal for signal <out_en_sig$cmp_le0001> created at line 66.
+    Found 16-bit comparator greatequal for signal <out_en_sig$cmp_ge0000> created at line 71.
+    Found 8-bit comparator greater for signal <out_en_sig$cmp_gt0000> created at line 66.
+    Found 8-bit comparator greater for signal <out_en_sig$cmp_gt0001> created at line 66.
     Found 16-bit register for signal <samplesSinceTrig>.
-    Found 16-bit adder for signal <samplesSinceTrig$addsub0000> created at line 79.
+    Found 16-bit adder for signal <samplesSinceTrig$addsub0000> created at line 81.
     Found 16-bit comparator less for signal <samplesSinceTrig$cmp_lt0000> created at line 71.
     Summary:
 	inferred  17 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
-	inferred   3 Comparator(s).
+	inferred   4 Comparator(s).
 Unit <PeakFinder> synthesized.
 
 
@@ -1747,9 +1748,10 @@ Macro Statistics
  48-bit register                                       : 2
  64-bit register                                       : 4
  8-bit register                                        : 59
-# Comparators                                          : 25
+# Comparators                                          : 26
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
+ 16-bit comparator greatequal                          : 1
  16-bit comparator less                                : 2
  16-bit comparator lessequal                           : 2
  17-bit comparator greater                             : 1
@@ -1765,8 +1767,7 @@ Macro Statistics
  6-bit comparator lessequal                            : 1
  8-bit comparator equal                                : 1
  8-bit comparator greatequal                           : 1
- 8-bit comparator greater                              : 1
- 8-bit comparator lessequal                            : 2
+ 8-bit comparator greater                              : 3
  9-bit comparator greatequal                           : 1
 # Multiplexers                                         : 8
  32-bit 4-to-1 multiplexer                             : 4
@@ -2181,9 +2182,10 @@ Macro Statistics
  8-bit up accumulator                                  : 1
 # Registers                                            : 1995
  Flip-Flops                                            : 1995
-# Comparators                                          : 25
+# Comparators                                          : 26
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
+ 16-bit comparator greatequal                          : 1
  16-bit comparator less                                : 2
  16-bit comparator lessequal                           : 2
  17-bit comparator greater                             : 1
@@ -2199,8 +2201,7 @@ Macro Statistics
  6-bit comparator lessequal                            : 1
  8-bit comparator equal                                : 1
  8-bit comparator greatequal                           : 1
- 8-bit comparator greater                              : 1
- 8-bit comparator lessequal                            : 2
+ 8-bit comparator greater                              : 3
  9-bit comparator greatequal                           : 1
 # Multiplexers                                         : 8
  32-bit 4-to-1 multiplexer                             : 4
@@ -2631,15 +2632,15 @@ Cell Usage :
 #      AND5B4                      : 1
 #      BUF                         : 5
 #      GND                         : 28
-#      INV                         : 181
+#      INV                         : 180
 #      LUT1                        : 229
-#      LUT2                        : 467
+#      LUT2                        : 468
 #      LUT2_D                      : 35
 #      LUT2_L                      : 11
-#      LUT3                        : 1099
+#      LUT3                        : 1100
 #      LUT3_D                      : 27
 #      LUT3_L                      : 62
-#      LUT4                        : 1822
+#      LUT4                        : 1821
 #      LUT4_D                      : 75
 #      LUT4_L                      : 288
 #      MUXCY                       : 786
@@ -2763,44 +2764,36 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
-  Clock period: 4.116ns (frequency: 242.934MHz)
-  Total number of paths / destination ports: 75 / 28
+  Clock period: 3.840ns (frequency: 260.444MHz)
+  Total number of paths / destination ports: 75 / 29
 -------------------------------------------------------------------------
-Offset:              4.116ns (Levels of Logic = 19)
-  Source:            XLXI_6251/I_Q0 (FF)
+Offset:              3.840ns (Levels of Logic = 11)
+  Source:            XLXI_6247/I_Q0 (FF)
   Destination:       XLXI_6249/out_en_sig (FF)
   Source Clock:      GEL_RXCLK rising
   Destination Clock: SECONDARY_CLK rising
 
-  Data Path: XLXI_6251/I_Q0 to XLXI_6249/out_en_sig
+  Data Path: XLXI_6247/I_Q0 to XLXI_6249/out_en_sig
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             1   0.360   0.523  I_Q0 (Q<0>)
-     end scope: 'XLXI_6251'
+     FDRE:C->Q             2   0.360   0.602  I_Q0 (Q<0>)
+     end scope: 'XLXI_6247'
      begin scope: 'XLXI_6249'
-     LUT2:I1->O            1   0.195   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_lut<0> (Mcompar_samplesSinceTrig_cmp_lt0000_lut<0>)
-     MUXCY:S->O            1   0.366   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<0> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<0>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<1> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<1>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<2> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<2>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<3> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<3>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<4> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<4>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<5> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<5>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<6> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<6>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<7> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<7>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<8> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<8>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<9> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<9>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<10> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<10>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<11> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<11>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<12> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<12>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<13> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<13>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_lt0000_cy<14> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<14>)
-     MUXCY:CI->O           1   0.369   0.585  Mcompar_samplesSinceTrig_cmp_lt0000_cy<15> (Mcompar_samplesSinceTrig_cmp_lt0000_cy<15>)
-     LUT4:I2->O            1   0.195   0.360  out_en_sig_not00011 (out_en_sig_not0001)
+     LUT2:I0->O            1   0.195   0.000  Mcompar_out_en_sig_cmp_gt0000_lut<0> (Mcompar_out_en_sig_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.366   0.000  Mcompar_out_en_sig_cmp_gt0000_cy<0> (Mcompar_out_en_sig_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0000_cy<1> (Mcompar_out_en_sig_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0000_cy<2> (Mcompar_out_en_sig_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0000_cy<3> (Mcompar_out_en_sig_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0000_cy<4> (Mcompar_out_en_sig_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0000_cy<5> (Mcompar_out_en_sig_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0000_cy<6> (Mcompar_out_en_sig_cmp_gt0000_cy<6>)
+     MUXCY:CI->O           1   0.369   0.585  Mcompar_out_en_sig_cmp_gt0000_cy<7> (Mcompar_out_en_sig_cmp_gt0000_cy<7>)
+     LUT3:I1->O            1   0.195   0.360  out_en_sig_not00011 (out_en_sig_not0001)
      FDRE:CE                   0.540          out_en_sig
     ----------------------------------------
-    Total                      4.116ns (2.649ns logic, 1.468ns route)
-                                       (64.3% logic, 35.7% route)
+    Total                      3.840ns (2.292ns logic, 1.547ns route)
+                                       (59.7% logic, 40.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
@@ -2885,16 +2878,16 @@ Delay:               5.564ns (Levels of Logic = 14)
      INV:I->O              2   0.358   0.540  counter_two<0>1_INV_0 (data_out<8>)
      end scope: 'XLXI_6292'
      begin scope: 'XLXI_6249'
-     LUT2:I1->O            1   0.195   0.000  Mcompar_out_en_sig_cmp_le0001_lut<0> (Mcompar_out_en_sig_cmp_le0001_lut<0>)
-     MUXCY:S->O            1   0.366   0.000  Mcompar_out_en_sig_cmp_le0001_cy<0> (Mcompar_out_en_sig_cmp_le0001_cy<0>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_le0001_cy<1> (Mcompar_out_en_sig_cmp_le0001_cy<1>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_le0001_cy<2> (Mcompar_out_en_sig_cmp_le0001_cy<2>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_le0001_cy<3> (Mcompar_out_en_sig_cmp_le0001_cy<3>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_le0001_cy<4> (Mcompar_out_en_sig_cmp_le0001_cy<4>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_le0001_cy<5> (Mcompar_out_en_sig_cmp_le0001_cy<5>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_le0001_cy<6> (Mcompar_out_en_sig_cmp_le0001_cy<6>)
-     MUXCY:CI->O           1   0.369   0.523  Mcompar_out_en_sig_cmp_le0001_cy<7> (out_en_sig_cmp_le0001)
-     LUT4:I3->O            1   0.195   0.360  out_en_sig_not00011 (out_en_sig_not0001)
+     LUT2:I1->O            1   0.195   0.000  Mcompar_out_en_sig_cmp_gt0001_lut<0> (Mcompar_out_en_sig_cmp_gt0001_lut<0>)
+     MUXCY:S->O            1   0.366   0.000  Mcompar_out_en_sig_cmp_gt0001_cy<0> (Mcompar_out_en_sig_cmp_gt0001_cy<0>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0001_cy<1> (Mcompar_out_en_sig_cmp_gt0001_cy<1>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0001_cy<2> (Mcompar_out_en_sig_cmp_gt0001_cy<2>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0001_cy<3> (Mcompar_out_en_sig_cmp_gt0001_cy<3>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0001_cy<4> (Mcompar_out_en_sig_cmp_gt0001_cy<4>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0001_cy<5> (Mcompar_out_en_sig_cmp_gt0001_cy<5>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0001_cy<6> (Mcompar_out_en_sig_cmp_gt0001_cy<6>)
+     MUXCY:CI->O           1   0.369   0.523  Mcompar_out_en_sig_cmp_gt0001_cy<7> (Mcompar_out_en_sig_cmp_gt0001_cy<7>)
+     LUT3:I2->O            1   0.195   0.360  out_en_sig_not00011 (out_en_sig_not0001)
      FDRE:CE                   0.540          out_en_sig
     ----------------------------------------
     Total                      5.564ns (2.651ns logic, 2.914ns route)
@@ -2995,12 +2988,12 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 65.00 secs
-Total CPU time to Xst completion: 64.37 secs
+Total REAL time to Xst completion: 63.00 secs
+Total CPU time to Xst completion: 63.38 secs
  
 --> 
 
-Total memory usage is 662216 kilobytes
+Total memory usage is 661704 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  274 (   0 filtered)
