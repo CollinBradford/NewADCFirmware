@@ -59,7 +59,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  3346 paths analyzed, 651 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   9.220ns.
+ Minimum period is   8.680ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -69,7 +69,7 @@ For more information, see From:To (Multicycle) Analysis in the Timing Closure Us
 
  18 paths analyzed, 18 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   3.121ns.
+ Maximum delay is   3.479ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -79,7 +79,7 @@ For more information, see From:To (Multicycle) Analysis in the Timing Closure Us
 
  1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   0.940ns.
+ Maximum delay is   0.949ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -102,7 +102,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  97235 paths analyzed, 11052 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   7.897ns.
+ Minimum period is   7.759ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -112,7 +112,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  3678 paths analyzed, 392 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   6.353ns.
+ Minimum period is   5.824ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -172,7 +172,7 @@ Derived Constraints for TS_GEL_RXCLK
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_GEL_RXCLK                   |      8.000ns|      7.897ns|      7.497ns|            0|            0|        97235|            0|
+|TS_GEL_RXCLK                   |      8.000ns|      7.759ns|      7.497ns|            0|            0|        97235|            0|
 | TS_XLXN_12257                 |      5.000ns|          N/A|          N/A|            0|            0|            0|            0|
 | TS_XLXN_12669                 |      5.333ns|      4.000ns|      4.998ns|            0|            0|            0|            0|
 |  TS_XLXN_12781                |      2.667ns|      2.499ns|          N/A|            0|            0|            0|            0|
@@ -190,7 +190,7 @@ Clock to Setup on destination clock GEL_RXCLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-GEL_RXCLK      |    7.897|         |         |         |
+GEL_RXCLK      |    7.759|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SECONDARY_CLK
@@ -198,7 +198,7 @@ Clock to Setup on destination clock SECONDARY_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SECONDARY_CLK  |    6.353|         |         |         |
+SECONDARY_CLK  |    5.824|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -207,21 +207,21 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 105038 paths, 0 nets, and 24626 connections
+Constraints cover 105038 paths, 0 nets, and 24538 connections
 
 Design statistics:
-   Minimum period:   9.220ns   (Maximum frequency: 108.460MHz)
-   Maximum path delay from/to any node:   3.121ns
+   Minimum period:   8.680ns   (Maximum frequency: 115.207MHz)
+   Maximum path delay from/to any node:   3.479ns
 
 
-Analysis completed Fri Sep 16 14:31:12 2016 
+Analysis completed Fri Sep 16 14:54:33 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 376 MB
+Peak Memory Usage: 375 MB
 
 
 
