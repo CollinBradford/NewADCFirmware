@@ -77,10 +77,12 @@ begin
 						out_en_sig <= '0';
 						samplesSinceTrig <= "0000000000000000";
 						triggered <= '0';
-					end if;
 					
-					if(out_en_sig = '1')then --We took another sample.  Increase the sample count
-						samplesSinceTrig <= samplesSinceTrig + 1;
+					else
+					
+						if(out_en_sig = '1')then --We took another sample.  Increase the sample count
+							samplesSinceTrig <= samplesSinceTrig + 1;
+						end if;
 					end if;
 					
 				end if;
@@ -92,6 +94,7 @@ begin
 			samplesSinceTrig <= (others => '0');
 			triggered <= '0';
 		end if;
+		
 	end process;
 end Behavioral;
 
