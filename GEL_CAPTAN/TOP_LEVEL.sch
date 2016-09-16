@@ -272,6 +272,7 @@
         <signal name="fadc_data_in(10)" />
         <signal name="fadc_data_in(15)" />
         <signal name="ethernet_fifo_din(15:0)" />
+        <signal name="XLXN_15485" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -684,7 +685,8 @@
             <line x2="800" y1="592" y2="592" x1="832" />
         </blockdef>
         <blockdef name="PeakFinder">
-            <timestamp>2016-8-26T20:37:20</timestamp>
+            <timestamp>2016-9-16T16:52:48</timestamp>
+            <line x2="528" y1="160" y2="160" x1="464" />
             <rect width="64" x="0" y="84" height="24" />
             <line x2="0" y1="96" y2="96" x1="64" />
             <line x2="0" y1="-288" y2="-288" x1="64" />
@@ -696,7 +698,7 @@
             <line x2="528" y1="-288" y2="-288" x1="464" />
             <rect width="64" x="464" y="-44" height="24" />
             <line x2="528" y1="-32" y2="-32" x1="464" />
-            <rect width="400" x="64" y="-320" height="512" />
+            <rect width="400" x="64" y="-320" height="576" />
         </blockdef>
         <blockdef name="data_send">
             <timestamp>2016-8-5T18:24:18</timestamp>
@@ -1809,6 +1811,7 @@
             <blockpin signalname="read_size(15:0)" name="user_samples_after_trig(15:0)" />
             <blockpin signalname="ethernet_fifo_in_en" name="out_enable" />
             <blockpin signalname="ethernet_fifo_din(15:0)" name="data_out(15:0)" />
+            <blockpin signalname="XLXN_15485" name="sig_compare_test" />
         </block>
         <block symbolname="MUX64_8" name="XLXI_6321">
             <blockpin signalname="psudo_data_attr(63:0)" name="in0(63:0)" />
@@ -1821,6 +1824,10 @@
             <blockpin signalname="XLXN_15484(63:0)" name="in7(63:0)" />
             <blockpin signalname="pusdo_data_select(2:0)" name="sel(2:0)" />
             <blockpin signalname="adc_data_in(63:0)" name="muxout(63:0)" />
+        </block>
+        <block symbolname="obuf" name="XLXI_6330">
+            <blockpin signalname="XLXN_15485" name="I" />
+            <blockpin name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -2559,6 +2566,10 @@
         </instance>
         <instance x="752" y="1184" name="XLXI_6321" orien="R0">
         </instance>
+        <branch name="XLXN_15485">
+            <wire x2="4160" y1="1216" y2="1216" x1="4128" />
+        </branch>
+        <instance x="4160" y="1248" name="XLXI_6330" orien="R0" />
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
         <instance x="1328" y="704" name="XLXI_5951" orien="R0" />

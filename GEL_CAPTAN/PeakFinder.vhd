@@ -29,7 +29,8 @@ entity PeakFinder is
 			  signal_threshold : in STD_LOGIC_VECTOR(7 downto 0);
 			  user_samples_after_trig : in std_logic_vector(15 downto 0);
            data_out : out  STD_LOGIC_VECTOR (15 downto 0);
-           out_enable : out  STD_LOGIC);
+           out_enable : out  STD_LOGIC;
+			  sig_compare_test : out STD_LOGIC);
 end PeakFinder;
 
 architecture Behavioral of PeakFinder is
@@ -57,6 +58,12 @@ begin
 		data_out(15 downto 8) <= data_in(7 downto 0);--I switched the signals because they weren't coming through right.  They were backwards.  
 		--there is probably a good explination for this somewhere, but for now I am just going to work around it with this.  
 		--data_out <= data_in;
+		
+		if(triggered = '1' and samplesSinceTrig >= userSamplesSinceTrig) then
+			sig_compare_test <= '1';
+		else
+			sig_compare_test <= '0';
+		end if;
 		
 		
 		if(reset = '0') then--reset is low

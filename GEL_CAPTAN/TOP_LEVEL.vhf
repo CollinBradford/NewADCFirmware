@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/16/2016 11:28:18
+-- /___/   /\     Timestamp : 09/16/2016 11:56:36
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -746,6 +746,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal XLXN_15481                : std_logic_vector (63 downto 0);
    signal XLXN_15483                : std_logic_vector (63 downto 0);
    signal XLXN_15484                : std_logic_vector (63 downto 0);
+   signal XLXN_15485                : std_logic;
    signal XLXI_5338_in3_openSignal  : std_logic_vector (63 downto 0);
    signal XLXI_5338_in4_openSignal  : std_logic_vector (63 downto 0);
    signal XLXI_5338_in5_openSignal  : std_logic_vector (63 downto 0);
@@ -1060,7 +1061,8 @@ architecture BEHAVIORAL of TOP_LEVEL is
              signal_threshold        : in    std_logic_vector (7 downto 0); 
              user_samples_after_trig : in    std_logic_vector (15 downto 0); 
              out_enable              : out   std_logic; 
-             data_out                : out   std_logic_vector (15 downto 0));
+             data_out                : out   std_logic_vector (15 downto 0); 
+             sig_compare_test        : out   std_logic);
    end component;
    
    component data_send
@@ -1877,7 +1879,8 @@ begin
                 signal_threshold(7 downto 0)=>threshold(7 downto 0),
                 user_samples_after_trig(15 downto 0)=>read_size(15 downto 0),
                 data_out(15 downto 0)=>ethernet_fifo_din(15 downto 0),
-                out_enable=>ethernet_fifo_in_en);
+                out_enable=>ethernet_fifo_in_en,
+                sig_compare_test=>XLXN_15485);
    
    XLXI_6251 : FD16RE_MXILINX_TOP_LEVEL
       port map (C=>MASTER_CLK,
@@ -1977,6 +1980,10 @@ begin
                 D(7 downto 0)=>rx_data(31 downto 24),
                 R=>reset,
                 Q(7 downto 0)=>data_send_delay_time(7 downto 0));
+   
+   XLXI_6330 : OBUF
+      port map (I=>XLXN_15485,
+                O=>open);
    
 end BEHAVIORAL;
 

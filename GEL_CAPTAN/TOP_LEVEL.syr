@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -349,13 +349,13 @@ Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
     Set user-defined property "FACTORY_JF =  F0F0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "PHASE_SHIFT =  0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <XLXI_3410> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1193: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1193: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1193: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1193: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1193: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1193: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1193: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1195: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1195: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1195: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1195: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1195: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1195: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1195: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_3432_0" for instance <XLXI_3432> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_4136> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_4136> in unit <TOP_LEVEL>.
@@ -630,8 +630,8 @@ WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 11
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6236> in unit <TOP_LEVEL>.
     Set user-defined property "SLEW =  SLOW" for instance <XLXI_6236> in unit <TOP_LEVEL>.
     Set user-defined property "HU_SET =  XLXI_6247_6" for instance <XLXI_6247> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1860: Unconnected output port 'valid' of component 'ethernet_FIFO'.
-WARNING:Xst:2211 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1860: Instantiating black box module <ethernet_FIFO>.
+WARNING:Xst:753 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1862: Unconnected output port 'valid' of component 'ethernet_FIFO'.
+WARNING:Xst:2211 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1862: Instantiating black box module <ethernet_FIFO>.
     Set user-defined property "HU_SET =  XLXI_6251_5" for instance <XLXI_6251> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6291> in unit <TOP_LEVEL>.
     Set user-defined property "DRIVE =  12" for instance <XLXI_6291> in unit <TOP_LEVEL>.
@@ -645,6 +645,10 @@ WARNING:Xst:2211 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1
     Set user-defined property "INIT =  0" for instance <XLXI_6324> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6325> in unit <TOP_LEVEL>.
     Set user-defined property "HU_SET =  XLXI_6329_11" for instance <XLXI_6329> in unit <TOP_LEVEL>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6330> in unit <TOP_LEVEL>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_6330> in unit <TOP_LEVEL>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6330> in unit <TOP_LEVEL>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_6330> in unit <TOP_LEVEL>.
 Entity <TOP_LEVEL> analyzed. Unit <TOP_LEVEL> generated.
 
 Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
@@ -820,8 +824,8 @@ Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHA
 Entity <FD8RE_MXILINX_TOP_LEVEL> analyzed. Unit <FD8RE_MXILINX_TOP_LEVEL> generated.
 
 Analyzing Entity <PeakFinder> in library <work> (Architecture <Behavioral>).
-WARNING:Xst:819 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/PeakFinder.vhd" line 52: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <data_in>, <reset>
+WARNING:Xst:819 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/PeakFinder.vhd" line 53: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <data_in>, <triggered>, <samplesSinceTrig>, <userSamplesSinceTrig>, <reset>
 Entity <PeakFinder> analyzed. Unit <PeakFinder> generated.
 
 Analyzing Entity <data_send> in library <work> (Architecture <Behavioral>).
@@ -891,16 +895,17 @@ Synthesizing Unit <PeakFinder>.
     Related source file is "D:/cbradford/NewADCFirmware/GEL_CAPTAN/PeakFinder.vhd".
     Register <triggered> equivalent to <out_en_sig> has been removed
     Found 1-bit register for signal <out_en_sig>.
-    Found 8-bit comparator greater for signal <out_en_sig$cmp_gt0000> created at line 66.
-    Found 8-bit comparator greater for signal <out_en_sig$cmp_gt0001> created at line 66.
-    Found 16-bit comparator greater for signal <out_en_sig$cmp_gt0002> created at line 71.
+    Found 8-bit comparator greater for signal <out_en_sig$cmp_gt0000> created at line 73.
+    Found 8-bit comparator greater for signal <out_en_sig$cmp_gt0001> created at line 73.
+    Found 16-bit comparator greater for signal <out_en_sig$cmp_gt0002> created at line 78.
     Found 16-bit register for signal <samplesSinceTrig>.
-    Found 16-bit adder for signal <samplesSinceTrig$addsub0000> created at line 81.
-    Found 16-bit comparator lessequal for signal <samplesSinceTrig$cmp_le0000> created at line 71.
+    Found 16-bit adder for signal <samplesSinceTrig$addsub0000> created at line 88.
+    Found 16-bit comparator lessequal for signal <samplesSinceTrig$cmp_le0000> created at line 78.
+    Found 16-bit comparator greatequal for signal <sig_compare_test$cmp_ge0000> created at line 62.
     Summary:
 	inferred  17 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
-	inferred   4 Comparator(s).
+	inferred   5 Comparator(s).
 Unit <PeakFinder> synthesized.
 
 
@@ -1748,9 +1753,10 @@ Macro Statistics
  48-bit register                                       : 2
  64-bit register                                       : 4
  8-bit register                                        : 59
-# Comparators                                          : 26
+# Comparators                                          : 27
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
+ 16-bit comparator greatequal                          : 1
  16-bit comparator greater                             : 1
  16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 3
@@ -2182,9 +2188,10 @@ Macro Statistics
  8-bit up accumulator                                  : 1
 # Registers                                            : 1995
  Flip-Flops                                            : 1995
-# Comparators                                          : 26
+# Comparators                                          : 27
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
+ 16-bit comparator greatequal                          : 1
  16-bit comparator greater                             : 1
  16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 3
@@ -2622,7 +2629,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 5746
+# BELS                             : 5779
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2634,7 +2641,7 @@ Cell Usage :
 #      GND                         : 28
 #      INV                         : 180
 #      LUT1                        : 229
-#      LUT2                        : 468
+#      LUT2                        : 485
 #      LUT2_D                      : 35
 #      LUT2_L                      : 11
 #      LUT3                        : 1100
@@ -2643,7 +2650,7 @@ Cell Usage :
 #      LUT4                        : 1821
 #      LUT4_D                      : 75
 #      LUT4_L                      : 288
-#      MUXCY                       : 786
+#      MUXCY                       : 802
 #      MUXF5                       : 136
 #      MUXF6                       : 40
 #      OR2                         : 3
@@ -2671,12 +2678,12 @@ Cell Usage :
 #      SRLC16E                     : 16
 # Clock Buffers                    : 13
 #      BUFG                        : 13
-# IO Buffers                       : 61
+# IO Buffers                       : 62
 #      IBUF                        : 10
 #      IBUFDS                      : 20
 #      IBUFG                       : 2
 #      IBUFGDS                     : 1
-#      OBUF                        : 28
+#      OBUF                        : 29
 # DCM_ADVs                         : 5
 #      DCM_ADV                     : 5
 # Others                           : 2
@@ -2689,10 +2696,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3050  out of  10752    28%  
+ Number of Slices:                     3059  out of  10752    28%  
  Number of Slice Flip Flops:           2281  out of  21504    10%  
- Number of 4 input LUTs:               4704  out of  21504    21%  
-    Number used as logic:              4296
+ Number of 4 input LUTs:               4721  out of  21504    21%  
+    Number used as logic:              4313
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          81
@@ -2988,12 +2995,12 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 63.00 secs
-Total CPU time to Xst completion: 63.80 secs
+Total REAL time to Xst completion: 64.00 secs
+Total CPU time to Xst completion: 63.94 secs
  
 --> 
 
-Total memory usage is 662024 kilobytes
+Total memory usage is 718920 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  274 (   0 filtered)
