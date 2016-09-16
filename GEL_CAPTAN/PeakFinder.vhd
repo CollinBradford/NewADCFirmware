@@ -59,7 +59,7 @@ begin
 		--there is probably a good explination for this somewhere, but for now I am just going to work around it with this.  
 		--data_out <= data_in;
 		
-		if(triggered = '1' and samplesSinceTrig >= userSamplesSinceTrig) then
+		if(samplesSinceTrig >= userSamplesSinceTrig) then
 			sig_compare_test <= '1';
 		else
 			sig_compare_test <= '0';
@@ -77,7 +77,7 @@ begin
 				else
 					if(triggered = '1' and samplesSinceTrig > userSamplesSinceTrig)then--Our sample count matches the user request.  Turn off.  
 						out_en_sig <= '0';
-						samplesSinceTrig <= (others => '0');
+						samplesSinceTrig <= "0000000000000000";
 						triggered <= '0';
 					else--I added this code because for some reason everything was turning off every other clock.  
 						triggered <= '1';

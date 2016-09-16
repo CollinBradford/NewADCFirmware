@@ -156,7 +156,7 @@
 </msg>
 
 <msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/NewADCFirmware/GEL_CAPTAN/PeakFinder.vhd</arg>&quot; line <arg fmt="%d" index="2">53</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;data_in&gt;, &lt;triggered&gt;, &lt;samplesSinceTrig&gt;, &lt;userSamplesSinceTrig&gt;, &lt;reset&gt;</arg>
+<arg fmt="%s" index="3">&lt;data_in&gt;, &lt;samplesSinceTrig&gt;, &lt;userSamplesSinceTrig&gt;, &lt;reset&gt;</arg>
 </msg>
 
 <msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">D:/cbradford/NewADCFirmware/GEL_CAPTAN/data_send.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
