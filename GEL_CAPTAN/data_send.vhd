@@ -69,7 +69,15 @@ begin
 		end if;
 	end process;
 	
-	b_data <= din;
+	--b_data <= din;
+	b_data(7 downto 0) <= din(63 downto 56);
+	b_data(15 downto 8) <= din(55 downto 48);
+	b_data(23 downto 16) <= din(47 downto 40);
+	b_data(31 downto 24) <= din(39 downto 32);
+	b_data(39 downto 32) <= din(31 downto 24);
+	b_data(47 downto 40) <= din(23 downto 16);
+	b_data(55 downto 48) <= din(15 downto 8);
+	b_data(63 downto 56) <= din(7 downto 0);
 	
 end Behavioral;
 
