@@ -396,3 +396,5 @@ INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance
 DRC detected 0 errors and 117 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
 Creating bit map...
+Saving bit stream in "top_level.bit".
+Bitstream generation is complete.
