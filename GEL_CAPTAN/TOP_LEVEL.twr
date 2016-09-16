@@ -59,7 +59,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  3346 paths analyzed, 651 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   9.085ns.
+ Minimum period is   9.785ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -69,7 +69,7 @@ For more information, see From:To (Multicycle) Analysis in the Timing Closure Us
 
  18 paths analyzed, 18 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   3.232ns.
+ Maximum delay is   3.418ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -100,9 +100,9 @@ Timing constraint: PATH "TS_D_TO_J_path" TIG;
 Timing constraint: TS_GEL_RXCLK = PERIOD TIMEGRP "GEL_RXCLK" 8 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 97251 paths analyzed, 11053 endpoints analyzed, 0 failing endpoints
+ 97235 paths analyzed, 11052 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   7.916ns.
+ Minimum period is   7.942ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -110,9 +110,9 @@ Timing constraint: TS_SECONDARY_CLK = PERIOD TIMEGRP "SECONDARY_CLK" 200 ns
 HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 1262 paths analyzed, 361 endpoints analyzed, 0 failing endpoints
+ 1262 paths analyzed, 360 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   6.563ns.
+ Minimum period is   7.639ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -172,7 +172,7 @@ Derived Constraints for TS_GEL_RXCLK
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_GEL_RXCLK                   |      8.000ns|      7.916ns|      7.497ns|            0|            0|        97251|            0|
+|TS_GEL_RXCLK                   |      8.000ns|      7.942ns|      7.497ns|            0|            0|        97235|            0|
 | TS_XLXN_12257                 |      5.000ns|          N/A|          N/A|            0|            0|            0|            0|
 | TS_XLXN_12669                 |      5.333ns|      4.000ns|      4.998ns|            0|            0|            0|            0|
 |  TS_XLXN_12781                |      2.667ns|      2.499ns|          N/A|            0|            0|            0|            0|
@@ -190,7 +190,7 @@ Clock to Setup on destination clock GEL_RXCLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-GEL_RXCLK      |    7.916|         |         |         |
+GEL_RXCLK      |    7.942|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SECONDARY_CLK
@@ -198,7 +198,7 @@ Clock to Setup on destination clock SECONDARY_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SECONDARY_CLK  |    6.563|         |         |         |
+SECONDARY_CLK  |    7.639|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -207,21 +207,21 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 102638 paths, 0 nets, and 24619 connections
+Constraints cover 102622 paths, 0 nets, and 24730 connections
 
 Design statistics:
-   Minimum period:   9.085ns   (Maximum frequency: 110.072MHz)
-   Maximum path delay from/to any node:   3.232ns
+   Minimum period:   9.785ns   (Maximum frequency: 102.197MHz)
+   Maximum path delay from/to any node:   3.418ns
 
 
-Analysis completed Fri Sep 16 13:23:03 2016 
+Analysis completed Fri Sep 16 14:12:44 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 375 MB
+Peak Memory Usage: 376 MB
 
 
 

@@ -38,7 +38,7 @@ architecture Behavioral of PeakFinder is
 	signal sample_two : unsigned(7 downto 0);
 	
 	signal threshold : unsigned( 7 downto 0 );
-	signal samplesSinceTrig : unsigned(15 downto 0);
+	signal samplesSinceTrig : unsigned(15 downto 0) := "0000000000000000";
 	signal userSamplesSinceTrig : unsigned(15 downto 0);
 	signal out_en_sig : std_logic;
 	signal triggered : std_logic;--sets when we have a trigger and we are reading.  
@@ -59,36 +59,34 @@ begin
 		--there is probably a good explination for this somewhere, but for now I am just going to work around it with this.  
 		--data_out <= data_in;
 		
-		if(samplesSinceTrig >= userSamplesSinceTrig) then
-			sig_compare_test <= '1';
-		else
-			sig_compare_test <= '0';
-		end if;
-		
 		
 		if(reset = '0') then--reset is low
+		
 			if(rising_edge(clk)) then--rising edge of clk and reset is low
+				
 				if(triggered = '0') then --If we aren't currently triggered, test for trigger.  
 				
 					if (sample_one > threshold or sample_two > threshold) then--controlls start of trigger.  
 						out_en_sig <= '1';
 						triggered <= '1';
 					end if;
-				else
-					if(triggered = '1' and samplesSinceTrig > userSamplesSinceTrig)then--Our sample count matches the user request.  Turn off.  
+					
+				else --during a trigger
+				
+					if(samplesSinceTrig > userSamplesSinceTrig)then--Our sample count matches the user request.  disable trigger.  
 						out_en_sig <= '0';
 						samplesSinceTrig <= "0000000000000000";
 						triggered <= '0';
-					else--I added this code because for some reason everything was turning off every other clock.  
-						triggered <= '1';
-						out_en_sig <= '1';
 					end if;
 					
 					if(out_en_sig = '1')then --We took another sample.  Increase the sample count
 						samplesSinceTrig <= samplesSinceTrig + 1;
 					end if;
+					
 				end if;
+				
 			end if;
+			
 		else--reset is high
 			out_en_sig <= '0';
 			samplesSinceTrig <= (others => '0');

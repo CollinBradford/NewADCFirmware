@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -180,27 +180,19 @@ Compiling vhdl file "D:/cbradford/NewADCFirmware/GEL_CAPTAN/ipcore_dir/ethernet_
 Architecture ethernet_fifo_a of Entity ethernet_fifo is up to date.
 Compiling vhdl file "D:/cbradford/NewADCFirmware/GEL_CAPTAN/PeakFinder.vhd" in Library work.
 Entity <peakfinder> compiled.
-Entity <PeakFinder> (Architecture <Behavioral>) compiled.
+Entity <peakfinder> (Architecture <behavioral>) compiled.
 Compiling vhdl file "D:/cbradford/NewADCFirmware/GEL_CAPTAN/data_send.vhd" in Library work.
-Entity <data_send> compiled.
-Entity <data_send> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity data_send is up to date.
 Compiling vhdl file "D:/cbradford/NewADCFirmware/GEL_CAPTAN/psudoData.vhd" in Library work.
-Entity <psudoData> compiled.
-Entity <psudoData> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity psudodata is up to date.
 Compiling vhdl file "D:/cbradford/NewADCFirmware/GEL_CAPTAN/psudo_data_allOne.vhd" in Library work.
-Entity <psudo_data_allOne> compiled.
-Entity <psudo_data_allOne> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity psudo_data_allone is up to date.
 Compiling vhdl file "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
-Entity <FD8RE_MXILINX_TOP_LEVEL> compiled.
-Entity <FD8RE_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
-Entity <FD16RE_MXILINX_TOP_LEVEL> compiled.
-Entity <FD16RE_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
-Entity <M2_1_MXILINX_TOP_LEVEL> compiled.
-Entity <M2_1_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
-Entity <D4_16E_MXILINX_TOP_LEVEL> compiled.
-Entity <D4_16E_MXILINX_TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
-Entity <TOP_LEVEL> compiled.
-Entity <TOP_LEVEL> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity fd8re_mxilinx_top_level is up to date.
+Architecture behavioral of Entity fd16re_mxilinx_top_level is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_top_level is up to date.
+Architecture behavioral of Entity d4_16e_mxilinx_top_level is up to date.
+Architecture behavioral of Entity top_level is up to date.
 Compiling verilog file "../oei/crc_gen.v" in library work
 Compiling verilog file "../oei/crc_chk.v" in library work
 Module <crc_gen> compiled
@@ -212,17 +204,17 @@ Analysis of file <"TOP_LEVEL.prj"> succeeded.
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <TOP_LEVEL> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <VERSION_BLK> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <MUX64_8> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <buffer_10bit> in library <work> (architecture <behavioral>).
 
@@ -232,15 +224,15 @@ Analyzing hierarchy for entity <ethernet_interface> in library <work> (architect
 
 Analyzing hierarchy for entity <Pulser> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <PeakFinder> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <PeakFinder> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <data_send> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <data_send> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <psudoData> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <psudoData> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <psudo_data_allOne> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <psudo_data_allOne> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <ethernet_controller_wrapper> in library <work> (architecture <arch>).
 
@@ -296,7 +288,7 @@ Analyzing hierarchy for entity <user_addrs_mux> in library <work> (architecture 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
     Set user-defined property "IOBDELAY_TYPE =  VARIABLE" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "IOBDELAY_VALUE =  0" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "CLKDV_DIVIDE =  2.0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
@@ -617,7 +609,7 @@ WARNING:Xst:2211 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf" line 1
     Set user-defined property "SLEW =  SLOW" for instance <XLXI_6330> in unit <TOP_LEVEL>.
 Entity <TOP_LEVEL> analyzed. Unit <TOP_LEVEL> generated.
 
-Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
 Entity <D4_16E_MXILINX_TOP_LEVEL> analyzed. Unit <D4_16E_MXILINX_TOP_LEVEL> generated.
 
 Analyzing Entity <VERSION_BLK> in library <work> (Architecture <behavioral>).
@@ -626,10 +618,10 @@ Entity <VERSION_BLK> analyzed. Unit <VERSION_BLK> generated.
 Analyzing Entity <MUX64_8> in library <work> (Architecture <behavioral>).
 Entity <MUX64_8> analyzed. Unit <MUX64_8> generated.
 
-Analyzing Entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <M2_1_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
 Entity <M2_1_MXILINX_TOP_LEVEL> analyzed. Unit <M2_1_MXILINX_TOP_LEVEL> generated.
 
-Analyzing Entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <FD16RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD16RE_MXILINX_TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD16RE_MXILINX_TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD16RE_MXILINX_TOP_LEVEL>.
@@ -778,7 +770,7 @@ Entity <reset_mgr> analyzed. Unit <reset_mgr> generated.
 Analyzing Entity <Pulser> in library <work> (Architecture <behavioral>).
 Entity <Pulser> analyzed. Unit <Pulser> generated.
 
-Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD8RE_MXILINX_TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD8RE_MXILINX_TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD8RE_MXILINX_TOP_LEVEL>.
@@ -789,23 +781,23 @@ Analyzing Entity <FD8RE_MXILINX_TOP_LEVEL> in library <work> (Architecture <BEHA
     Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD8RE_MXILINX_TOP_LEVEL>.
 Entity <FD8RE_MXILINX_TOP_LEVEL> analyzed. Unit <FD8RE_MXILINX_TOP_LEVEL> generated.
 
-Analyzing Entity <PeakFinder> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <PeakFinder> in library <work> (Architecture <behavioral>).
 WARNING:Xst:819 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/PeakFinder.vhd" line 53: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <data_in>, <samplesSinceTrig>, <userSamplesSinceTrig>, <reset>
+   <data_in>, <reset>
 Entity <PeakFinder> analyzed. Unit <PeakFinder> generated.
 
-Analyzing Entity <data_send> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <data_send> in library <work> (Architecture <behavioral>).
 WARNING:Xst:819 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/data_send.vhd" line 54: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>, <empty>
 Entity <data_send> analyzed. Unit <data_send> generated.
 
-Analyzing Entity <psudoData> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <psudoData> in library <work> (Architecture <behavioral>).
 WARNING:Xst:819 - "D:/cbradford/NewADCFirmware/GEL_CAPTAN/psudoData.vhd" line 40: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <counter>, <counter_two>, <reset>
 INFO:Xst:2679 - Register <delayCounter> in unit <psudoData> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
 Entity <psudoData> analyzed. Unit <psudoData> generated.
 
-Analyzing Entity <psudo_data_allOne> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <psudo_data_allOne> in library <work> (Architecture <behavioral>).
 Entity <psudo_data_allOne> analyzed. Unit <psudo_data_allOne> generated.
 
 
@@ -859,19 +851,18 @@ Unit <Pulser> synthesized.
 
 Synthesizing Unit <PeakFinder>.
     Related source file is "D:/cbradford/NewADCFirmware/GEL_CAPTAN/PeakFinder.vhd".
+WARNING:Xst:1305 - Output <sig_compare_test> is never assigned. Tied to value 0.
     Register <triggered> equivalent to <out_en_sig> has been removed
     Found 1-bit register for signal <out_en_sig>.
-    Found 8-bit comparator greater for signal <out_en_sig$cmp_gt0000> created at line 73.
-    Found 8-bit comparator greater for signal <out_en_sig$cmp_gt0001> created at line 73.
-    Found 16-bit comparator greater for signal <out_en_sig$cmp_gt0002> created at line 78.
+    Found 8-bit comparator lessequal for signal <out_en_sig$cmp_le0000> created at line 69.
+    Found 8-bit comparator lessequal for signal <out_en_sig$cmp_le0001> created at line 69.
     Found 16-bit register for signal <samplesSinceTrig>.
-    Found 16-bit adder for signal <samplesSinceTrig$addsub0000> created at line 88.
-    Found 16-bit comparator lessequal for signal <samplesSinceTrig$cmp_le0000> created at line 78.
-    Found 16-bit comparator greatequal for signal <sig_compare_test$cmp_ge0000> created at line 62.
+    Found 16-bit adder for signal <samplesSinceTrig$addsub0000> created at line 83.
+    Found 16-bit comparator lessequal for signal <samplesSinceTrig$cmp_le0000> created at line 76.
     Summary:
 	inferred  17 D-type flip-flop(s).
 	inferred   1 Adder/Subtractor(s).
-	inferred   5 Comparator(s).
+	inferred   3 Comparator(s).
 Unit <PeakFinder> synthesized.
 
 
@@ -1719,11 +1710,9 @@ Macro Statistics
  48-bit register                                       : 2
  64-bit register                                       : 4
  8-bit register                                        : 59
-# Comparators                                          : 27
+# Comparators                                          : 25
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
- 16-bit comparator greatequal                          : 1
- 16-bit comparator greater                             : 1
  16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 3
  17-bit comparator greater                             : 1
@@ -1739,7 +1728,8 @@ Macro Statistics
  6-bit comparator lessequal                            : 1
  8-bit comparator equal                                : 1
  8-bit comparator greatequal                           : 1
- 8-bit comparator greater                              : 3
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 2
  9-bit comparator greatequal                           : 1
 # Multiplexers                                         : 8
  32-bit 4-to-1 multiplexer                             : 4
@@ -2154,11 +2144,9 @@ Macro Statistics
  8-bit up accumulator                                  : 1
 # Registers                                            : 1995
  Flip-Flops                                            : 1995
-# Comparators                                          : 27
+# Comparators                                          : 25
  11-bit comparator less                                : 2
  12-bit comparator less                                : 1
- 16-bit comparator greatequal                          : 1
- 16-bit comparator greater                             : 1
  16-bit comparator less                                : 1
  16-bit comparator lessequal                           : 3
  17-bit comparator greater                             : 1
@@ -2174,7 +2162,8 @@ Macro Statistics
  6-bit comparator lessequal                            : 1
  8-bit comparator equal                                : 1
  8-bit comparator greatequal                           : 1
- 8-bit comparator greater                              : 3
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 2
  9-bit comparator greatequal                           : 1
 # Multiplexers                                         : 8
  32-bit 4-to-1 multiplexer                             : 4
@@ -2595,7 +2584,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 5778
+# BELS                             : 5746
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2605,18 +2594,18 @@ Cell Usage :
 #      AND5B4                      : 1
 #      BUF                         : 5
 #      GND                         : 28
-#      INV                         : 180
+#      INV                         : 181
 #      LUT1                        : 229
-#      LUT2                        : 484
+#      LUT2                        : 467
 #      LUT2_D                      : 35
 #      LUT2_L                      : 11
-#      LUT3                        : 1100
+#      LUT3                        : 1099
 #      LUT3_D                      : 27
 #      LUT3_L                      : 62
-#      LUT4                        : 1821
+#      LUT4                        : 1822
 #      LUT4_D                      : 75
 #      LUT4_L                      : 288
-#      MUXCY                       : 802
+#      MUXCY                       : 786
 #      MUXF5                       : 136
 #      MUXF6                       : 40
 #      OR2                         : 3
@@ -2662,10 +2651,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3058  out of  10752    28%  
+ Number of Slices:                     3050  out of  10752    28%  
  Number of Slice Flip Flops:           2281  out of  21504    10%  
- Number of 4 input LUTs:               4720  out of  21504    21%  
-    Number used as logic:              4312
+ Number of 4 input LUTs:               4704  out of  21504    21%  
+    Number used as logic:              4296
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          81
@@ -2737,36 +2726,44 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
-  Clock period: 3.840ns (frequency: 260.444MHz)
-  Total number of paths / destination ports: 91 / 29
+  Clock period: 4.178ns (frequency: 239.329MHz)
+  Total number of paths / destination ports: 91 / 28
 -------------------------------------------------------------------------
-Offset:              3.840ns (Levels of Logic = 11)
-  Source:            XLXI_6247/I_Q0 (FF)
+Offset:              4.178ns (Levels of Logic = 19)
+  Source:            XLXI_6251/I_Q0 (FF)
   Destination:       XLXI_6249/out_en_sig (FF)
   Source Clock:      GEL_RXCLK rising
   Destination Clock: SECONDARY_CLK rising
 
-  Data Path: XLXI_6247/I_Q0 to XLXI_6249/out_en_sig
+  Data Path: XLXI_6251/I_Q0 to XLXI_6249/out_en_sig
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             2   0.360   0.602  I_Q0 (Q<0>)
-     end scope: 'XLXI_6247'
+     FDRE:C->Q             1   0.360   0.585  I_Q0 (Q<0>)
+     end scope: 'XLXI_6251'
      begin scope: 'XLXI_6249'
-     LUT2:I0->O            1   0.195   0.000  Mcompar_out_en_sig_cmp_gt0000_lut<0> (Mcompar_out_en_sig_cmp_gt0000_lut<0>)
-     MUXCY:S->O            1   0.366   0.000  Mcompar_out_en_sig_cmp_gt0000_cy<0> (Mcompar_out_en_sig_cmp_gt0000_cy<0>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0000_cy<1> (Mcompar_out_en_sig_cmp_gt0000_cy<1>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0000_cy<2> (Mcompar_out_en_sig_cmp_gt0000_cy<2>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0000_cy<3> (Mcompar_out_en_sig_cmp_gt0000_cy<3>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0000_cy<4> (Mcompar_out_en_sig_cmp_gt0000_cy<4>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0000_cy<5> (Mcompar_out_en_sig_cmp_gt0000_cy<5>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0000_cy<6> (Mcompar_out_en_sig_cmp_gt0000_cy<6>)
-     MUXCY:CI->O           1   0.369   0.585  Mcompar_out_en_sig_cmp_gt0000_cy<7> (Mcompar_out_en_sig_cmp_gt0000_cy<7>)
-     LUT3:I1->O            1   0.195   0.360  out_en_sig_not00011 (out_en_sig_not0001)
+     LUT2:I0->O            1   0.195   0.000  Mcompar_samplesSinceTrig_cmp_le0000_lut<0> (Mcompar_samplesSinceTrig_cmp_le0000_lut<0>)
+     MUXCY:S->O            1   0.366   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<0> (Mcompar_samplesSinceTrig_cmp_le0000_cy<0>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<1> (Mcompar_samplesSinceTrig_cmp_le0000_cy<1>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<2> (Mcompar_samplesSinceTrig_cmp_le0000_cy<2>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<3> (Mcompar_samplesSinceTrig_cmp_le0000_cy<3>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<4> (Mcompar_samplesSinceTrig_cmp_le0000_cy<4>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<5> (Mcompar_samplesSinceTrig_cmp_le0000_cy<5>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<6> (Mcompar_samplesSinceTrig_cmp_le0000_cy<6>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<7> (Mcompar_samplesSinceTrig_cmp_le0000_cy<7>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<8> (Mcompar_samplesSinceTrig_cmp_le0000_cy<8>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<9> (Mcompar_samplesSinceTrig_cmp_le0000_cy<9>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<10> (Mcompar_samplesSinceTrig_cmp_le0000_cy<10>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<11> (Mcompar_samplesSinceTrig_cmp_le0000_cy<11>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<12> (Mcompar_samplesSinceTrig_cmp_le0000_cy<12>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<13> (Mcompar_samplesSinceTrig_cmp_le0000_cy<13>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_samplesSinceTrig_cmp_le0000_cy<14> (Mcompar_samplesSinceTrig_cmp_le0000_cy<14>)
+     MUXCY:CI->O           1   0.369   0.585  Mcompar_samplesSinceTrig_cmp_le0000_cy<15> (samplesSinceTrig_cmp_le0000)
+     LUT4:I2->O            1   0.195   0.360  out_en_sig_not00011 (out_en_sig_not0001)
      FDRE:CE                   0.540          out_en_sig
     ----------------------------------------
-    Total                      3.840ns (2.292ns logic, 1.547ns route)
-                                       (59.7% logic, 40.3% route)
+    Total                      4.178ns (2.648ns logic, 1.530ns route)
+                                       (63.4% logic, 36.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
@@ -2851,16 +2848,16 @@ Delay:               5.564ns (Levels of Logic = 14)
      INV:I->O              2   0.358   0.540  counter_two<0>1_INV_0 (data_out<8>)
      end scope: 'XLXI_6292'
      begin scope: 'XLXI_6249'
-     LUT2:I1->O            1   0.195   0.000  Mcompar_out_en_sig_cmp_gt0001_lut<0> (Mcompar_out_en_sig_cmp_gt0001_lut<0>)
-     MUXCY:S->O            1   0.366   0.000  Mcompar_out_en_sig_cmp_gt0001_cy<0> (Mcompar_out_en_sig_cmp_gt0001_cy<0>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0001_cy<1> (Mcompar_out_en_sig_cmp_gt0001_cy<1>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0001_cy<2> (Mcompar_out_en_sig_cmp_gt0001_cy<2>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0001_cy<3> (Mcompar_out_en_sig_cmp_gt0001_cy<3>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0001_cy<4> (Mcompar_out_en_sig_cmp_gt0001_cy<4>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0001_cy<5> (Mcompar_out_en_sig_cmp_gt0001_cy<5>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_gt0001_cy<6> (Mcompar_out_en_sig_cmp_gt0001_cy<6>)
-     MUXCY:CI->O           1   0.369   0.523  Mcompar_out_en_sig_cmp_gt0001_cy<7> (Mcompar_out_en_sig_cmp_gt0001_cy<7>)
-     LUT3:I2->O            1   0.195   0.360  out_en_sig_not00011 (out_en_sig_not0001)
+     LUT2:I1->O            1   0.195   0.000  Mcompar_out_en_sig_cmp_le0001_lut<0> (Mcompar_out_en_sig_cmp_le0001_lut<0>)
+     MUXCY:S->O            1   0.366   0.000  Mcompar_out_en_sig_cmp_le0001_cy<0> (Mcompar_out_en_sig_cmp_le0001_cy<0>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_le0001_cy<1> (Mcompar_out_en_sig_cmp_le0001_cy<1>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_le0001_cy<2> (Mcompar_out_en_sig_cmp_le0001_cy<2>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_le0001_cy<3> (Mcompar_out_en_sig_cmp_le0001_cy<3>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_le0001_cy<4> (Mcompar_out_en_sig_cmp_le0001_cy<4>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_le0001_cy<5> (Mcompar_out_en_sig_cmp_le0001_cy<5>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_out_en_sig_cmp_le0001_cy<6> (Mcompar_out_en_sig_cmp_le0001_cy<6>)
+     MUXCY:CI->O           1   0.369   0.523  Mcompar_out_en_sig_cmp_le0001_cy<7> (out_en_sig_cmp_le0001)
+     LUT4:I3->O            1   0.195   0.360  out_en_sig_not00011 (out_en_sig_not0001)
      FDRE:CE                   0.540          out_en_sig
     ----------------------------------------
     Total                      5.564ns (2.651ns logic, 2.914ns route)
@@ -2962,13 +2959,13 @@ Delay:               5.299ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 64.00 secs
-Total CPU time to Xst completion: 63.52 secs
+Total CPU time to Xst completion: 63.38 secs
  
 --> 
 
-Total memory usage is 662216 kilobytes
+Total memory usage is 634376 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  274 (   0 filtered)
+Number of warnings :  275 (   0 filtered)
 Number of infos    :  129 (   0 filtered)
 
