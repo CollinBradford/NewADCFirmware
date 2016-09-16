@@ -78,6 +78,8 @@ begin
 	b_data(47 downto 40) <= din(23 downto 16);
 	b_data(55 downto 48) <= din(15 downto 8);
 	b_data(63 downto 56) <= din(7 downto 0);
+	--This makes the data come out right for some reason.  Better to organize it here than on the coputer where it will take 
+	--valuable clocks.  
 	
 end Behavioral;
 

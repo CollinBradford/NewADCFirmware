@@ -41,7 +41,7 @@ architecture Behavioral of PeakFinder is
 	signal samplesSinceTrig : unsigned(15 downto 0) := "0000000000000000";
 	signal userSamplesSinceTrig : unsigned(15 downto 0);
 	signal out_en_sig : std_logic;
-	signal triggered : std_logic;--sets when we have a trigger and we are reading.  
+	signal triggered : std_logic;--Means that a signal is over the threshold.  Sync with clk.
 begin
 	sample_one <= unsigned(data_in(7 downto 0));
 	sample_two <= unsigned(data_in(15 downto 8));
@@ -64,16 +64,14 @@ begin
 		
 			if(rising_edge(clk)) then--rising edge of clk and reset is low
 				
-				if(triggered = '0') then --If we aren't currently triggered, test for trigger.  
-				
 					if (sample_one > threshold or sample_two > threshold) then--controlls start of trigger.  
 						out_en_sig <= '1';
 						triggered <= '1';
+					else
+						triggered <= '0';
 					end if;
-					
-				else --during a trigger
 				
-					if(samplesSinceTrig > userSamplesSinceTrig)then--Our sample count matches the user request.  disable trigger.  
+					if(samplesSinceTrig > userSamplesSinceTrig and triggered = '0')then--Our sample count matches the user request.  disable trigger.  
 						out_en_sig <= '0';
 						samplesSinceTrig <= "0000000000000000";
 						triggered <= '0';
@@ -83,9 +81,8 @@ begin
 						if(out_en_sig = '1')then --We took another sample.  Increase the sample count
 							samplesSinceTrig <= samplesSinceTrig + 1;
 						end if;
+						
 					end if;
-					
-				end if;
 				
 			end if;
 			
