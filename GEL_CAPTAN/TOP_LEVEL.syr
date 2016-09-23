@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -1691,7 +1691,6 @@ WARNING:Xst:653 - Signal <fadc_debug<51:34>> is used but never assigned. This so
 WARNING:Xst:653 - Signal <fadc_debug<23:22>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
 WARNING:Xst:653 - Signal <fadc_debug<11:10>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
 WARNING:Xst:1780 - Signal <fadc_data_in<31:16>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <fadc_data_in<15:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <fadc_ctrl_data<13:12>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <b_end_packet> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <adc_data_in> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -2142,6 +2141,8 @@ WARNING:Xst:1290 - Hierarchical block <genDbgCRC[0].crcGenDebug> is unconnected 
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6231> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_6292> is unconnected in block <TOP_LEVEL>.
+   It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6294> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6321> is unconnected in block <TOP_LEVEL>.
@@ -2338,6 +2339,8 @@ WARNING:Xst:1290 - Hierarchical block <XLXI_6294> is unconnected in block <TOP_L
 WARNING:Xst:1290 - Hierarchical block <XLXI_6321> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6231> is unconnected in block <TOP_LEVEL>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_6292> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
 WARNING:Xst:2677 - Node <tmp_rd_sig> of sequential type is unconnected in block <ec_wrapper>.
 WARNING:Xst:2677 - Node <tmp_cnt_0> of sequential type is unconnected in block <ec_wrapper>.
@@ -2583,8 +2586,8 @@ Unit <ICMPPingShiftRegBlock> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1645
- Flip-Flops                                            : 1645
+# Registers                                            : 1638
+ Flip-Flops                                            : 1638
 # Shift Registers                                      : 8
  44-bit shift register                                 : 8
 
@@ -2615,7 +2618,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 5758
+# BELS                             : 5740
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2624,18 +2627,18 @@ Cell Usage :
 #      AND5B3                      : 4
 #      AND5B4                      : 1
 #      BUF                         : 5
-#      GND                         : 28
-#      INV                         : 179
+#      GND                         : 27
+#      INV                         : 177
 #      LUT1                        : 214
-#      LUT2                        : 472
+#      LUT2                        : 463
 #      LUT2_D                      : 33
-#      LUT2_L                      : 23
-#      LUT3                        : 1129
+#      LUT2_L                      : 24
+#      LUT3                        : 1126
 #      LUT3_D                      : 25
 #      LUT3_L                      : 66
-#      LUT4                        : 1816
-#      LUT4_D                      : 75
-#      LUT4_L                      : 273
+#      LUT4                        : 1799
+#      LUT4_D                      : 77
+#      LUT4_L                      : 284
 #      MUXCY                       : 788
 #      MUXF5                       : 137
 #      MUXF6                       : 40
@@ -2643,14 +2646,14 @@ Cell Usage :
 #      VCC                         : 24
 #      XOR2                        : 2
 #      XORCY                       : 401
-# FlipFlops/Latches                : 2275
+# FlipFlops/Latches                : 2268
 #      FD                          : 58
 #      FDC                         : 128
 #      FDCE                        : 144
 #      FDE                         : 467
 #      FDP                         : 30
 #      FDPE                        : 11
-#      FDR                         : 151
+#      FDR                         : 144
 #      FDRE                        : 1154
 #      FDRS                        : 19
 #      FDRSE                       : 1
@@ -2682,10 +2685,10 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3045  out of  10752    28%  
- Number of Slice Flip Flops:           2275  out of  21504    10%  
- Number of 4 input LUTs:               4713  out of  21504    21%  
-    Number used as logic:              4305
+ Number of Slices:                     3037  out of  10752    28%  
+ Number of Slice Flip Flops:           2268  out of  21504    10%  
+ Number of 4 input LUTs:               4696  out of  21504    21%  
+    Number used as logic:              4288
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          81
@@ -2717,7 +2720,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 GEL_RXCLK                          | IBUFG+BUFG             | 2376  |
-BUSBHS_02DP_04S                    | XLXI_6199:CLK0         | 110   |
+BUSBHS_02DP_04S                    | XLXI_6199:CLK0         | 103   |
 SECONDARY_CLK                      | IBUFG                  | 18    |
 -----------------------------------+------------------------+-------+
 
@@ -2747,9 +2750,9 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 7.885ns (Maximum Frequency: 126.818MHz)
+   Minimum period: 7.827ns (Maximum Frequency: 127.768MHz)
    Minimum input arrival time before clock: 6.278ns
-   Maximum output required time after clock: 6.530ns
+   Maximum output required time after clock: 6.471ns
    Maximum combinational path delay: 5.299ns
 
 Timing Detail:
@@ -2836,47 +2839,10 @@ Offset:              0.742ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 5.586ns (frequency: 179.031MHz)
-  Total number of paths / destination ports: 49 / 35
--------------------------------------------------------------------------
-Offset:              5.586ns (Levels of Logic = 14)
-  Source:            XLXI_6227/reset_mgr/reset (FF)
-  Destination:       XLXI_6249/out_en_sig (FF)
-  Source Clock:      SECONDARY_CLK rising
-  Destination Clock: BUSBHS_02DP_04S rising
-
-  Data Path: XLXI_6227/reset_mgr/reset to XLXI_6249/out_en_sig
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDS:C->Q            177   0.360   1.495  reset (reset)
-     end scope: 'reset_mgr'
-     end scope: 'XLXI_6227'
-     begin scope: 'XLXI_6292'
-     INV:I->O              2   0.358   0.540  counter_two<0>1_INV_0 (data_out<8>)
-     end scope: 'XLXI_6292'
-     begin scope: 'XLXI_6249'
-     LUT2:I1->O            1   0.195   0.000  Mcompar_triggered_cmp_gt0001_lut<0> (Mcompar_triggered_cmp_gt0001_lut<0>)
-     MUXCY:S->O            1   0.366   0.000  Mcompar_triggered_cmp_gt0001_cy<0> (Mcompar_triggered_cmp_gt0001_cy<0>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_triggered_cmp_gt0001_cy<1> (Mcompar_triggered_cmp_gt0001_cy<1>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_triggered_cmp_gt0001_cy<2> (Mcompar_triggered_cmp_gt0001_cy<2>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_triggered_cmp_gt0001_cy<3> (Mcompar_triggered_cmp_gt0001_cy<3>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_triggered_cmp_gt0001_cy<4> (Mcompar_triggered_cmp_gt0001_cy<4>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_triggered_cmp_gt0001_cy<5> (Mcompar_triggered_cmp_gt0001_cy<5>)
-     MUXCY:CI->O           1   0.045   0.000  Mcompar_triggered_cmp_gt0001_cy<6> (Mcompar_triggered_cmp_gt0001_cy<6>)
-     MUXCY:CI->O           2   0.370   0.540  Mcompar_triggered_cmp_gt0001_cy<7> (Mcompar_triggered_cmp_gt0001_cy<7>)
-     LUT4:I3->O            1   0.195   0.360  out_en_sig_not00011 (out_en_sig_not0001)
-     FDRE:CE                   0.540          out_en_sig
-    ----------------------------------------
-    Total                      5.586ns (2.651ns logic, 2.935ns route)
-                                       (47.5% logic, 52.5% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
-  Clock period: 7.885ns (frequency: 126.818MHz)
+  Clock period: 7.827ns (frequency: 127.768MHz)
   Total number of paths / destination ports: 2002 / 1724
 -------------------------------------------------------------------------
-Offset:              7.885ns (Levels of Logic = 5)
+Offset:              7.827ns (Levels of Logic = 5)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/rpntr/count_7 (FF)
   Source Clock:      SECONDARY_CLK rising
@@ -2886,7 +2852,7 @@ Offset:              7.885ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            177   0.360   1.495  reset (reset)
+     FDS:C->Q            162   0.360   1.436  reset (reset)
      end scope: 'reset_mgr'
      BUF:I->O            487   0.358   2.870  reset_mgr_reset_1 (reset_mgr_reset_1)
      begin scope: 'data_manager_blk'
@@ -2896,8 +2862,32 @@ Offset:              7.885ns (Levels of Logic = 5)
      LUT3:I0->O           16   0.195   0.593  U0/grf.rf/gl0.wr/wpntr/count_not00011 (U0/grf.rf/gl0.wr/wpntr/count_not0001)
      FDCE:CE                   0.540          U0/grf.rf/gl0.wr/wpntr/count_7
     ----------------------------------------
-    Total                      7.885ns (1.648ns logic, 6.237ns route)
-                                       (20.9% logic, 79.1% route)
+    Total                      7.827ns (1.648ns logic, 6.179ns route)
+                                       (21.1% logic, 78.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SECONDARY_CLK'
+  Clock period: 2.858ns (frequency: 349.880MHz)
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              2.858ns (Levels of Logic = 2)
+  Source:            XLXI_6227/reset_mgr/reset (FF)
+  Destination:       XLXI_6249/out_en_sig (FF)
+  Source Clock:      SECONDARY_CLK rising
+  Destination Clock: BUSBHS_02DP_04S rising
+
+  Data Path: XLXI_6227/reset_mgr/reset to XLXI_6249/out_en_sig
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q            162   0.360   1.436  reset (reset)
+     end scope: 'reset_mgr'
+     end scope: 'XLXI_6227'
+     begin scope: 'XLXI_6249'
+     FDRE:R                    1.062          out_en_sig
+    ----------------------------------------
+    Total                      2.858ns (1.422ns logic, 1.436ns route)
+                                       (49.8% logic, 50.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
@@ -2963,7 +2953,7 @@ Delay:               7.298ns (Levels of Logic = 14)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'BUSBHS_02DP_04S'
   Clock period: 4.994ns (frequency: 200.240MHz)
-  Total number of paths / destination ports: 3494 / 192
+  Total number of paths / destination ports: 3424 / 171
 -------------------------------------------------------------------------
 Delay:               4.994ns (Levels of Logic = 34)
   Source:            XLXI_6249/samplesSinceTrig_0 (FF)
@@ -3042,6 +3032,36 @@ Delay:               4.543ns (Levels of Logic = 5)
                                        (57.0% logic, 43.0% route)
 
 =========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BUSBHS_02DP_04S'
+  Total number of paths / destination ports: 96 / 18
+-------------------------------------------------------------------------
+Offset:              4.556ns (Levels of Logic = 12)
+  Source:            BUSB_07DP_14S (PAD)
+  Destination:       XLXI_6249/out_en_sig (FF)
+  Destination Clock: BUSBHS_02DP_04S rising
+
+  Data Path: BUSB_07DP_14S to XLXI_6249/out_en_sig
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFDS:I->O           2   0.965   0.540  XLXI_6156 (fadc_data_in<0>)
+     begin scope: 'XLXI_6249'
+     LUT2:I1->O            1   0.195   0.000  Mcompar_triggered_cmp_gt0000_lut<0> (Mcompar_triggered_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.366   0.000  Mcompar_triggered_cmp_gt0000_cy<0> (Mcompar_triggered_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_triggered_cmp_gt0000_cy<1> (Mcompar_triggered_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_triggered_cmp_gt0000_cy<2> (Mcompar_triggered_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_triggered_cmp_gt0000_cy<3> (Mcompar_triggered_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_triggered_cmp_gt0000_cy<4> (Mcompar_triggered_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_triggered_cmp_gt0000_cy<5> (Mcompar_triggered_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.045   0.000  Mcompar_triggered_cmp_gt0000_cy<6> (Mcompar_triggered_cmp_gt0000_cy<6>)
+     MUXCY:CI->O           2   0.370   0.758  Mcompar_triggered_cmp_gt0000_cy<7> (Mcompar_triggered_cmp_gt0000_cy<7>)
+     LUT4:I0->O            1   0.195   0.360  out_en_sig_not00011 (out_en_sig_not0001)
+     FDRE:CE                   0.540          out_en_sig
+    ----------------------------------------
+    Total                      4.556ns (2.898ns logic, 1.658ns route)
+                                       (63.6% logic, 36.4% route)
+
+=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'GEL_RXCLK'
   Total number of paths / destination ports: 921 / 350
 -------------------------------------------------------------------------
@@ -3097,7 +3117,7 @@ Offset:              4.694ns (Levels of Logic = 2)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'SECONDARY_CLK'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              6.530ns (Levels of Logic = 3)
+Offset:              6.471ns (Levels of Logic = 3)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       BUSC_21DN_43S (PAD)
   Source Clock:      SECONDARY_CLK rising
@@ -3106,14 +3126,14 @@ Offset:              6.530ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            177   0.360   1.495  reset (reset)
+     FDS:C->Q            162   0.360   1.436  reset (reset)
      end scope: 'reset_mgr'
      end scope: 'XLXI_6227'
      INV:I->O              1   0.358   0.360  XLXI_6230 (XLXN_15150)
      OBUF:I->O                 3.957          XLXI_6229 (BUSC_21DN_43S)
     ----------------------------------------
-    Total                      6.530ns (4.675ns logic, 1.855ns route)
-                                       (71.6% logic, 28.4% route)
+    Total                      6.471ns (4.675ns logic, 1.796ns route)
+                                       (72.2% logic, 27.8% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -3136,14 +3156,14 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 62.00 secs
-Total CPU time to Xst completion: 62.32 secs
+Total REAL time to Xst completion: 63.00 secs
+Total CPU time to Xst completion: 62.37 secs
  
 --> 
 
-Total memory usage is 634556 kilobytes
+Total memory usage is 661116 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  272 (   0 filtered)
+Number of warnings :  273 (   0 filtered)
 Number of infos    :  129 (   0 filtered)
 

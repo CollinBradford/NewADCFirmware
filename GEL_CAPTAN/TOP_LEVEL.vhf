@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/23/2016 11:01:25
+-- /___/   /\     Timestamp : 09/23/2016 14:38:19
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -1874,7 +1874,7 @@ begin
    
    XLXI_6249 : PeakFinder
       port map (clk=>FADC_DCLK,
-                data_in(15 downto 0)=>psudo_data_sawtooth(15 downto 0),
+                data_in(15 downto 0)=>fadc_data_in(15 downto 0),
                 reset=>reset,
                 signal_threshold(7 downto 0)=>threshold(7 downto 0),
                 user_samples_after_trig(15 downto 0)=>read_size(15 downto 0),

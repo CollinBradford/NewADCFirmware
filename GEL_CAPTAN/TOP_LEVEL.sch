@@ -273,6 +273,7 @@
         <signal name="fadc_data_in(15)" />
         <signal name="ethernet_fifo_din(15:0)" />
         <signal name="XLXN_15485" />
+        <signal name="fadc_data_in(15:0)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -1806,7 +1807,7 @@
         <block symbolname="PeakFinder" name="XLXI_6249">
             <blockpin signalname="FADC_DCLK" name="clk" />
             <blockpin signalname="reset" name="reset" />
-            <blockpin signalname="psudo_data_sawtooth(15:0)" name="data_in(15:0)" />
+            <blockpin signalname="fadc_data_in(15:0)" name="data_in(15:0)" />
             <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
             <blockpin signalname="read_size(15:0)" name="user_samples_after_trig(15:0)" />
             <blockpin signalname="ethernet_fifo_in_en" name="out_enable" />
@@ -2552,7 +2553,7 @@
             <wire x2="4176" y1="1024" y2="1024" x1="4128" />
             <wire x2="4192" y1="1024" y2="1024" x1="4176" />
         </branch>
-        <branch name="psudo_data_sawtooth(15:0)">
+        <branch name="fadc_data_in(15:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3552" y="960" type="branch" />
             <wire x2="3568" y1="960" y2="960" x1="3552" />
             <wire x2="3600" y1="960" y2="960" x1="3568" />
