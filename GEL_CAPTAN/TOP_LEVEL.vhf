@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/16/2016 15:40:35
+-- /___/   /\     Timestamp : 09/23/2016 11:01:25
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -1864,7 +1864,7 @@ begin
                 rd_clk=>MASTER_CLK,
                 rd_en=>b_data_we,
                 rst=>reset,
-                wr_clk=>clock_5mhz,
+                wr_clk=>FADC_DCLK,
                 wr_en=>ethernet_fifo_in_en,
                 dout(63 downto 0)=>ethernet_data_out(63 downto 0),
                 empty=>ethernet_fifo_empty,
@@ -1873,7 +1873,7 @@ begin
                 valid=>open);
    
    XLXI_6249 : PeakFinder
-      port map (clk=>clock_5mhz,
+      port map (clk=>FADC_DCLK,
                 data_in(15 downto 0)=>psudo_data_sawtooth(15 downto 0),
                 reset=>reset,
                 signal_threshold(7 downto 0)=>threshold(7 downto 0),
@@ -1904,7 +1904,7 @@ begin
                 O=>open);
    
    XLXI_6292 : psudoData
-      port map (clk=>clock_5mhz,
+      port map (clk=>FADC_DCLK,
                 delay(7 downto 0)=>psudo_delay(7 downto 0),
                 reset=>reset,
                 data_out(15 downto 0)=>psudo_data_sawtooth(15 downto 0));

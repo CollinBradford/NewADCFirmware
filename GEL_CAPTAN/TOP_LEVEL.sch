@@ -1728,7 +1728,7 @@
         </block>
         <block symbolname="ethernet_FIFO" name="XLXI_6248">
             <blockpin signalname="reset" name="rst" />
-            <blockpin signalname="clock_5mhz" name="wr_clk" />
+            <blockpin signalname="FADC_DCLK" name="wr_clk" />
             <blockpin signalname="ethernet_fifo_din(15:0)" name="din(15:0)" />
             <blockpin signalname="ethernet_fifo_in_en" name="wr_en" />
             <blockpin signalname="XLXN_15364" name="full" />
@@ -1777,7 +1777,7 @@
             <blockpin signalname="psudo_data_aio(63:0)" name="value_out(63:0)" />
         </block>
         <block symbolname="psudoData" name="XLXI_6292">
-            <blockpin signalname="clock_5mhz" name="clk" />
+            <blockpin signalname="FADC_DCLK" name="clk" />
             <blockpin signalname="reset" name="reset" />
             <blockpin signalname="psudo_delay(7:0)" name="delay(7:0)" />
             <blockpin signalname="psudo_data_sawtooth(15:0)" name="data_out(15:0)" />
@@ -1804,7 +1804,7 @@
             <blockpin signalname="data_send_delay_time(7:0)" name="Q(7:0)" />
         </block>
         <block symbolname="PeakFinder" name="XLXI_6249">
-            <blockpin signalname="clock_5mhz" name="clk" />
+            <blockpin signalname="FADC_DCLK" name="clk" />
             <blockpin signalname="reset" name="reset" />
             <blockpin signalname="psudo_data_sawtooth(15:0)" name="data_in(15:0)" />
             <blockpin signalname="threshold(7:0)" name="signal_threshold(7:0)" />
@@ -2234,7 +2234,7 @@
             <wire x2="6368" y1="496" y2="496" x1="6352" />
             <wire x2="6400" y1="496" y2="496" x1="6368" />
         </branch>
-        <branch name="clock_5mhz">
+        <branch name="FADC_DCLK">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4944" y="480" type="branch" />
             <wire x2="4992" y1="480" y2="480" x1="4944" />
         </branch>
@@ -2390,7 +2390,7 @@
         </branch>
         <instance x="688" y="2496" name="XLXI_6292" orien="R0">
         </instance>
-        <branch name="clock_5mhz">
+        <branch name="FADC_DCLK">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="2336" type="branch" />
             <wire x2="688" y1="2336" y2="2336" x1="672" />
         </branch>
@@ -2537,7 +2537,7 @@
             <wire x2="3568" y1="1152" y2="1152" x1="3552" />
             <wire x2="3600" y1="1152" y2="1152" x1="3568" />
         </branch>
-        <branch name="clock_5mhz">
+        <branch name="FADC_DCLK">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3552" y="768" type="branch" />
             <wire x2="3568" y1="768" y2="768" x1="3552" />
             <wire x2="3600" y1="768" y2="768" x1="3568" />

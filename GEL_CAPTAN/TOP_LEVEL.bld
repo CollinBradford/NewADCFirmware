@@ -522,6 +522,20 @@ INFO:ConstraintSystem:178 - TNM 'GEL_RXCLK', used in period specification
    CLKFX: <TIMESPEC TS_XLXN_12669 = PERIOD "XLXN_12669" TS_GEL_RXCLK / 1.5 HIGH
    50%>
 
+INFO:ConstraintSystem:178 - TNM 'BUSBHS_02DN_05S', used in period specification
+   'TS_BUSBHS_02DN_05S', was traced into DCM_ADV instance XLXI_6199. The
+   following new TNM groups and period specifications were generated at the
+   DCM_ADV output(s): 
+   CLK0: <TIMESPEC TS_XLXN_15087 = PERIOD "XLXN_15087" TS_BUSBHS_02DN_05S HIGH
+   50%>
+
+INFO:ConstraintSystem:178 - TNM 'BUSBHS_02DP_04S', used in period specification
+   'TS_BUSBHS_02DP_04S', was traced into DCM_ADV instance XLXI_6199. The
+   following new TNM groups and period specifications were generated at the
+   DCM_ADV output(s): 
+   CLK0: <TIMESPEC TS_XLXN_15087_0 = PERIOD "XLXN_15087_0" TS_BUSBHS_02DP_04S
+   HIGH 50%>
+
 INFO:ConstraintSystem:178 - TNM 'XLXN_12669', used in period specification
    'TS_XLXN_12669', was traced into DCM_ADV instance XLXI_5953. The following
    new TNM groups and period specifications were generated at the DCM_ADV
@@ -626,10 +640,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:  71
 
-Total memory usage is 270712 kilobytes
+Total memory usage is 265064 kilobytes
 
 Writing NGD file "TOP_LEVEL.ngd" ...
-Total REAL time to NGDBUILD completion:  13 sec
+Total REAL time to NGDBUILD completion:  10 sec
 Total CPU time to NGDBUILD completion:   10 sec
 
 Writing NGDBUILD log file "TOP_LEVEL.bld"...

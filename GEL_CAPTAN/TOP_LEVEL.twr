@@ -59,7 +59,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  3346 paths analyzed, 651 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   9.307ns.
+ Minimum period is   9.182ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -69,7 +69,7 @@ For more information, see From:To (Multicycle) Analysis in the Timing Closure Us
 
  18 paths analyzed, 18 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   3.434ns.
+ Maximum delay is   3.360ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -102,7 +102,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  101844 paths analyzed, 11034 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   7.839ns.
+ Minimum period is   7.880ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -110,9 +110,9 @@ Timing constraint: TS_SECONDARY_CLK = PERIOD TIMEGRP "SECONDARY_CLK" 200 ns
 HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 4158 paths analyzed, 422 endpoints analyzed, 0 failing endpoints
+ 615 paths analyzed, 71 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   6.389ns.
+ Minimum period is   6.140ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -155,6 +155,26 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 --------------------------------------------------------------------------------
 
 ================================================================================
+Timing constraint: TS_XLXN_15087 = PERIOD TIMEGRP "XLXN_15087" 
+TS_BUSBHS_02DN_05S HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   2.500ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_XLXN_15087_0 = PERIOD TIMEGRP "XLXN_15087_0" 
+TS_BUSBHS_02DP_04S HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 3494 paths analyzed, 325 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.998ns.
+--------------------------------------------------------------------------------
+
+================================================================================
 Timing constraint: TS_XLXN_12781 = PERIOD TIMEGRP "XLXN_12781" TS_XLXN_12669 / 
 2 HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
@@ -172,10 +192,30 @@ Derived Constraints for TS_GEL_RXCLK
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_GEL_RXCLK                   |      8.000ns|      7.839ns|      7.497ns|            0|            0|       101844|            0|
+|TS_GEL_RXCLK                   |      8.000ns|      7.880ns|      7.497ns|            0|            0|       101844|            0|
 | TS_XLXN_12257                 |      5.000ns|          N/A|          N/A|            0|            0|            0|            0|
 | TS_XLXN_12669                 |      5.333ns|      4.000ns|      4.998ns|            0|            0|            0|            0|
 |  TS_XLXN_12781                |      2.667ns|      2.499ns|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_BUSBHS_02DN_05S
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_BUSBHS_02DN_05S             |      5.000ns|      3.600ns|      2.500ns|            0|            0|            0|            0|
+| TS_XLXN_15087                 |      5.000ns|      2.500ns|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+Derived Constraints for TS_BUSBHS_02DP_04S
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_BUSBHS_02DP_04S             |      5.000ns|      3.600ns|      4.998ns|            0|            0|            0|         3494|
+| TS_XLXN_15087_0               |      5.000ns|      4.998ns|          N/A|            0|            0|         3494|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -185,12 +225,30 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Clock to Setup on destination clock BUSBHS_02DN_05S
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+BUSBHS_02DN_05S|    4.998|         |         |         |
+BUSBHS_02DP_04S|    4.998|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock BUSBHS_02DP_04S
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+BUSBHS_02DN_05S|    4.998|         |         |         |
+BUSBHS_02DP_04S|    4.998|         |         |         |
+---------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock GEL_RXCLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-GEL_RXCLK      |    7.839|         |         |         |
+GEL_RXCLK      |    7.880|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SECONDARY_CLK
@@ -198,7 +256,7 @@ Clock to Setup on destination clock SECONDARY_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SECONDARY_CLK  |    6.389|         |         |         |
+SECONDARY_CLK  |    6.140|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -207,21 +265,21 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 110127 paths, 0 nets, and 24772 connections
+Constraints cover 110078 paths, 0 nets, and 24729 connections
 
 Design statistics:
-   Minimum period:   9.307ns   (Maximum frequency: 107.446MHz)
-   Maximum path delay from/to any node:   3.434ns
+   Minimum period:   9.182ns   (Maximum frequency: 108.909MHz)
+   Maximum path delay from/to any node:   3.360ns
 
 
-Analysis completed Fri Sep 16 16:49:48 2016 
+Analysis completed Fri Sep 23 11:09:00 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 376 MB
+Peak Memory Usage: 377 MB
 
 
 
