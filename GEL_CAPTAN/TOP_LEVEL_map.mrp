@@ -9,7 +9,7 @@ Target Device  : xc4vlx25
 Target Package : ff668
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Fri Sep 30 14:11:35 2016
+Mapped Date    : Fri Sep 30 14:28:38 2016
 
 Design Summary
 --------------
@@ -47,7 +47,7 @@ Logic Distribution:
   Number of RPM macros:           12
 Average Fanout of Non-Clock Nets:                3.42
 
-Peak Memory Usage:  611 MB
+Peak Memory Usage:  613 MB
 Total REAL time to MAP completion:  55 secs 
 Total CPU time to MAP completion:   53 secs 
 

@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <DeviceUsageSummary rev="2">
-<DesignStatistics TimeStamp="Fri Sep 30 14:14:08 2016"><group name="NetStatistics">
+<DesignStatistics TimeStamp="Fri Sep 30 14:31:12 2016"><group name="NetStatistics">
 <item name="NumNets_Active" rev="2">
 <attrib name="value" value="7289"/></item>
 <item name="NumNets_Gnd" rev="2">
@@ -144,7 +144,7 @@
 <attrib name="value" value="5"/></item>
 </group>
 </DesignStatistics>
-<DeviceUsage TimeStamp="Fri Sep 30 14:14:08 2016"><group name="SiteSummary">
+<DeviceUsage TimeStamp="Fri Sep 30 14:31:12 2016"><group name="SiteSummary">
 <item name="BSCAN" rev="2">
 <attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
 <item name="BSCAN_BSCAN" rev="2">
@@ -259,7 +259,7 @@
 <attrib name="total" value="1000000"/><attrib name="used" value="10"/></item>
 </group>
 </DeviceUsage>
-<ReportConfigData TimeStamp="Fri Sep 30 14:14:08 2016"><group name="SLICEL_CYMUXF">
+<ReportConfigData TimeStamp="Fri Sep 30 14:31:12 2016"><group name="SLICEL_CYMUXF">
 <item name="0" rev="2">
 <attrib name="0" value="438"/><attrib name="0_INV" value="0"/></item>
 <item name="1" rev="2">
@@ -696,7 +696,7 @@
 <attrib name="9" value="23"/><attrib name="36" value="9"/></item>
 </group>
 </ReportConfigData>
-<ReportPinData TimeStamp="Fri Sep 30 14:14:08 2016"><group name="SLICEL_CYMUXF">
+<ReportPinData TimeStamp="Fri Sep 30 14:31:12 2016"><group name="SLICEL_CYMUXF">
 <item name="0" rev="2">
 <attrib name="value" value="438"/></item>
 <item name="1" rev="2">
