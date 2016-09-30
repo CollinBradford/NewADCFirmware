@@ -1,4 +1,4 @@
-V3 194
+V3 197
 FL D:/cbradford/NewADCFirmware/GEL_CAPTAN/buffer_10bit.vhd 2016/07/20.15:53:14 P.20131013
 EN work/buffer_10bit 1474659563 \
       FL D:/cbradford/NewADCFirmware/GEL_CAPTAN/buffer_10bit.vhd \
@@ -7,6 +7,14 @@ EN work/buffer_10bit 1474659563 \
 AR work/buffer_10bit/Behavioral 1474659564 \
       FL D:/cbradford/NewADCFirmware/GEL_CAPTAN/buffer_10bit.vhd \
       EN work/buffer_10bit 1474659563
+FL D:/cbradford/NewADCFirmware/GEL_CAPTAN/ClockLatchSignals.vhd 2016/09/30.10:32:23 P.20131013
+EN work/ClockLatchSignals 1475249551 \
+      FL D:/cbradford/NewADCFirmware/GEL_CAPTAN/ClockLatchSignals.vhd \
+      PB ieee/NUMERIC_STD 1381692181 PB ieee/std_logic_1164 1381692176 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ClockLatchSignals/Behavioral 1475249552 \
+      FL D:/cbradford/NewADCFirmware/GEL_CAPTAN/ClockLatchSignals.vhd \
+      EN work/ClockLatchSignals 1475249551
 FL D:/cbradford/NewADCFirmware/GEL_CAPTAN/data_send.vhd 2016/09/16.16:46:00 P.20131013
 EN work/data_send 1474659575 \
       FL D:/cbradford/NewADCFirmware/GEL_CAPTAN/data_send.vhd \

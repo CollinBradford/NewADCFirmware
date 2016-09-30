@@ -29,6 +29,7 @@ AR tx_seq_ctl arch D:/cbradford/NewADCFirmware/oei/tx_seq_ctl.vhd sub00/vhpl39 1
 AR ethernet_fifo ethernet_fifo_a D:/cbradford/NewADCFirmware/GEL_CAPTAN/ipcore_dir/ethernet_FIFO.vhd sub00/vhpl67 1474659572
 AR icmp_ping_shift_reg arch D:/cbradford/NewADCFirmware/oei/icmp_ping_shift_reg.vhd sub00/vhpl21 1474659526
 AR fd16re_mxilinx_top_level behavioral D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl79 1474659584
+AR clocklatchsignals behavioral D:/cbradford/NewADCFirmware/GEL_CAPTAN/ClockLatchSignals.vhd sub00/vhpl87 1475249552
 AR decipherer decipherer_arch D:/cbradford/NewADCFirmware/oei/decipherer.vhd sub00/vhpl15 1474659520
 EN ram_comm_dec NULL D:/cbradford/NewADCFirmware/oei/ram_comm_dec.vhd sub00/vhpl36 1474659541
 EN tx_seq_ctl NULL D:/cbradford/NewADCFirmware/oei/tx_seq_ctl.vhd sub00/vhpl38 1474659543
@@ -86,3 +87,4 @@ EN mux64_8 NULL D:/cbradford/NewADCFirmware/GEL_CAPTAN/MUX64_8.vhd sub00/vhpl56 
 EN top_level NULL D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL.vhf sub00/vhpl84 1474659589
 EN decipherer NULL D:/cbradford/NewADCFirmware/oei/decipherer.vhd sub00/vhpl14 1474659519
 EN addr_fifo NULL D:/cbradford/NewADCFirmware/ipcore_dir/ADDR_FIFO.vhd sub00/vhpl30 1474659535
+EN clocklatchsignals NULL D:/cbradford/NewADCFirmware/GEL_CAPTAN/ClockLatchSignals.vhd sub00/vhpl86 1475249551
