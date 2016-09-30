@@ -1,6 +1,0 @@
-[Inputs]
-clk
-rst
-[Outputs]
-=signals[7:0]=
-[BiDir]

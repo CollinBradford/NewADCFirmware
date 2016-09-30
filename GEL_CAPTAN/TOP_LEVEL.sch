@@ -274,6 +274,15 @@
         <signal name="ethernet_fifo_din(15:0)" />
         <signal name="XLXN_15485" />
         <signal name="fadc_data_in(15:0)" />
+        <signal name="clk_latch_signals(7:0)" />
+        <signal name="XLXN_15498" />
+        <signal name="clk_latch_signals(0)" />
+        <signal name="XLXN_15503" />
+        <signal name="clk_latch_signals(1)" />
+        <signal name="clk_latch_signals(2)" />
+        <signal name="XLXN_15514" />
+        <signal name="clk_latch_signals(3)" />
+        <signal name="XLXN_15517" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -734,6 +743,25 @@
             <rect width="64" x="384" y="-44" height="24" />
             <line x2="448" y1="-32" y2="-32" x1="384" />
         </blockdef>
+        <blockdef name="ClockLatchSignals">
+            <timestamp>2016-9-30T16:49:33</timestamp>
+            <rect width="256" x="64" y="-128" height="128" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="320" y="-108" height="24" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+        </blockdef>
+        <blockdef name="or2">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="192" y1="-96" y2="-96" x1="256" />
+            <arc ex="192" ey="-96" sx="112" sy="-48" r="88" cx="116" cy="-136" />
+            <arc ex="48" ey="-144" sx="48" sy="-48" r="56" cx="16" cy="-96" />
+            <line x2="48" y1="-144" y2="-144" x1="112" />
+            <arc ex="112" ey="-144" sx="192" sy="-96" r="88" cx="116" cy="-56" />
+            <line x2="48" y1="-48" y2="-48" x1="112" />
+        </blockdef>
         <block symbolname="ibuf" name="XLXI_4248">
             <blockpin signalname="BUSC_16DP_32S" name="I" />
             <blockpin signalname="GMII_RX_ER_0_sig" name="O" />
@@ -900,7 +928,7 @@
             </attr>
             <blockpin signalname="MASTER_CLK" name="CLKIN" />
             <blockpin signalname="XLXN_12661" name="CLKFB" />
-            <blockpin signalname="dcm_reset_0" name="RST" />
+            <blockpin signalname="XLXN_15498" name="RST" />
             <blockpin signalname="XLXN_12660" name="CLK0" />
             <blockpin name="CLK90" />
             <blockpin name="CLK180" />
@@ -944,7 +972,7 @@
             </attr>
             <blockpin signalname="CLK_187_5" name="CLKIN" />
             <blockpin signalname="XLXN_12672" name="CLKFB" />
-            <blockpin signalname="dcm_reset_1" name="RST" />
+            <blockpin signalname="XLXN_15503" name="RST" />
             <blockpin signalname="XLXN_12671" name="CLK0" />
             <blockpin name="CLK90" />
             <blockpin name="CLK180" />
@@ -1034,7 +1062,7 @@
             </attr>
             <blockpin signalname="CLK_MUX" name="CLKIN" />
             <blockpin signalname="XLXN_12923" name="CLKFB" />
-            <blockpin signalname="dcm_reset_2" name="RST" />
+            <blockpin signalname="XLXN_15514" name="RST" />
             <blockpin signalname="XLXN_12697" name="CLK0" />
             <blockpin signalname="XLXN_12783" name="CLK90" />
             <blockpin signalname="XLXN_12930" name="CLK180" />
@@ -1593,7 +1621,7 @@
             </attr>
             <blockpin signalname="XLXN_15130" name="CLKIN" />
             <blockpin signalname="FADC_DCLK" name="CLKFB" />
-            <blockpin signalname="fadc_clk_in_reset" name="RST" />
+            <blockpin signalname="XLXN_15517" name="RST" />
             <blockpin signalname="XLXN_15087" name="CLK0" />
             <blockpin name="CLK90" />
             <blockpin signalname="XLXN_15092" name="CLK180" />
@@ -1829,6 +1857,31 @@
         <block symbolname="obuf" name="XLXI_6330">
             <blockpin signalname="XLXN_15485" name="I" />
             <blockpin name="O" />
+        </block>
+        <block symbolname="ClockLatchSignals" name="XLXI_6331">
+            <blockpin signalname="clock_5mhz" name="clk" />
+            <blockpin signalname="reset" name="rst" />
+            <blockpin signalname="clk_latch_signals(7:0)" name="signals(7:0)" />
+        </block>
+        <block symbolname="or2" name="XLXI_6332">
+            <blockpin signalname="dcm_reset_0" name="I0" />
+            <blockpin signalname="clk_latch_signals(0)" name="I1" />
+            <blockpin signalname="XLXN_15498" name="O" />
+        </block>
+        <block symbolname="or2" name="XLXI_6333">
+            <blockpin signalname="clk_latch_signals(1)" name="I0" />
+            <blockpin signalname="dcm_reset_1" name="I1" />
+            <blockpin signalname="XLXN_15503" name="O" />
+        </block>
+        <block symbolname="or2" name="XLXI_6335">
+            <blockpin signalname="fadc_clk_in_reset" name="I0" />
+            <blockpin signalname="clk_latch_signals(3)" name="I1" />
+            <blockpin signalname="XLXN_15517" name="O" />
+        </block>
+        <block symbolname="or2" name="XLXI_6334">
+            <blockpin signalname="dcm_reset_2" name="I0" />
+            <blockpin signalname="clk_latch_signals(2)" name="I1" />
+            <blockpin signalname="XLXN_15514" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -2602,10 +2655,6 @@
             <wire x2="3152" y1="464" y2="464" x1="3136" />
         </branch>
         <instance x="3152" y="496" name="XLXI_5950" orien="R0" />
-        <branch name="dcm_reset_0">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="2656" y="752" type="branch" />
-            <wire x2="2752" y1="752" y2="752" x1="2656" />
-        </branch>
         <branch name="XLXN_12669">
             <wire x2="3152" y1="688" y2="688" x1="3136" />
         </branch>
@@ -2666,10 +2715,6 @@
             <wire x2="4320" y1="816" y2="816" x1="4224" />
             <wire x2="4432" y1="816" y2="816" x1="4320" />
         </branch>
-        <branch name="dcm_reset_1">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3504" y="976" type="branch" />
-            <wire x2="3584" y1="976" y2="976" x1="3504" />
-        </branch>
         <instance x="1328" y="1488" name="XLXI_5967" orien="R0" />
         <branch name="MASTER_CLK">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="1168" y="1360" type="branch" />
@@ -2710,10 +2755,6 @@
             <wire x2="5056" y1="2016" y2="2016" x1="4352" />
             <wire x2="5056" y1="1904" y2="2016" x1="5056" />
             <wire x2="5264" y1="1904" y2="1904" x1="5056" />
-        </branch>
-        <branch name="dcm_reset_2">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3888" y="2272" type="branch" />
-            <wire x2="3968" y1="2272" y2="2272" x1="3888" />
         </branch>
         <branch name="CLK_375">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3632" y="1520" type="branch" />
@@ -2856,10 +2897,6 @@
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5168" y="3024" type="branch" />
             <wire x2="5168" y1="3024" y2="3024" x1="5072" />
         </branch>
-        <branch name="fadc_clk_in_reset">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4608" y="3024" type="branch" />
-            <wire x2="4688" y1="3024" y2="3024" x1="4608" />
-        </branch>
         <branch name="XLXN_15092">
             <wire x2="5104" y1="2800" y2="2800" x1="5072" />
         </branch>
@@ -2953,6 +2990,82 @@
             <wire x2="3392" y1="352" y2="352" x1="2688" />
             <wire x2="3392" y1="352" y2="464" x1="3392" />
             <wire x2="3392" y1="464" y2="464" x1="3376" />
+        </branch>
+        <instance x="1360" y="2448" name="XLXI_6331" orien="R0">
+        </instance>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1328" y="2416" type="branch" />
+            <wire x2="1360" y1="2416" y2="2416" x1="1328" />
+        </branch>
+        <branch name="clock_5mhz">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1328" y="2352" type="branch" />
+            <wire x2="1360" y1="2352" y2="2352" x1="1328" />
+        </branch>
+        <branch name="clk_latch_signals(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1792" y="2352" type="branch" />
+            <wire x2="1792" y1="2352" y2="2352" x1="1744" />
+        </branch>
+        <rect width="3396" x="2464" y="284" height="2204" />
+        <text style="fontsize:45;fontname:Arial" x="2756" y="2000">Output Clock to the ADC</text>
+        <text style="fontsize:20;fontname:Arial" x="2832" y="2040">These DCMs need to be latched first.  </text>
+        <text style="fontsize:20;fontname:Arial" x="2592" y="3512">These DCMs need to be latched second.  </text>
+        <text style="fontsize:45;fontname:Arial" x="2556" y="3464">Input Clock from ADC</text>
+        <rect width="3396" x="2464" y="2528" height="1316" />
+        <branch name="dcm_reset_0">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="2592" y="1136" type="branch" />
+            <wire x2="2688" y1="1136" y2="1136" x1="2592" />
+        </branch>
+        <instance x="2688" y="1200" name="XLXI_6332" orien="R0" />
+        <branch name="XLXN_15498">
+            <wire x2="2752" y1="752" y2="752" x1="2688" />
+            <wire x2="2688" y1="752" y2="864" x1="2688" />
+            <wire x2="3008" y1="864" y2="864" x1="2688" />
+            <wire x2="3008" y1="864" y2="1104" x1="3008" />
+            <wire x2="3008" y1="1104" y2="1104" x1="2944" />
+        </branch>
+        <branch name="clk_latch_signals(0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2672" y="1072" type="branch" />
+            <wire x2="2688" y1="1072" y2="1072" x1="2672" />
+        </branch>
+        <instance x="4464" y="3424" name="XLXI_6335" orien="R0" />
+        <branch name="XLXN_15503">
+            <wire x2="3584" y1="976" y2="976" x1="3552" />
+        </branch>
+        <instance x="3296" y="1072" name="XLXI_6333" orien="R0" />
+        <branch name="dcm_reset_1">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3264" y="944" type="branch" />
+            <wire x2="3296" y1="944" y2="944" x1="3264" />
+        </branch>
+        <branch name="clk_latch_signals(1)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3264" y="1008" type="branch" />
+            <wire x2="3296" y1="1008" y2="1008" x1="3264" />
+        </branch>
+        <instance x="3696" y="2368" name="XLXI_6334" orien="R0" />
+        <branch name="dcm_reset_2">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3616" y="2304" type="branch" />
+            <wire x2="3696" y1="2304" y2="2304" x1="3616" />
+        </branch>
+        <branch name="clk_latch_signals(2)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3616" y="2240" type="branch" />
+            <wire x2="3696" y1="2240" y2="2240" x1="3616" />
+        </branch>
+        <branch name="XLXN_15514">
+            <wire x2="3968" y1="2272" y2="2272" x1="3952" />
+        </branch>
+        <branch name="fadc_clk_in_reset">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4384" y="3360" type="branch" />
+            <wire x2="4464" y1="3360" y2="3360" x1="4384" />
+        </branch>
+        <branch name="clk_latch_signals(3)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4384" y="3296" type="branch" />
+            <wire x2="4464" y1="3296" y2="3296" x1="4384" />
+        </branch>
+        <branch name="XLXN_15517">
+            <wire x2="4688" y1="3024" y2="3024" x1="4624" />
+            <wire x2="4624" y1="3024" y2="3136" x1="4624" />
+            <wire x2="4784" y1="3136" y2="3136" x1="4624" />
+            <wire x2="4784" y1="3136" y2="3328" x1="4784" />
+            <wire x2="4784" y1="3328" y2="3328" x1="4720" />
         </branch>
     </sheet>
     <sheet sheetnum="5" width="7040" height="5440">

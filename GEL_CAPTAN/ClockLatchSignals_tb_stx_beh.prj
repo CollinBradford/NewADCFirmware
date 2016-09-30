@@ -1,2 +1,0 @@
-vhdl isim_temp "ClockLatchSignals.vhd"
-vhdl isim_temp "ClockLatchSignals_tb.vhd"

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/23/2016 14:38:19
+-- /___/   /\     Timestamp : 09/30/2016 12:41:12
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -643,6 +643,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal b_data_we                 : std_logic;
    signal b_enable                  : std_logic;
    signal b_end_packet              : std_logic;
+   signal clk_latch_signals         : std_logic_vector (7 downto 0);
    signal CLK_MUX                   : std_logic;
    signal CLK_187_5                 : std_logic;
    signal CLK_375                   : std_logic;
@@ -747,6 +748,10 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal XLXN_15483                : std_logic_vector (63 downto 0);
    signal XLXN_15484                : std_logic_vector (63 downto 0);
    signal XLXN_15485                : std_logic;
+   signal XLXN_15498                : std_logic;
+   signal XLXN_15503                : std_logic;
+   signal XLXN_15514                : std_logic;
+   signal XLXN_15517                : std_logic;
    signal XLXI_5338_in3_openSignal  : std_logic_vector (63 downto 0);
    signal XLXI_5338_in4_openSignal  : std_logic_vector (63 downto 0);
    signal XLXI_5338_in5_openSignal  : std_logic_vector (63 downto 0);
@@ -1088,6 +1093,19 @@ architecture BEHAVIORAL of TOP_LEVEL is
              value_out : out   std_logic_vector (63 downto 0));
    end component;
    
+   component ClockLatchSignals
+      port ( clk     : in    std_logic; 
+             rst     : in    std_logic; 
+             signals : out   std_logic_vector (7 downto 0));
+   end component;
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
    attribute IOBDELAY_TYPE of XLXI_3405 : label is "VARIABLE";
    attribute CLKIN_PERIOD of XLXI_3410 : label is "8.0";
    attribute CLKFX_MULTIPLY of XLXI_3410 : label is "8";
@@ -1360,7 +1378,7 @@ begin
    -- synopsys translate_on
       port map (CLKFB=>XLXN_12661,
                 CLKIN=>MASTER_CLK,
-                RST=>dcm_reset_0,
+                RST=>XLXN_15498,
                 CLKDV=>open,
                 CLKFX=>XLXN_12669,
                 CLKFX180=>open,
@@ -1395,7 +1413,7 @@ begin
    -- synopsys translate_on
       port map (CLKFB=>XLXN_12672,
                 CLKIN=>CLK_187_5,
-                RST=>dcm_reset_1,
+                RST=>XLXN_15503,
                 CLKDV=>open,
                 CLKFX=>open,
                 CLKFX180=>open,
@@ -1426,7 +1444,7 @@ begin
    -- synopsys translate_on
       port map (CLKFB=>XLXN_12923,
                 CLKIN=>CLK_MUX,
-                RST=>dcm_reset_2,
+                RST=>XLXN_15514,
                 CLKDV=>open,
                 CLKFX=>open,
                 CLKFX180=>open,
@@ -1777,7 +1795,7 @@ begin
    -- synopsys translate_on
       port map (CLKFB=>FADC_DCLK,
                 CLKIN=>XLXN_15130,
-                RST=>fadc_clk_in_reset,
+                RST=>XLXN_15517,
                 CLKDV=>open,
                 CLKFX=>open,
                 CLKFX180=>open,
@@ -1984,6 +2002,31 @@ begin
    XLXI_6330 : OBUF
       port map (I=>XLXN_15485,
                 O=>open);
+   
+   XLXI_6331 : ClockLatchSignals
+      port map (clk=>clock_5mhz,
+                rst=>reset,
+                signals(7 downto 0)=>clk_latch_signals(7 downto 0));
+   
+   XLXI_6332 : OR2
+      port map (I0=>dcm_reset_0,
+                I1=>clk_latch_signals(0),
+                O=>XLXN_15498);
+   
+   XLXI_6333 : OR2
+      port map (I0=>clk_latch_signals(1),
+                I1=>dcm_reset_1,
+                O=>XLXN_15503);
+   
+   XLXI_6334 : OR2
+      port map (I0=>dcm_reset_2,
+                I1=>clk_latch_signals(2),
+                O=>XLXN_15514);
+   
+   XLXI_6335 : OR2
+      port map (I0=>fadc_clk_in_reset,
+                I1=>clk_latch_signals(3),
+                O=>XLXN_15517);
    
 end BEHAVIORAL;
 

@@ -57,9 +57,9 @@ Timing constraint: PATH "TS_J4_TO_D2_ila_pro_0_path" TIG;
 Timing constraint: TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 3361 paths analyzed, 670 endpoints analyzed, 0 failing endpoints
+ 3399 paths analyzed, 687 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   8.422ns.
+ Minimum period is   8.966ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -69,7 +69,7 @@ For more information, see From:To (Multicycle) Analysis in the Timing Closure Us
 
  18 paths analyzed, 18 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   3.438ns.
+ Maximum delay is   3.455ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -79,20 +79,20 @@ For more information, see From:To (Multicycle) Analysis in the Timing Closure Us
 
  1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   0.940ns.
+ Maximum delay is   1.128ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
 Timing constraint: PATH "TS_J_TO_D_path" TIG;
 
- 222 paths analyzed, 82 endpoints analyzed, 0 failing endpoints
+ 224 paths analyzed, 82 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
 --------------------------------------------------------------------------------
 
 ================================================================================
 Timing constraint: PATH "TS_D_TO_J_path" TIG;
 
- 544 paths analyzed, 527 endpoints analyzed, 0 failing endpoints
+ 552 paths analyzed, 535 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
 --------------------------------------------------------------------------------
 
@@ -100,9 +100,9 @@ Timing constraint: PATH "TS_D_TO_J_path" TIG;
 Timing constraint: TS_GEL_RXCLK = PERIOD TIMEGRP "GEL_RXCLK" 8 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 101915 paths analyzed, 11089 endpoints analyzed, 0 failing endpoints
+ 101955 paths analyzed, 11120 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   7.864ns.
+ Minimum period is   7.780ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -112,7 +112,7 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  615 paths analyzed, 71 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   5.858ns.
+ Minimum period is   7.238ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -169,19 +169,19 @@ Timing constraint: TS_XLXN_15087_0 = PERIOD TIMEGRP "XLXN_15087_0"
 TS_BUSBHS_02DP_04S HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 3424 paths analyzed, 288 endpoints analyzed, 1 failing endpoint
- 1 timing error detected. (1 setup error, 0 hold errors, 0 component switching limit errors)
- Minimum period is   5.012ns.
+ 3424 paths analyzed, 288 endpoints analyzed, 2 failing endpoints
+ 2 timing errors detected. (2 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.088ns.
 --------------------------------------------------------------------------------
 
-Paths for end point XLXI_6249/samplesSinceTrig_15 (SLICE_X38Y115.CIN), 269 paths
+Paths for end point XLXI_6249/samplesSinceTrig_15 (SLICE_X38Y73.CIN), 269 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     -0.012ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     -0.088ns (requirement - (data path - clock path skew + uncertainty))
   Source:               XLXI_6249/samplesSinceTrig_1 (FF)
   Destination:          XLXI_6249/samplesSinceTrig_15 (FF)
   Requirement:          5.000ns
-  Data Path Delay:      4.952ns (Levels of Logic = 17)
-  Clock Path Skew:      0.000ns
+  Data Path Delay:      5.021ns (Levels of Logic = 17)
+  Clock Path Skew:      -0.007ns (0.127 - 0.134)
   Source Clock:         FADC_DCLK rising at 0.000ns
   Destination Clock:    FADC_DCLK rising at 5.000ns
   Clock Uncertainty:    0.060ns
@@ -196,79 +196,267 @@ Slack (setup path):     -0.012ns (requirement - (data path - clock path skew + u
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X38Y108.YQ     Tcko                  0.360   ila0_trig0<124>
+    SLICE_X38Y66.YQ      Tcko                  0.360   ila0_trig0<124>
                                                        XLXI_6249/samplesSinceTrig_1
-    SLICE_X39Y106.G2     net (fanout=3)        0.576   ila0_trig0<125>
-    SLICE_X39Y106.COUT   Topcyg                0.559   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<1>
+    SLICE_X39Y65.G2      net (fanout=3)        0.537   ila0_trig0<125>
+    SLICE_X39Y65.COUT    Topcyg                0.559   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<1>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_lut<1>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<1>
-    SLICE_X39Y107.CIN    net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<1>
-    SLICE_X39Y107.COUT   Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<3>
+    SLICE_X39Y66.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<1>
+    SLICE_X39Y66.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<3>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<2>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<3>
-    SLICE_X39Y108.CIN    net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<3>
-    SLICE_X39Y108.COUT   Tbyp                  0.086   U_ila_pro_0/U0/iTRIG_IN<22>
+    SLICE_X39Y67.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<3>
+    SLICE_X39Y67.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<5>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<4>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<5>
-    SLICE_X39Y109.CIN    net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<5>
-    SLICE_X39Y109.COUT   Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<7>
+    SLICE_X39Y68.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<5>
+    SLICE_X39Y68.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<7>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<6>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<7>
-    SLICE_X39Y110.CIN    net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<7>
-    SLICE_X39Y110.COUT   Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<9>
+    SLICE_X39Y69.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<7>
+    SLICE_X39Y69.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<9>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<8>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<9>
-    SLICE_X39Y111.CIN    net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<9>
-    SLICE_X39Y111.COUT   Tbyp                  0.086   U_ila_pro_0/U0/iTRIG_IN<10>
+    SLICE_X39Y70.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<9>
+    SLICE_X39Y70.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<11>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<10>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<11>
-    SLICE_X39Y112.CIN    net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<11>
-    SLICE_X39Y112.COUT   Tbyp                  0.086   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/muxAddrFF<3>
+    SLICE_X39Y71.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<11>
+    SLICE_X39Y71.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<13>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<12>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<13>
-    SLICE_X39Y113.CIN    net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<13>
-    SLICE_X39Y113.COUT   Tbyp                  0.086   U_ila_pro_0/U0/I_NO_D.U_ILA/U_CAPSTOR/I_CASE1.I_NO_TB.I_RT1.U_RAM/muxAddrFF<0>
+    SLICE_X39Y72.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<13>
+    SLICE_X39Y72.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<15>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<14>
                                                        XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<15>
-    SLICE_X39Y115.G4     net (fanout=20)       0.620   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<15>
-    SLICE_X39Y115.Y      Tilo                  0.194   ethernet_fifo_in_en
+    SLICE_X39Y73.F2      net (fanout=20)       0.741   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<15>
+    SLICE_X39Y73.X       Tilo                  0.194   ethernet_fifo_in_en
                                                        XLXI_6249/samplesSinceTrig_and0000_inv1
-    SLICE_X38Y108.BX     net (fanout=1)        0.505   XLXI_6249/samplesSinceTrig_and0000_inv
-    SLICE_X38Y108.COUT   Tbxcy                 0.524   ila0_trig0<124>
+    SLICE_X38Y66.BX      net (fanout=1)        0.492   XLXI_6249/samplesSinceTrig_and0000_inv
+    SLICE_X38Y66.COUT    Tbxcy                 0.524   ila0_trig0<124>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<0>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<1>
-    SLICE_X38Y109.CIN    net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<1>
-    SLICE_X38Y109.COUT   Tbyp                  0.089   ila0_trig0<126>
+    SLICE_X38Y67.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<1>
+    SLICE_X38Y67.COUT    Tbyp                  0.089   ila0_trig0<126>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<2>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<3>
-    SLICE_X38Y110.CIN    net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<3>
-    SLICE_X38Y110.COUT   Tbyp                  0.089   ila0_trig0<128>
+    SLICE_X38Y68.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<3>
+    SLICE_X38Y68.COUT    Tbyp                  0.089   ila0_trig0<128>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<4>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<5>
-    SLICE_X38Y111.CIN    net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<5>
-    SLICE_X38Y111.COUT   Tbyp                  0.089   ila0_trig0<130>
+    SLICE_X38Y69.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<5>
+    SLICE_X38Y69.COUT    Tbyp                  0.089   ila0_trig0<130>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<6>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<7>
-    SLICE_X38Y112.CIN    net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<7>
-    SLICE_X38Y112.COUT   Tbyp                  0.089   ila0_trig0<132>
+    SLICE_X38Y70.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<7>
+    SLICE_X38Y70.COUT    Tbyp                  0.089   ila0_trig0<132>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<8>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<9>
-    SLICE_X38Y113.CIN    net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<9>
-    SLICE_X38Y113.COUT   Tbyp                  0.089   ila0_trig0<134>
+    SLICE_X38Y71.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<9>
+    SLICE_X38Y71.COUT    Tbyp                  0.089   ila0_trig0<134>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<10>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<11>
-    SLICE_X38Y114.CIN    net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<11>
-    SLICE_X38Y114.COUT   Tbyp                  0.089   ila0_trig0<136>
+    SLICE_X38Y72.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<11>
+    SLICE_X38Y72.COUT    Tbyp                  0.089   ila0_trig0<136>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<12>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<13>
-    SLICE_X38Y115.CIN    net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<13>
-    SLICE_X38Y115.CLK    Tcinck                0.478   ila0_trig0<138>
+    SLICE_X38Y73.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<13>
+    SLICE_X38Y73.CLK     Tcinck                0.478   ila0_trig0<138>
                                                        XLXI_6249/Mcount_samplesSinceTrig_cy<14>
                                                        XLXI_6249/Mcount_samplesSinceTrig_xor<15>
                                                        XLXI_6249/samplesSinceTrig_15
     -------------------------------------------------  ---------------------------
-    Total                                      4.952ns (3.251ns logic, 1.701ns route)
-                                                       (65.7% logic, 34.3% route)
+    Total                                      5.021ns (3.251ns logic, 1.770ns route)
+                                                       (64.7% logic, 35.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.014ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_6249/samplesSinceTrig_3 (FF)
+  Destination:          XLXI_6249/samplesSinceTrig_15 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      4.947ns (Levels of Logic = 16)
+  Clock Path Skew:      -0.007ns (0.127 - 0.134)
+  Source Clock:         FADC_DCLK rising at 0.000ns
+  Destination Clock:    FADC_DCLK rising at 5.000ns
+  Clock Uncertainty:    0.060ns
+
+  Clock Uncertainty:          0.060ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.000ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.120ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: XLXI_6249/samplesSinceTrig_3 to XLXI_6249/samplesSinceTrig_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X38Y67.YQ      Tcko                  0.360   ila0_trig0<126>
+                                                       XLXI_6249/samplesSinceTrig_3
+    SLICE_X39Y66.G4      net (fanout=3)        0.549   ila0_trig0<127>
+    SLICE_X39Y66.COUT    Topcyg                0.559   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<3>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_lut<3>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<3>
+    SLICE_X39Y67.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<3>
+    SLICE_X39Y67.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<5>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<4>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<5>
+    SLICE_X39Y68.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<5>
+    SLICE_X39Y68.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<7>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<6>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<7>
+    SLICE_X39Y69.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<7>
+    SLICE_X39Y69.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<9>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<8>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<9>
+    SLICE_X39Y70.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<9>
+    SLICE_X39Y70.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<11>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<10>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<11>
+    SLICE_X39Y71.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<11>
+    SLICE_X39Y71.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<13>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<12>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<13>
+    SLICE_X39Y72.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<13>
+    SLICE_X39Y72.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<15>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<14>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<15>
+    SLICE_X39Y73.F2      net (fanout=20)       0.741   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<15>
+    SLICE_X39Y73.X       Tilo                  0.194   ethernet_fifo_in_en
+                                                       XLXI_6249/samplesSinceTrig_and0000_inv1
+    SLICE_X38Y66.BX      net (fanout=1)        0.492   XLXI_6249/samplesSinceTrig_and0000_inv
+    SLICE_X38Y66.COUT    Tbxcy                 0.524   ila0_trig0<124>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<0>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<1>
+    SLICE_X38Y67.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<1>
+    SLICE_X38Y67.COUT    Tbyp                  0.089   ila0_trig0<126>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<2>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<3>
+    SLICE_X38Y68.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<3>
+    SLICE_X38Y68.COUT    Tbyp                  0.089   ila0_trig0<128>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<4>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<5>
+    SLICE_X38Y69.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<5>
+    SLICE_X38Y69.COUT    Tbyp                  0.089   ila0_trig0<130>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<6>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<7>
+    SLICE_X38Y70.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<7>
+    SLICE_X38Y70.COUT    Tbyp                  0.089   ila0_trig0<132>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<8>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<9>
+    SLICE_X38Y71.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<9>
+    SLICE_X38Y71.COUT    Tbyp                  0.089   ila0_trig0<134>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<10>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<11>
+    SLICE_X38Y72.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<11>
+    SLICE_X38Y72.COUT    Tbyp                  0.089   ila0_trig0<136>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<12>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<13>
+    SLICE_X38Y73.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<13>
+    SLICE_X38Y73.CLK     Tcinck                0.478   ila0_trig0<138>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<14>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_xor<15>
+                                                       XLXI_6249/samplesSinceTrig_15
+    -------------------------------------------------  ---------------------------
+    Total                                      4.947ns (3.165ns logic, 1.782ns route)
+                                                       (64.0% logic, 36.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point XLXI_6249/samplesSinceTrig_14 (SLICE_X38Y73.CIN), 269 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.033ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               XLXI_6249/samplesSinceTrig_1 (FF)
+  Destination:          XLXI_6249/samplesSinceTrig_14 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      4.966ns (Levels of Logic = 17)
+  Clock Path Skew:      -0.007ns (0.127 - 0.134)
+  Source Clock:         FADC_DCLK rising at 0.000ns
+  Destination Clock:    FADC_DCLK rising at 5.000ns
+  Clock Uncertainty:    0.060ns
+
+  Clock Uncertainty:          0.060ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.000ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.120ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: XLXI_6249/samplesSinceTrig_1 to XLXI_6249/samplesSinceTrig_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X38Y66.YQ      Tcko                  0.360   ila0_trig0<124>
+                                                       XLXI_6249/samplesSinceTrig_1
+    SLICE_X39Y65.G2      net (fanout=3)        0.537   ila0_trig0<125>
+    SLICE_X39Y65.COUT    Topcyg                0.559   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<1>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_lut<1>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<1>
+    SLICE_X39Y66.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<1>
+    SLICE_X39Y66.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<3>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<2>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<3>
+    SLICE_X39Y67.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<3>
+    SLICE_X39Y67.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<5>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<4>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<5>
+    SLICE_X39Y68.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<5>
+    SLICE_X39Y68.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<7>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<6>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<7>
+    SLICE_X39Y69.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<7>
+    SLICE_X39Y69.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<9>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<8>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<9>
+    SLICE_X39Y70.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<9>
+    SLICE_X39Y70.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<11>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<10>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<11>
+    SLICE_X39Y71.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<11>
+    SLICE_X39Y71.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<13>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<12>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<13>
+    SLICE_X39Y72.CIN     net (fanout=1)        0.000   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<13>
+    SLICE_X39Y72.COUT    Tbyp                  0.086   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<15>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<14>
+                                                       XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<15>
+    SLICE_X39Y73.F2      net (fanout=20)       0.741   XLXI_6249/Mcompar_samplesSinceTrig_cmp_gt0000_cy<15>
+    SLICE_X39Y73.X       Tilo                  0.194   ethernet_fifo_in_en
+                                                       XLXI_6249/samplesSinceTrig_and0000_inv1
+    SLICE_X38Y66.BX      net (fanout=1)        0.492   XLXI_6249/samplesSinceTrig_and0000_inv
+    SLICE_X38Y66.COUT    Tbxcy                 0.524   ila0_trig0<124>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<0>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<1>
+    SLICE_X38Y67.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<1>
+    SLICE_X38Y67.COUT    Tbyp                  0.089   ila0_trig0<126>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<2>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<3>
+    SLICE_X38Y68.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<3>
+    SLICE_X38Y68.COUT    Tbyp                  0.089   ila0_trig0<128>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<4>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<5>
+    SLICE_X38Y69.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<5>
+    SLICE_X38Y69.COUT    Tbyp                  0.089   ila0_trig0<130>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<6>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<7>
+    SLICE_X38Y70.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<7>
+    SLICE_X38Y70.COUT    Tbyp                  0.089   ila0_trig0<132>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<8>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<9>
+    SLICE_X38Y71.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<9>
+    SLICE_X38Y71.COUT    Tbyp                  0.089   ila0_trig0<134>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<10>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<11>
+    SLICE_X38Y72.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<11>
+    SLICE_X38Y72.COUT    Tbyp                  0.089   ila0_trig0<136>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<12>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_cy<13>
+    SLICE_X38Y73.CIN     net (fanout=1)        0.000   XLXI_6249/Mcount_samplesSinceTrig_cy<13>
+    SLICE_X38Y73.CLK     Tcinck                0.423   ila0_trig0<138>
+                                                       XLXI_6249/Mcount_samplesSinceTrig_xor<14>
+                                                       XLXI_6249/samplesSinceTrig_14
+    -------------------------------------------------  ---------------------------
+    Total                                      4.966ns (3.196ns logic, 1.770ns route)
+                                                       (64.4% logic, 35.6% route)
 
 --------------------------------------------------------------------------------
 
@@ -290,7 +478,7 @@ Derived Constraints for TS_GEL_RXCLK
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_GEL_RXCLK                   |      8.000ns|      7.864ns|      7.497ns|            0|            0|       101915|            0|
+|TS_GEL_RXCLK                   |      8.000ns|      7.780ns|      7.497ns|            0|            0|       101955|            0|
 | TS_XLXN_12257                 |      5.000ns|          N/A|          N/A|            0|            0|            0|            0|
 | TS_XLXN_12669                 |      5.333ns|      4.000ns|      4.998ns|            0|            0|            0|            0|
 |  TS_XLXN_12781                |      2.667ns|      2.499ns|          N/A|            0|            0|            0|            0|
@@ -312,8 +500,8 @@ Derived Constraints for TS_BUSBHS_02DP_04S
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_BUSBHS_02DP_04S             |      5.000ns|      3.600ns|      5.012ns|            0|            1|            0|         3424|
-| TS_XLXN_15087_0               |      5.000ns|      5.012ns|          N/A|            1|            0|         3424|            0|
+|TS_BUSBHS_02DP_04S             |      5.000ns|      3.600ns|      5.088ns|            0|            2|            0|         3424|
+| TS_XLXN_15087_0               |      5.000ns|      5.088ns|          N/A|            2|            0|         3424|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 1 constraint not met.
@@ -328,8 +516,8 @@ Clock to Setup on destination clock BUSBHS_02DN_05S
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-BUSBHS_02DN_05S|    5.012|         |         |         |
-BUSBHS_02DP_04S|    5.012|         |         |         |
+BUSBHS_02DN_05S|    5.088|         |         |         |
+BUSBHS_02DP_04S|    5.088|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock BUSBHS_02DP_04S
@@ -337,8 +525,8 @@ Clock to Setup on destination clock BUSBHS_02DP_04S
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-BUSBHS_02DN_05S|    5.012|         |         |         |
-BUSBHS_02DP_04S|    5.012|         |         |         |
+BUSBHS_02DN_05S|    5.088|         |         |         |
+BUSBHS_02DP_04S|    5.088|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock GEL_RXCLK
@@ -346,7 +534,7 @@ Clock to Setup on destination clock GEL_RXCLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-GEL_RXCLK      |    7.864|         |         |         |
+GEL_RXCLK      |    7.780|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SECONDARY_CLK
@@ -354,30 +542,30 @@ Clock to Setup on destination clock SECONDARY_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SECONDARY_CLK  |    5.858|         |         |         |
+SECONDARY_CLK  |    7.238|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
 Timing summary:
 ---------------
 
-Timing errors: 1  Score: 12  (Setup/Max: 12, Hold: 0)
+Timing errors: 2  Score: 121  (Setup/Max: 121, Hold: 0)
 
-Constraints cover 110114 paths, 0 nets, and 24772 connections
+Constraints cover 110202 paths, 0 nets, and 24902 connections
 
 Design statistics:
-   Minimum period:   8.422ns   (Maximum frequency: 118.737MHz)
-   Maximum path delay from/to any node:   3.438ns
+   Minimum period:   8.966ns   (Maximum frequency: 111.532MHz)
+   Maximum path delay from/to any node:   3.455ns
 
 
-Analysis completed Fri Sep 23 14:44:47 2016 
+Analysis completed Fri Sep 30 12:48:19 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 378 MB
+Peak Memory Usage: 375 MB
 
 
 
