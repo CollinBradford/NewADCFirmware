@@ -44,6 +44,8 @@ end ClockLatchSignals;
 --ERROR:  The last latch signal does not stay high for more than a clock or two.  Since I don't need so many signals, I am just giong
 --use the module, but it should be fixed for anyone who wants to use this signal.    
 
+--ERROR:  For the first few clock cycles, the latch signals read U.  
+
 architecture Behavioral of ClockLatchSignals is
 signal delay : unsigned(3 downto 0) := (others => '0'); --creates the delay for each latch.  
 signal clock_place : unsigned(2 downto 0) := (others => '0');  --Holds our place so we can tell which clock we need to latch next

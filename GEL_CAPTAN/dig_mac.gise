@@ -24,7 +24,9 @@
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ClockLatchSignals.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="ClockLatchSignals.spl"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ClockLatchSignals.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ClockLatchSignals.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="ClockLatchSignals.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ClockLatchSignals_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ClockLatchSignals_tb_isim_beh.wdb"/>
@@ -100,6 +102,10 @@
     <transform xil_pn:end_ts="1475253691" xil_pn:in_ck="-3309149013464739804" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1475253691">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../oei/address_container.vhd"/>
       <outfile xil_pn:name="../oei/arp_reply.vhd"/>
       <outfile xil_pn:name="../oei/burst_controller_sm.vhd"/>
@@ -162,6 +168,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
