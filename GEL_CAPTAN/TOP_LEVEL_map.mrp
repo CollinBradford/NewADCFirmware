@@ -9,7 +9,7 @@ Target Device  : xc4vlx25
 Target Package : ff668
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Fri Oct 07 16:26:18 2016
+Mapped Date    : Fri Oct 07 16:41:22 2016
 
 Design Summary
 --------------
@@ -47,9 +47,9 @@ Logic Distribution:
   Number of RPM macros:           12
 Average Fanout of Non-Clock Nets:                3.43
 
-Peak Memory Usage:  621 MB
-Total REAL time to MAP completion:  55 secs 
-Total CPU time to MAP completion:   53 secs 
+Peak Memory Usage:  613 MB
+Total REAL time to MAP completion:  56 secs 
+Total CPU time to MAP completion:   54 secs 
 
 Table of Contents
 -----------------
@@ -480,13 +480,13 @@ GND 		XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/XST_GND
 VCC 		XLXI_6227/ec_wrapper/ethernet_controller/ICMPPingShiftRegBlock/XST_VCC
 GND 		XLXI_6227/reset_mgr/XST_GND
 VCC 		XLXI_6227/reset_mgr/XST_VCC
+GND 		XLXI_6228
 GND 		XLXI_6248/XST_GND
 VCC 		XLXI_6248/XST_VCC
 VCC 		XLXI_6249/XST_VCC
 GND 		XLXI_6253/XST_GND
 VCC 		XLXI_6253/XST_VCC
 VCC 		XLXI_6331/XST_VCC
-GND 		XLXI_6341
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.

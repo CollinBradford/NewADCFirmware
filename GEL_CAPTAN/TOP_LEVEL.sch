@@ -283,7 +283,7 @@
         <signal name="clk_latch_signals(6)" />
         <signal name="XLXN_15517" />
         <signal name="clk_latch_signals(4)" />
-        <signal name="XLXN_15521" />
+        <signal name="reset_out" />
         <signal name="XLXN_15522" />
         <signal name="XLXN_15523" />
         <signal name="XLXN_15524" />
@@ -1892,16 +1892,13 @@
             <blockpin signalname="MASTER_CLK" name="C" />
             <blockpin signalname="GLOBAL_RESET_MAP" name="CE" />
             <blockpin signalname="rx_data(0)" name="D" />
-            <blockpin signalname="XLXN_15521" name="R" />
+            <blockpin signalname="reset_out" name="R" />
             <blockpin signalname="XLXN_15523" name="Q" />
         </block>
         <block symbolname="or2" name="XLXI_6340">
             <blockpin signalname="XLXN_15526" name="I0" />
             <blockpin signalname="XLXN_15523" name="I1" />
             <blockpin signalname="reset" name="O" />
-        </block>
-        <block symbolname="gnd" name="XLXI_6341">
-            <blockpin signalname="XLXN_15521" name="G" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -2087,7 +2084,8 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="352" type="branch" />
             <wire x2="1312" y1="352" y2="352" x1="1296" />
         </branch>
-        <branch name="XLXN_15521">
+        <branch name="reset_out">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="448" type="branch" />
             <wire x2="1312" y1="448" y2="448" x1="1296" />
         </branch>
         <instance x="1968" y="480" name="XLXI_6340" orien="R0" />
@@ -2105,7 +2103,6 @@
             <wire x2="1840" y1="416" y2="672" x1="1840" />
             <wire x2="1968" y1="416" y2="416" x1="1840" />
         </branch>
-        <instance x="1168" y="384" name="XLXI_6341" orien="R90" />
     </sheet>
     <sheet sheetnum="2" width="7040" height="5440">
         <branch name="MASTER_CLK">
