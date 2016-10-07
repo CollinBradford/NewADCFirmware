@@ -283,6 +283,11 @@
         <signal name="clk_latch_signals(6)" />
         <signal name="XLXN_15517" />
         <signal name="clk_latch_signals(4)" />
+        <signal name="XLXN_15521" />
+        <signal name="XLXN_15522" />
+        <signal name="XLXN_15523" />
+        <signal name="XLXN_15524" />
+        <signal name="XLXN_15526" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -761,6 +766,12 @@
             <line x2="48" y1="-144" y2="-144" x1="112" />
             <arc ex="112" ey="-144" sx="192" sy="-96" r="88" cx="116" cy="-56" />
             <line x2="48" y1="-48" y2="-48" x1="112" />
+        </blockdef>
+        <blockdef name="vcc">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-64" x1="64" />
+            <line x2="64" y1="0" y2="-32" x1="64" />
+            <line x2="32" y1="-64" y2="-64" x1="96" />
         </blockdef>
         <block symbolname="ibuf" name="XLXI_4248">
             <blockpin signalname="BUSC_16DP_32S" name="I" />
@@ -1686,7 +1697,7 @@
             <blockpin signalname="tx_data(63:0)" name="tx_data(63:0)" />
             <blockpin signalname="b_data(63:0)" name="b_data(63:0)" />
             <blockpin signalname="GMII_RXD_0_sig(7:0)" name="PHY_RXD(7:0)" />
-            <blockpin signalname="reset" name="reset_out" />
+            <blockpin signalname="XLXN_15526" name="reset_out" />
             <blockpin signalname="rx_wren" name="rx_wren" />
             <blockpin signalname="b_enable" name="b_enable" />
             <blockpin signalname="GTX_CLK_0_sig" name="TX_CLK" />
@@ -1883,6 +1894,21 @@
             <blockpin signalname="clk_latch_signals(4)" name="I1" />
             <blockpin signalname="XLXN_15514" name="O" />
         </block>
+        <block symbolname="fdre" name="XLXI_6337">
+            <blockpin signalname="MASTER_CLK" name="C" />
+            <blockpin signalname="GLOBAL_RESET_MAP" name="CE" />
+            <blockpin signalname="rx_data(0)" name="D" />
+            <blockpin signalname="XLXN_15521" name="R" />
+            <blockpin signalname="XLXN_15523" name="Q" />
+        </block>
+        <block symbolname="vcc" name="XLXI_6339">
+            <blockpin signalname="XLXN_15521" name="P" />
+        </block>
+        <block symbolname="or2" name="XLXI_6340">
+            <blockpin signalname="XLXN_15526" name="I0" />
+            <blockpin signalname="XLXN_15523" name="I1" />
+            <blockpin signalname="reset" name="O" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
         <rect width="2260" x="424" y="276" height="1256" />
@@ -1976,10 +2002,6 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="832" y="1120" type="branch" />
             <wire x2="1264" y1="1120" y2="1120" x1="832" />
         </branch>
-        <branch name="reset">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1872" y="672" type="branch" />
-            <wire x2="1872" y1="672" y2="672" x1="1728" />
-        </branch>
         <branch name="b_data_we">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="1040" y="736" type="branch" />
             <wire x2="1264" y1="736" y2="736" x1="1040" />
@@ -2057,6 +2079,38 @@
         <branch name="psudo_data_select_map">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="4672" y="3296" type="branch" />
             <wire x2="4672" y1="3296" y2="3296" x1="4512" />
+        </branch>
+        <instance x="1312" y="480" name="XLXI_6337" orien="R0" />
+        <branch name="rx_data(0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="224" type="branch" />
+            <wire x2="1312" y1="224" y2="224" x1="1296" />
+        </branch>
+        <branch name="GLOBAL_RESET_MAP">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="288" type="branch" />
+            <wire x2="1312" y1="288" y2="288" x1="1296" />
+        </branch>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="352" type="branch" />
+            <wire x2="1312" y1="352" y2="352" x1="1296" />
+        </branch>
+        <branch name="XLXN_15521">
+            <wire x2="1312" y1="448" y2="448" x1="1296" />
+        </branch>
+        <instance x="1296" y="512" name="XLXI_6339" orien="R270" />
+        <instance x="1968" y="480" name="XLXI_6340" orien="R0" />
+        <branch name="XLXN_15523">
+            <wire x2="1712" y1="224" y2="224" x1="1696" />
+            <wire x2="1712" y1="224" y2="352" x1="1712" />
+            <wire x2="1968" y1="352" y2="352" x1="1712" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2240" y="384" type="branch" />
+            <wire x2="2240" y1="384" y2="384" x1="2224" />
+        </branch>
+        <branch name="XLXN_15526">
+            <wire x2="1840" y1="672" y2="672" x1="1728" />
+            <wire x2="1840" y1="416" y2="672" x1="1840" />
+            <wire x2="1968" y1="416" y2="416" x1="1840" />
         </branch>
     </sheet>
     <sheet sheetnum="2" width="7040" height="5440">

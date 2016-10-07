@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 10/07/2016 14:56:39
+-- /___/   /\     Timestamp : 10/07/2016 16:05:31
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -752,6 +752,9 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal XLXN_15503                : std_logic;
    signal XLXN_15514                : std_logic;
    signal XLXN_15517                : std_logic;
+   signal XLXN_15521                : std_logic;
+   signal XLXN_15523                : std_logic;
+   signal XLXN_15526                : std_logic;
    signal XLXI_5338_in3_openSignal  : std_logic_vector (63 downto 0);
    signal XLXI_5338_in4_openSignal  : std_logic_vector (63 downto 0);
    signal XLXI_5338_in5_openSignal  : std_logic_vector (63 downto 0);
@@ -1105,6 +1108,11 @@ architecture BEHAVIORAL of TOP_LEVEL is
              O  : out   std_logic);
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component VCC
+      port ( P : out   std_logic);
+   end component;
+   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
    attribute IOBDELAY_TYPE of XLXI_3405 : label is "VARIABLE";
    attribute CLKIN_PERIOD of XLXI_3410 : label is "8.0";
@@ -1836,7 +1844,7 @@ begin
                 PHY_TXD(7 downto 0)=>PHY_TXD_sig(7 downto 0),
                 PHY_TX_EN=>PHY_TXEN_sig,
                 PHY_TX_ER=>PHY_TXER_sig,
-                reset_out=>reset,
+                reset_out=>XLXN_15526,
                 rx_addr(31 downto 0)=>rx_addr(31 downto 0),
                 rx_data(63 downto 0)=>rx_data(63 downto 0),
                 rx_wren=>rx_wren,
@@ -2027,6 +2035,21 @@ begin
       port map (I0=>fadc_clk_in_reset,
                 I1=>clk_latch_signals(6),
                 O=>XLXN_15517);
+   
+   XLXI_6337 : FDRE
+      port map (C=>MASTER_CLK,
+                CE=>GLOBAL_RESET_MAP,
+                D=>rx_data(0),
+                R=>XLXN_15521,
+                Q=>XLXN_15523);
+   
+   XLXI_6339 : VCC
+      port map (P=>XLXN_15521);
+   
+   XLXI_6340 : OR2
+      port map (I0=>XLXN_15526,
+                I1=>XLXN_15523,
+                O=>reset);
    
 end BEHAVIORAL;
 
