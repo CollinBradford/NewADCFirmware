@@ -25,11 +25,11 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 195820 kilobytes
+Total memory usage is 195180 kilobytes
 
 Writing NGC file "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL_cs.ngc" ...
 Total REAL time to NGCBUILD completion:  4 sec
-Total CPU time to NGCBUILD completion:   3 sec
+Total CPU time to NGCBUILD completion:   4 sec
 
 Writing NGCBUILD log file
 "D:/cbradford/NewADCFirmware/GEL_CAPTAN/TOP_LEVEL_cs.blc"...
