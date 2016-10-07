@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 09/30/2016 14:23:27
+-- /___/   /\     Timestamp : 10/07/2016 11:51:22
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -2014,18 +2014,18 @@ begin
                 O=>XLXN_15498);
    
    XLXI_6333 : OR2
-      port map (I0=>clk_latch_signals(1),
+      port map (I0=>clk_latch_signals(2),
                 I1=>dcm_reset_1,
                 O=>XLXN_15503);
    
    XLXI_6334 : OR2
       port map (I0=>dcm_reset_2,
-                I1=>clk_latch_signals(2),
+                I1=>clk_latch_signals(4),
                 O=>XLXN_15514);
    
    XLXI_6335 : OR2
       port map (I0=>fadc_clk_in_reset,
-                I1=>clk_latch_signals(3),
+                I1=>clk_latch_signals(6),
                 O=>XLXN_15517);
    
 end BEHAVIORAL;

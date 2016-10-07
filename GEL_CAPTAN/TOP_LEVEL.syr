@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -1720,7 +1720,10 @@ WARNING:Xst:653 - Signal <fadc_debug<23:22>> is used but never assigned. This so
 WARNING:Xst:653 - Signal <fadc_debug<11:10>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
 WARNING:Xst:1780 - Signal <fadc_data_in<31:16>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <fadc_ctrl_data<13:12>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <clk_latch_signals<7:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk_latch_signals<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk_latch_signals<5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk_latch_signals<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clk_latch_signals<1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <b_end_packet> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <adc_data_in> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <XLXN_15484> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000000000000000000000000000000000000.
@@ -2389,9 +2392,9 @@ WARNING:Xst:1290 - Hierarchical block <XLXI_6231> is unconnected in block <TOP_L
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <XLXI_6292> is unconnected in block <TOP_LEVEL>.
    It will be removed from the design.
-WARNING:Xst:2677 - Node <signals_4> of sequential type is unconnected in block <XLXI_6331>.
+WARNING:Xst:2677 - Node <signals_1> of sequential type is unconnected in block <XLXI_6331>.
+WARNING:Xst:2677 - Node <signals_3> of sequential type is unconnected in block <XLXI_6331>.
 WARNING:Xst:2677 - Node <signals_5> of sequential type is unconnected in block <XLXI_6331>.
-WARNING:Xst:2677 - Node <signals_6> of sequential type is unconnected in block <XLXI_6331>.
 WARNING:Xst:2677 - Node <signals_7> of sequential type is unconnected in block <XLXI_6331>.
 WARNING:Xst:2677 - Node <tmp_rd_sig> of sequential type is unconnected in block <ec_wrapper>.
 WARNING:Xst:2677 - Node <tmp_cnt_0> of sequential type is unconnected in block <ec_wrapper>.
@@ -3399,14 +3402,14 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 64.00 secs
-Total CPU time to Xst completion: 64.17 secs
+Total REAL time to Xst completion: 62.00 secs
+Total CPU time to Xst completion: 62.74 secs
  
 --> 
 
 Total memory usage is 659636 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  285 (   0 filtered)
+Number of warnings :  288 (   0 filtered)
 Number of infos    :  131 (   0 filtered)
 

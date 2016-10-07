@@ -278,11 +278,11 @@
         <signal name="XLXN_15498" />
         <signal name="clk_latch_signals(0)" />
         <signal name="XLXN_15503" />
-        <signal name="clk_latch_signals(1)" />
         <signal name="clk_latch_signals(2)" />
         <signal name="XLXN_15514" />
-        <signal name="clk_latch_signals(3)" />
+        <signal name="clk_latch_signals(6)" />
         <signal name="XLXN_15517" />
+        <signal name="clk_latch_signals(4)" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -1869,18 +1869,18 @@
             <blockpin signalname="XLXN_15498" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_6333">
-            <blockpin signalname="clk_latch_signals(1)" name="I0" />
+            <blockpin signalname="clk_latch_signals(2)" name="I0" />
             <blockpin signalname="dcm_reset_1" name="I1" />
             <blockpin signalname="XLXN_15503" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_6335">
             <blockpin signalname="fadc_clk_in_reset" name="I0" />
-            <blockpin signalname="clk_latch_signals(3)" name="I1" />
+            <blockpin signalname="clk_latch_signals(6)" name="I1" />
             <blockpin signalname="XLXN_15517" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_6334">
             <blockpin signalname="dcm_reset_2" name="I0" />
-            <blockpin signalname="clk_latch_signals(2)" name="I1" />
+            <blockpin signalname="clk_latch_signals(4)" name="I1" />
             <blockpin signalname="XLXN_15514" name="O" />
         </block>
     </netlist>
@@ -3036,7 +3036,7 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3264" y="944" type="branch" />
             <wire x2="3296" y1="944" y2="944" x1="3264" />
         </branch>
-        <branch name="clk_latch_signals(1)">
+        <branch name="clk_latch_signals(2)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3264" y="1008" type="branch" />
             <wire x2="3296" y1="1008" y2="1008" x1="3264" />
         </branch>
@@ -3045,7 +3045,7 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="3616" y="2304" type="branch" />
             <wire x2="3696" y1="2304" y2="2304" x1="3616" />
         </branch>
-        <branch name="clk_latch_signals(2)">
+        <branch name="clk_latch_signals(4)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="3616" y="2240" type="branch" />
             <wire x2="3696" y1="2240" y2="2240" x1="3616" />
         </branch>
@@ -3056,7 +3056,7 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4384" y="3360" type="branch" />
             <wire x2="4464" y1="3360" y2="3360" x1="4384" />
         </branch>
-        <branch name="clk_latch_signals(3)">
+        <branch name="clk_latch_signals(6)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="4384" y="3296" type="branch" />
             <wire x2="4464" y1="3296" y2="3296" x1="4384" />
         </branch>
