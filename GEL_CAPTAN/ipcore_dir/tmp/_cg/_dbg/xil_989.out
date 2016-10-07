@@ -1,7 +1,7 @@
 SET_PARAMETER underflow_sense_axi Active_High
 SET_PARAMETER programmable_empty_type_wdch No_Programmable_Empty_Threshold
 SET_PARAMETER register_slice_mode_axis Fully_Registered
-SET_PARAMETER output_depth 512
+SET_PARAMETER output_depth 1024
 SET_PARAMETER enable_data_counts_wdch false
 SET_PARAMETER programmable_full_type No_Programmable_Full_Threshold
 SET_PARAMETER inject_dbit_error_wrch false
@@ -38,7 +38,7 @@ SET_PARAMETER write_clock_frequency 1
 SET_PARAMETER programmable_empty_type No_Programmable_Empty_Threshold
 SET_PARAMETER register_slice_mode_rdch Fully_Registered
 SET_PARAMETER inject_dbit_error_wdch false
-SET_PARAMETER input_depth 2048
+SET_PARAMETER input_depth 4096
 SET_PARAMETER overflow_sense_axi Active_High
 SET_PARAMETER tkeep_width 4
 SET_PARAMETER valid_flag true
@@ -56,7 +56,7 @@ SET_PARAMETER inject_dbit_error false
 SET_PARAMETER enable_tdata false
 SET_PARAMETER enable_ecc_rdch false
 SET_PARAMETER inject_sbit_error_rdch false
-SET_PARAMETER data_count_width 11
+SET_PARAMETER data_count_width 12
 SET_PARAMETER input_depth_rdch 1024
 SET_PARAMETER clock_enable_type Slave_Interface_Clock_Enable
 SET_PARAMETER awuser_width 1
@@ -69,10 +69,10 @@ SET_PARAMETER inject_sbit_error_wrch false
 SET_PARAMETER programmable_empty_type_rach No_Programmable_Empty_Threshold
 SET_PARAMETER input_depth_wrch 16
 SET_PARAMETER enable_data_counts_rach false
-SET_PARAMETER full_threshold_assert_value 2045
+SET_PARAMETER full_threshold_assert_value 4093
 SET_PARAMETER fifo_application_type_rach Data_FIFO
 SET_PARAMETER add_ngc_constraint_axi false
-SET_PARAMETER write_data_count_width 11
+SET_PARAMETER write_data_count_width 12
 SET_PARAMETER overflow_flag true
 SET_PARAMETER disable_timing_violations_axi false
 SET_PARAMETER empty_threshold_assert_value_axis 1022
@@ -113,7 +113,7 @@ SET_PARAMETER ruser_width 1
 SET_PARAMETER fifo_application_type_wach Data_FIFO
 SET_PARAMETER enable_read_pointer_increment_by2 false
 SET_PARAMETER read_clock_frequency 1
-SET_PARAMETER full_threshold_negate_value 2044
+SET_PARAMETER full_threshold_negate_value 4092
 SET_PARAMETER empty_threshold_assert_value_wrch 1022
 SET_PARAMETER almost_empty_flag false
 SET_PARAMETER underflow_flag false
@@ -122,7 +122,7 @@ SET_PARAMETER interface_type Native
 SET_PARAMETER reset_type Asynchronous_Reset
 SET_PARAMETER wrch_type FIFO
 SET_PARAMETER use_dout_reset true
-SET_PARAMETER read_data_count_width 9
+SET_PARAMETER read_data_count_width 10
 SET_PARAMETER read_data_count false
 SET_PARAMETER inject_dbit_error_axis false
 SET_PARAMETER programmable_empty_type_rdch No_Programmable_Empty_Threshold

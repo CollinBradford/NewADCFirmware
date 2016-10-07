@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -2672,7 +2672,7 @@ Design Statistics
 # IOs                              : 81
 
 Cell Usage :
-# BELS                             : 5764
+# BELS                             : 5775
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2683,27 +2683,27 @@ Cell Usage :
 #      BUF                         : 5
 #      GND                         : 27
 #      INV                         : 180
-#      LUT1                        : 214
-#      LUT2                        : 468
+#      LUT1                        : 216
+#      LUT2                        : 466
 #      LUT2_D                      : 33
-#      LUT2_L                      : 23
+#      LUT2_L                      : 24
 #      LUT3                        : 1133
 #      LUT3_D                      : 25
 #      LUT3_L                      : 66
-#      LUT4                        : 1805
+#      LUT4                        : 1811
 #      LUT4_D                      : 77
 #      LUT4_L                      : 283
-#      MUXCY                       : 788
+#      MUXCY                       : 790
 #      MUXF5                       : 137
 #      MUXF6                       : 40
 #      OR2                         : 7
 #      VCC                         : 25
 #      XOR2                        : 2
-#      XORCY                       : 401
-# FlipFlops/Latches                : 2281
+#      XORCY                       : 403
+# FlipFlops/Latches                : 2294
 #      FD                          : 58
-#      FDC                         : 128
-#      FDCE                        : 144
+#      FDC                         : 136
+#      FDCE                        : 149
 #      FDE                         : 467
 #      FDP                         : 30
 #      FDPE                        : 11
@@ -2717,9 +2717,9 @@ Cell Usage :
 #      LDCE                        : 4
 #      LDCE_1                      : 1
 #      LDE                         : 7
-# RAMS                             : 203
+# RAMS                             : 205
 #      RAM16X1D                    : 192
-#      RAMB16                      : 11
+#      RAMB16                      : 13
 # Shift Registers                  : 24
 #      SRL16E                      : 8
 #      SRLC16E                     : 16
@@ -2743,16 +2743,16 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     3046  out of  10752    28%  
- Number of Slice Flip Flops:           2281  out of  21504    10%  
- Number of 4 input LUTs:               4715  out of  21504    21%  
-    Number used as logic:              4307
+ Number of Slices:                     3050  out of  10752    28%  
+ Number of Slice Flip Flops:           2294  out of  21504    10%  
+ Number of 4 input LUTs:               4722  out of  21504    21%  
+    Number used as logic:              4314
     Number used as Shift registers:      24
     Number used as RAMs:                384
  Number of IOs:                          81
  Number of bonded IOBs:                  81  out of    448    18%  
- Number of FIFO16/RAMB16s:               11  out of     72    15%  
-    Number used as RAMB16s:              11
+ Number of FIFO16/RAMB16s:               13  out of     72    18%  
+    Number used as RAMB16s:              13
  Number of GCLKs:                        12  out of     32    37%  
  Number of DCM_ADVs:                      5  out of      8    62%  
 
@@ -2777,8 +2777,8 @@ Clock Information:
 -------------------------------------------------------+---------------------------------+-------+
 Clock Signal                                           | Clock buffer(FF name)           | Load  |
 -------------------------------------------------------+---------------------------------+-------+
-GEL_RXCLK                                              | IBUFG+BUFG                      | 2376  |
-BUSBHS_02DP_04S                                        | XLXI_6199:CLK0                  | 103   |
+GEL_RXCLK                                              | IBUFG+BUFG                      | 2384  |
+BUSBHS_02DP_04S                                        | XLXI_6199:CLK0                  | 112   |
 XLXI_6331/done_not0001(XLXI_6331/done_not0001:O)       | NONE(*)(XLXI_6331/done)         | 1     |
 XLXI_6331/triggered                                    | NONE(XLXI_6331/triggered)       | 5     |
 XLXI_6331/signals_and0001(XLXI_6331/signals_and00011:O)| NONE(*)(XLXI_6331/clock_place_0)| 7     |
@@ -2794,17 +2794,17 @@ Asynchronous Control Signals Information:
 ---------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                     | Buffer(FF name)                                                                                                                                                                                     | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0)                                                                             | 44    |
+XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0)                                                                             | 42    |
 XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/XST_GND:G)                                         | NONE(XLXI_6227/data_manager_blk/RX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                         | 40    |
 XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/XST_GND:G)                                         | NONE(XLXI_6227/data_manager_blk/TX_CTRL_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                         | 40    |
 XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/XST_GND:G)                                         | NONE(XLXI_6227/data_manager_blk/TX_DATA_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                         | 40    |
-XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0)                                                                             | 40    |
-XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0)                                                                             | 38    |
-XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0)                                                                                                    | 33    |
+XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0)                                                                                                    | 36    |
+XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i)                                                                                         | 23    |
 XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/XST_GND:G)                               | NONE(XLXI_6227/data_manager_blk/RX_DATA_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                    | 22    |
 XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/XST_GND:G)                               | NONE(XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                    | 22    |
 XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/dbiterr(XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/XST_GND:G)                               | NONE(XLXI_6227/data_manager_blk/TX_DATA_INFO_FIFO/BU2/U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i)                                                                                                    | 22    |
-XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i)                                                                                         | 21    |
-XLXI_6248/N0(XLXI_6248/XST_GND:G)                                                                                                                  | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP)| 8     |
+XLXI_6248/N0(XLXI_6248/XST_GND:G)                                                                                                                  | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP)| 16    |
 XLXI_6227/reset_mgr/reset(XLXI_6227/reset_mgr/reset:Q)                                                                                             | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN)                                                                                                                       | 6     |
 XLXI_6331/signals_and0000(XLXI_6331/signals_and00001:O)                                                                                            | NONE(XLXI_6331/signals_0)                                                                                                                                                                           | 5     |
 XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                                                                                                                       | 3     |
@@ -2828,7 +2828,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 5.039ns (frequency: 198.462MHz)
-  Total number of paths / destination ports: 5545 / 44
+  Total number of paths / destination ports: 5546 / 45
 -------------------------------------------------------------------------
 Offset:              5.039ns (Levels of Logic = 35)
   Source:            XLXI_6251/I_Q0 (FF)
@@ -2885,7 +2885,7 @@ Offset:              5.039ns (Levels of Logic = 35)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'BUSBHS_02DP_04S'
   Clock period: 0.742ns (frequency: 1347.800MHz)
-  Total number of paths / destination ports: 11 / 11
+  Total number of paths / destination ports: 12 / 12
 -------------------------------------------------------------------------
 Offset:              0.742ns (Levels of Logic = 0)
   Source:            XLXI_6248/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0 (FF)
@@ -3095,7 +3095,7 @@ Offset:              2.913ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
   Clock period: 7.298ns (frequency: 137.021MHz)
-  Total number of paths / destination ports: 99560 / 6763
+  Total number of paths / destination ports: 99626 / 6796
 -------------------------------------------------------------------------
 Delay:               7.298ns (Levels of Logic = 14)
   Source:            XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_addr_sig_53 (FF)
@@ -3133,7 +3133,7 @@ Delay:               7.298ns (Levels of Logic = 14)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'BUSBHS_02DP_04S'
   Clock period: 4.994ns (frequency: 200.240MHz)
-  Total number of paths / destination ports: 3424 / 171
+  Total number of paths / destination ports: 3511 / 216
 -------------------------------------------------------------------------
 Delay:               4.994ns (Levels of Logic = 34)
   Source:            XLXI_6249/samplesSinceTrig_0 (FF)
@@ -3402,8 +3402,8 @@ Delay:               5.299ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 62.00 secs
-Total CPU time to Xst completion: 62.74 secs
+Total REAL time to Xst completion: 65.00 secs
+Total CPU time to Xst completion: 64.84 secs
  
 --> 
 

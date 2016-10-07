@@ -2,9 +2,27 @@ Command line:
    ClockLatchSignals_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  55498
+     -socket  56205
 
-Fri Sep 30 11:39:58 2016
+Fri Oct 07 14:57:22 2016
 
 
- Elaboration Time: 0.1092 sec
+ Elaboration Time: 0.062401 sec
+
+ Current Memory Usage: 1316.19 Meg
+
+ Total Signals          : 10
+ Total Nets             : 19
+ Total Signal Drivers   : 7
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 3
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 521
+
+ Total Simulation Time: 0.062401 sec
+
+ Current Memory Usage: 1316.19 Meg
+
+Fri Oct 07 14:57:24 2016
+
