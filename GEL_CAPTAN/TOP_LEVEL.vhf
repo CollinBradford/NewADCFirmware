@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 10/07/2016 16:05:31
+-- /___/   /\     Timestamp : 10/07/2016 16:21:03
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -1109,11 +1109,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   component VCC
-      port ( P : out   std_logic);
-   end component;
-   attribute BOX_TYPE of VCC : component is "BLACK_BOX";
-   
    attribute IOBDELAY_TYPE of XLXI_3405 : label is "VARIABLE";
    attribute CLKIN_PERIOD of XLXI_3410 : label is "8.0";
    attribute CLKFX_MULTIPLY of XLXI_3410 : label is "8";
@@ -2043,13 +2038,13 @@ begin
                 R=>XLXN_15521,
                 Q=>XLXN_15523);
    
-   XLXI_6339 : VCC
-      port map (P=>XLXN_15521);
-   
    XLXI_6340 : OR2
       port map (I0=>XLXN_15526,
                 I1=>XLXN_15523,
                 O=>reset);
+   
+   XLXI_6341 : GND
+      port map (G=>XLXN_15521);
    
 end BEHAVIORAL;
 

@@ -767,12 +767,6 @@
             <arc ex="112" ey="-144" sx="192" sy="-96" r="88" cx="116" cy="-56" />
             <line x2="48" y1="-48" y2="-48" x1="112" />
         </blockdef>
-        <blockdef name="vcc">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-32" y2="-64" x1="64" />
-            <line x2="64" y1="0" y2="-32" x1="64" />
-            <line x2="32" y1="-64" y2="-64" x1="96" />
-        </blockdef>
         <block symbolname="ibuf" name="XLXI_4248">
             <blockpin signalname="BUSC_16DP_32S" name="I" />
             <blockpin signalname="GMII_RX_ER_0_sig" name="O" />
@@ -1901,13 +1895,13 @@
             <blockpin signalname="XLXN_15521" name="R" />
             <blockpin signalname="XLXN_15523" name="Q" />
         </block>
-        <block symbolname="vcc" name="XLXI_6339">
-            <blockpin signalname="XLXN_15521" name="P" />
-        </block>
         <block symbolname="or2" name="XLXI_6340">
             <blockpin signalname="XLXN_15526" name="I0" />
             <blockpin signalname="XLXN_15523" name="I1" />
             <blockpin signalname="reset" name="O" />
+        </block>
+        <block symbolname="gnd" name="XLXI_6341">
+            <blockpin signalname="XLXN_15521" name="G" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -2096,7 +2090,6 @@
         <branch name="XLXN_15521">
             <wire x2="1312" y1="448" y2="448" x1="1296" />
         </branch>
-        <instance x="1296" y="512" name="XLXI_6339" orien="R270" />
         <instance x="1968" y="480" name="XLXI_6340" orien="R0" />
         <branch name="XLXN_15523">
             <wire x2="1712" y1="224" y2="224" x1="1696" />
@@ -2112,6 +2105,7 @@
             <wire x2="1840" y1="416" y2="672" x1="1840" />
             <wire x2="1968" y1="416" y2="416" x1="1840" />
         </branch>
+        <instance x="1168" y="384" name="XLXI_6341" orien="R90" />
     </sheet>
     <sheet sheetnum="2" width="7040" height="5440">
         <branch name="MASTER_CLK">
